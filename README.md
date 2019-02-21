@@ -82,7 +82,8 @@ Ficam aqui os arquivos básicos estruturais. São eles:
  - O normalize (reset) de CSS para deixar todos os navegadores com o mesmo estilo;
  - Os estilos universais, aplicados diretamente no html e no body;
  - As utilities, ou seja classes de ajuda com usos simples, como `display: none` por exemplo;
- - As variáveis globais, utilizadas por todas as outras folhas de estilo.
+ - As variáveis globais, utilizadas por todas as outras folhas de estilo;
+ - As constantes de cor da Unimed.
   
 ### Components
 Aqui ficam os componentes (como botões por exemplo), tanto de classes como também semanticos de HTML (form/input...).
