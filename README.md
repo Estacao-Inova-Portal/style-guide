@@ -69,6 +69,7 @@ Os arquivos estão divididos da seguinte forma:
  |-- base  
  |-- components  
  |-- layout  
+ |  
  | main.scss  
  | style.css  
 
