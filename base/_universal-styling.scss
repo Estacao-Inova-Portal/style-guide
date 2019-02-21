@@ -1,0 +1,12 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body, html{
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: unset;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  backface-visibility: hidden;
+}

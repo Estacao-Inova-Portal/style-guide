@@ -10,7 +10,7 @@ Estando instalado seguir para o próximo passo. Não instalado [visitar essa pag
 ### Comando para deixar o Sass atualizar o style.css automaticamente
 No terminal, chegue até o diretório css e use o seguinte comando:  
 ~~~
-_sass --watch _main.scss:style.css --style compressed_
+sass --watch main.scss:style.css --style compressed
 ~~~
 
 ## Convenção de nomenclatura de classes: BEM
