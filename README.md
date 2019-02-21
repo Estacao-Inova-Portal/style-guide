@@ -62,3 +62,29 @@ Que apresentaria o seguinte código CSS de resultado:
  - [BEM 101](https://css-tricks.com/bem-101/)
  - [BEM: A New Front-End Methodology](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)
  - [BEM For Beginners: Why You Need BEM](https://www.smashingmagazine.com/2018/06/bem-for-beginners/)
+
+ ## Árvore de arquivos
+ Os arquivos estão divididos da seguinte forma:
+ |  
+ |-- base  
+ |-- components  
+ |-- layout  
+ | main.scss  
+ | style.css  
+
+ ### Main e Style
+ O arquivo main.scss importa todos os outros arquivos do estilo. Já o style.css é o arquivo final gerado para ser aplicado nos sites.
+
+### Base
+Ficam aqui os arquivos básicos estruturais. São eles:  
+ - As famílias de fonte;
+ - O normalize (reset) de CSS para deixar todos os navegadores com o mesmo estilo;
+ - Os estilos universais, aplicados diretamente no html e no body;
+ - As utilities, ou seja classes de ajuda com usos simples, como `display: none` por exemplo;
+ - As variáveis globais, utilizadas por todas as outras folhas de estilo.
+  
+### Components
+Aqui ficam os componentes (como botões por exemplo), tanto de classes como também semanticos de HTML (form/input...).
+  
+### Layout
+A base do layout do Framework. Ficam aqui os arquivos que montam a tipografia e o sistema de grid/apresentação.
