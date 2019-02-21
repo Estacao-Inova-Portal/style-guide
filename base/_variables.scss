@@ -1,8 +1,13 @@
 // ---------
 // Variables
 // ---------
+//
+// 1 - Colors
+// 2 - Fonts
+// 3 - Units and Sizes
+// 4 - Shadows
 
-// Colors
+// 1 - Colors
 // ---------
 // Shades of gray
 $black: rgb(20,20,20);
@@ -34,7 +39,29 @@ $secondary-yellow-light: rgb(255,225,145);
 $secondary-lime: rgb(177,211,75);
 $secondary-lime-light: rgb(212,229,163);
 
-// Fonts
+// Colors applied
+$font-color: $gray-darker;
+$main-color: $primary;
+$contrast-color: $secondary-purple-dark;
+$link-color: $secondary-purple-dark;
+
+// 2 - Fonts
 // ---------
 $font-sans-serif: "Unimed Sans", "Trebuchet MS", sans-serif;
 $font-serif:  "Unimed Serif", Georgia, serif;
+
+// 3 - Units and sizes
+// ---------
+$unit: 4.5px;
+$unit-2: calc($unit * 2);
+$unit-4: calc($unit * 4);
+$unit-8: calc($unit * 8);
+
+// Units aplied
+$font-size: $unit-4;
+$radius: calc($unit * 0.75);
+
+// 5 - Shadows
+// ---------
+$shadow: 2px 2px 8px 0px $gray-light;
+$shadow-strong: 2px 2px 10px 0px $gray;
