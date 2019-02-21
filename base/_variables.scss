@@ -34,3 +34,9 @@ $radius: calc($unit * 0.75);
 // ---------
 $shadow: 2px 2px 8px 0px $gray-light;
 $shadow-strong: 2px 2px 10px 0px $gray;
+
+// 6 - Transitions
+// ---------
+$transition-fast: 0.3s;
+$transition: 0.5s;
+$transition-slow: 0.7s;
