@@ -62,9 +62,9 @@ Que apresentaria o seguinte código CSS de resultado:
  - [BEM 101](https://css-tricks.com/bem-101/)
  - [BEM: A New Front-End Methodology](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)
  - [BEM For Beginners: Why You Need BEM](https://www.smashingmagazine.com/2018/06/bem-for-beginners/)
-
- ## Árvore de arquivos
- Os arquivos estão divididos da seguinte forma:
+  
+## Árvore de arquivos
+Os arquivos estão divididos da seguinte forma:  
  |  
  |-- base  
  |-- components  
@@ -72,8 +72,8 @@ Que apresentaria o seguinte código CSS de resultado:
  | main.scss  
  | style.css  
 
- ### Main e Style
- O arquivo main.scss importa todos os outros arquivos do estilo. Já o style.css é o arquivo final gerado para ser aplicado nos sites.
+### Main e Style
+O arquivo main.scss importa todos os outros arquivos do estilo. Já o style.css é o arquivo final gerado para ser aplicado nos sites.
 
 ### Base
 Ficam aqui os arquivos básicos estruturais. São eles:  
