@@ -6,7 +6,6 @@
 // 2 - Fonts
 // 3 - Units and Sizes
 // 4 - Shadows
-// 5 - Shadows
 // 6 - Transitions
 
 // 1 - Colors
@@ -21,6 +20,11 @@ $link-color: $secondary-purple-dark;
 $font-sans-serif: "Unimed Sans", "Trebuchet MS", sans-serif;
 $font-serif:  "Unimed Serif", Georgia, serif;
 
+// Text Column sizing
+$max-text-column: calc(195 * $unit);
+$min-text-column: calc(120 * $unit);
+$ideal-text-column: calc(170 * $unit);
+
 // 3 - Units and sizes
 // ---------
 $unit: 4.5px;
@@ -32,12 +36,12 @@ $unit-8: calc($unit * 8);
 $font-size: $unit-4;
 $radius: calc($unit * 0.75);
 
-// 5 - Shadows
+// 4 - Shadows
 // ---------
 $shadow: 2px 2px 8px 0px $gray-light;
 $shadow-strong: 2px 2px 10px 0px $gray;
 
-// 6 - Transitions
+// 5 - Transitions
 // ---------
 $transition-fast: 0.3s;
 $transition: 0.5s;

@@ -92,8 +92,7 @@ Aqui ficam os componentes (como botões por exemplo), tanto de classes como tamb
 A base do layout do Framework. Ficam aqui os arquivos que montam a tipografia e o sistema de grid/apresentação.
 
 ## Tipografia
-A fonte base do framework é a Unimed Sans no **tamanho base de 18px**.  
-O tamanho de 18px pode ser dividido por 4 e chegar no resultado de **4,5px - a unidade mínima do projeto**.
+A fonte base do framework é a Unimed Sans no **tamanho base de 18px**. O tamanho de 18px pode ser dividido por 4 e chegar no resultado de **4,5px - a unidade mínima do projeto**.  
 São levadas em conta no layout as larguras mínimas / ideais / máximas de coluna de texto apresentadas por James Craig em seu livro [Designing with Type](https://www.amazon.com/Designing-Type-5th-Essential-Typography/dp/0823014134).  
  - Largura mínima: **45 caracteres**;
  - Largura ideal: **65 caracteres**;

@@ -1,4 +1,4 @@
 p {
-  max-width: calc(195 * $unit);
-  min-width: calc(120 * $unit);
+  max-width: $max-text-column;
+  min-width: $min-text-column;
 }
