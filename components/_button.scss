@@ -1,0 +1,39 @@
+input[type="submit"], input[type="reset"], button{
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  background: none;
+}
+
+.btn, button, input[type="submit"], input[type="reset"]{
+  background: $contrast-color;
+  border: 2px solid $contrast-color;
+  border-radius: $radius;
+  padding: $unit-2 $unit-4;
+  margin-top: $unit-4 + $unit-2;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  transition: $transition;
+  &:focus{
+    outline: 3px solid $focus;
+    outline-offset: 0;
+  }
+  &:hover{
+    transform: scale(1.025);
+    background: lighten($contrast-color, 5);
+    border-color: lighten($contrast-color, 5);
+  }
+}
+
+// Button Modifiers
+// ----------------------
+// Backgrond color Modifiers
+.btn--primary{
+  border-color: $primary;
+  background-color: $primary;
+  &:hover{
+    background: lighten($primary, 5);
+    border-color: lighten($primary, 5);
+  }
+}

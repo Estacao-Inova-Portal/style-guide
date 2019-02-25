@@ -1,6 +1,14 @@
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+  ::selection {
+    background: $primary-75;
+    color: white;
+  }
+  ::-moz-selection {
+    background: $primary-75;
+    color: white;
+  }
 }
 
 body, html{

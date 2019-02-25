@@ -24,7 +24,7 @@ label, legend{
 }
 
 input, textarea, select{
-  &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]){
+  &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]){
     padding: $unit-2;
     margin: $unit 0 $unit-2;
     width: $min-text-column;
