@@ -13,20 +13,25 @@ fieldset{
   border: 1px solid $gray-lighter;
   border-radius: $radius;
   padding: $unit-4;
+  padding-bottom:  $unit-8;
   & > legend:first-child{
     font-weight: 800;
   }
 }
 
 label, legend{
-  margin-top: $unit-4 + $unit;
+  margin-top: $unit-4;
   display: inline-block;
+}
+
+legend{
+  margin-top: $unit-8;
 }
 
 input, textarea, select{
   &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]){
     padding: $unit-2;
-    margin: $unit 0 $unit-2;
+    margin: $unit 0 $unit-8;
     width: $min-text-column;
     max-width: 80vw;
     border: $form-border;
@@ -40,9 +45,10 @@ input, textarea, select{
     -webkit-appearance: none;
     appearance: none;
     border: $form-border;
-    height: $unit-4;
-    width: $unit-4;
-    margin-bottom: $unit / -1.5;
+    height: $unit-4 + $unit;
+    width: $unit-4 + $unit;
+    margin-right: $unit;
+    margin-bottom: $unit / -1;
     &:focus{
       outline: 3px solid $focus;
       outline-offset: 0;
