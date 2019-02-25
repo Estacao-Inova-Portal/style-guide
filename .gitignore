@@ -1,0 +1,7 @@
+# Remove OS generated files #
+.DS_Store
+.DS_Store?
+
+# Remove files not to be used on CSS Base #
+*.map
+*.html
