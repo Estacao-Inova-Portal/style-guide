@@ -92,7 +92,7 @@ Aqui ficam os componentes (como botões por exemplo), tanto de classes como tamb
 A base do layout do Framework. Ficam aqui os arquivos que montam a tipografia e o sistema de grid/apresentação.
 
 ## Tipografia
-A fonte base do framework é a Unimed Sans no **tamanho base de 18px**. O tamanho de 18px pode ser dividido por 4 e chegar no resultado de **4,5px - a unidade mínima do projeto**.  
+A fonte base do framework é a Unimed Sans no **tamanho base de 18px**. O tamanho de 18px pode ser dividido por 4 e chegar no resultado de **4,5px - a unidade mínima do projeto**, que pode ser acessada pela variável `$unit`.  
 São levadas em conta no layout as larguras mínimas / ideais / máximas de coluna de texto apresentadas por James Craig em seu livro [Designing with Type](https://www.amazon.com/Designing-Type-5th-Essential-Typography/dp/0823014134).  
  - Largura mínima: **45 caracteres**;
  - Largura ideal: **65 caracteres**;
@@ -103,6 +103,6 @@ Para encontrar a largura mínima tire 30% do resultado da largura ideal; para a 
 
 ### Largura das colunas de texto
  - Largura do alfabeto na Unimed Sans 18px: **303,5px**
- - Largura ideal da coluna de texto: **758.75px** ou seja, 168.61 unidades básicas de layout, arredondado para **170 unidades básicas**.
- - Largura mínima da coluna de texto: **531.125px** ou seja, 118.027 unidades básicas de layout, arredondado para **120 unidades básicas**.
- - Largura máxima da coluna de texto: **872.5625px** ou seja, 193.90 unidades báscias de layout, arredondado para **195 unidades básicas**.
+ - Largura ideal da coluna de texto: **758.75px** ou seja, 168.61 unidades básicas de layout, arredondado para **170 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$ideal-text-column`.
+ - Largura mínima da coluna de texto: **531.125px** ou seja, 118.027 unidades básicas de layout, arredondado para **120 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$min-text-column`.
+ - Largura máxima da coluna de texto: **872.5625px** ou seja, 193.90 unidades báscias de layout, arredondado para **195 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$max-text-column`.
