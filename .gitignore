@@ -3,5 +3,5 @@
 .DS_Store?
 
 # Remove files not to be used on CSS Base #
-*.map
+style.css.map
 *.html

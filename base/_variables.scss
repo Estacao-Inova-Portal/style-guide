@@ -3,38 +3,40 @@
 // ---------
 //
 // 1 - Colors
-// 2 - Fonts
-// 3 - Units and Sizes
+// 2 - Units and Sizes
+// 3 - Fonts
 // 4 - Shadows
 // 6 - Transitions
+
 
 // 1 - Colors
 // ---------
 $font-color: $gray-darker;
 $main-color: $primary-75;
-$contrast-color: $secondary-purple-dark;
+$contrast-color: $secondary-orange;
 $link-color: $secondary-purple-dark;
 
-// 2 - Fonts
-// ---------
-$font-sans-serif: "Unimed Sans", "Trebuchet MS", sans-serif;
-$font-serif:  "Unimed Serif", Georgia, serif;
-
-// Text Column sizing
-$max-text-column: calc(195 * $unit);
-$min-text-column: calc(120 * $unit);
-$ideal-text-column: calc(170 * $unit);
-
-// 3 - Units and sizes
+// 2 - Units and sizes
 // ---------
 $unit: 4.5px;
-$unit-2: calc($unit * 2);
-$unit-4: calc($unit * 4);
-$unit-8: calc($unit * 8);
+$unit-2: calc(#{$unit} * 2);
+$unit-4: calc(#{$unit} * 4);
+$unit-8: calc(#{$unit} * 8);
 
 // Units aplied
 $font-size: $unit-4;
-$radius: calc($unit * 0.75);
+$radius: calc(#{$unit} * 0.75);
+
+// 3 - Fonts
+// ---------
+$font-sans-serif: "Unimed Sans", "Trebuchet MS", sans-serif;
+$font-serif:  "Unimed Serif", Georgia, serif;
+$line-height: 1.5;
+
+// Text Column sizing
+$max-text-column: calc(195 * #{$unit});
+$min-text-column: calc(120 * #{$unit});
+$ideal-text-column: calc(170 * #{$unit});
 
 // 4 - Shadows
 // ---------

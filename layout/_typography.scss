@@ -1,4 +1,15 @@
+// Basic components
 p {
   max-width: $max-text-column;
   min-width: $min-text-column;
+  line-height: $line-height;
+}
+
+// Typography Modifiers
+.text--primary-color{
+  color: $main-color;
+}
+
+.text--secondary-color{
+  color: $contrast-color;
 }
