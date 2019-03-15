@@ -39,8 +39,7 @@ $container-width: 1.2 * $max-text-column;
 // ---------
 $font-sans-serif: "Unimed Sans", "Trebuchet MS", sans-serif;
 $font-serif:  "Unimed Serif", Georgia, serif;
-$line-height: 1.55;
-$line-height-titles: 1.35;
+$line-height: $font-size * 1.5;
 
 // 4 - Shadows
 // ---------

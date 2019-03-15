@@ -4,8 +4,39 @@ p, span, ul, ol, a, legend {
   line-height: $line-height;
 }
 
-h1, h2, h3, h4, h5, h6{
-  line-height: $line-height-titles;
+p{
+  margin-top: 0;
+  margin-bottom: $font-size;
+  hanging-punctuation: first;
+}
+
+h1{
+  font-size: $font-size * 2.75;
+  line-height: $unit * 14;
+  margin-top: $font-size * 2.75;
+  margin-bottom: $font-size;
+}
+
+h2{
+  font-size: $font-size * 2.25;
+  font-weight: 400;
+  line-height: $unit * 12;
+  margin-top: $font-size * 2.25;
+  margin-bottom: $font-size;
+}
+
+h3{
+  font-size: $font-size * 1.5;
+  line-height: $unit * 8;
+  margin-top: $font-size * 1.5;
+  margin-bottom: $font-size;
+}
+
+h4{
+  font-size: $font-size * 1.25;
+  line-height: $unit * 7;
+  margin-top: $font-size * 1.25;
+  margin-bottom: $font-size;
 }
 
 a {
@@ -34,4 +65,36 @@ a {
 }
 .text--secondary-color{
   color: $contrast-color;
+}
+.text--all-caps{
+  text-transform: uppercase;
+}
+.text--bold{
+  font-weight: bold;
+}
+
+// Media Querie
+// ----------------------
+@media (max-width: 800px){
+  h1{
+    font-size: $font-size * 1.75;
+    line-height: $unit * 9;
+    margin-top: $font-size * 1.75;
+  }
+  h2{
+    font-size: $font-size * 1.5;
+    line-height: $unit * 8;
+    margin-top: $font-size * 1.5;
+  }
+  
+  h3{
+    font-size: $font-size * 1.25;
+    line-height: $unit * 7;
+    margin-top: $font-size * 1.25;
+  }
+  h4{
+    font-size: $font-size;
+    line-height: $font-size * 1.5;
+    margin-top: $font-size;
+  }
 }
