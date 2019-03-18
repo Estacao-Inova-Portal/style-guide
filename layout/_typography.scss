@@ -39,6 +39,10 @@ h4{
   margin-bottom: $font-size;
 }
 
+h2:first-child, h3:first-child, h4:first-child{
+  margin-top: $unit-2;
+}
+
 code, pre{
   background: $gray-darker;
   color: $gray-lighter-max;
@@ -67,6 +71,10 @@ a {
     outline: none;
     color: black;
   }
+}
+
+hr{
+  border: 1px solid $gray-lighter;
 }
 
 // Typography Modifiers

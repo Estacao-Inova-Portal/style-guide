@@ -13,7 +13,6 @@ fieldset{
   border: 1px solid $gray-lighter;
   border-radius: $radius;
   padding: $unit-4;
-  padding-bottom:  $unit-8;
   & > legend:first-child{
     font-weight: 800;
   }
@@ -73,4 +72,8 @@ input, textarea, select{
 .form__hint{
   display: block;
   color: $gray;
+}
+
+.form__multiple-choice:last-of-type{
+  margin-bottom: $unit-2;
 }
