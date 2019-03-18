@@ -1,0 +1,44 @@
+.table{
+  overflow-x: auto;
+}
+
+table{
+  width: 100%;
+}
+
+th, td{
+  text-align: left;
+  padding: $unit-2;
+  min-width: 25 * $unit;
+}
+
+tr:nth-child(even) {
+  background: lighten($gray-lighter-max, 5);
+}
+
+thead {
+  background: $gray-lighter;
+  tr:hover{
+    background: initial;
+  }
+}
+
+tr:hover{
+  background: $gray-lighter;
+}
+
+// Table Elements
+// ----------------------
+// Number Cells
+.table__number{
+  text-align: right;
+  &:not(th){
+    font-family: monospace,monospace;
+  }
+}
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  
+}

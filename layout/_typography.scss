@@ -1,5 +1,5 @@
 // Basic components
-p, span, ul, ol, a, legend {
+p, span, ul, ol, a, legend, th, td {
   max-width: $max-text-column;
   line-height: $line-height;
 }
@@ -39,6 +39,18 @@ h4{
   margin-bottom: $font-size;
 }
 
+code, pre{
+  background: $gray-darker;
+  color: $gray-lighter-max;
+  padding: 0 $unit;
+  border-radius: $radius;
+}
+
+pre{
+  line-height: $line-height;
+  padding: $unit-2;
+}
+
 a {
   transition: $transition;
   color: $font-color;
@@ -59,23 +71,27 @@ a {
 
 // Typography Modifiers
 // ----------------------
-// Color Modifiers
+// Color modifiers
 .text--primary-color{
   color: $main-color;
 }
 .text--secondary-color{
   color: $contrast-color;
 }
+
+// Text transform modifiers
 .text--all-caps{
   text-transform: uppercase;
 }
-.text--bold{
-  font-weight: bold;
+
+.text--small{
+  font-size: 0.75em;
+  font-weight: normal;
 }
 
 // Media Querie
 // ----------------------
-@media (max-width: 800px){
+@media (max-width: $break-default){
   h1{
     font-size: $font-size * 1.75;
     line-height: $unit * 9;
