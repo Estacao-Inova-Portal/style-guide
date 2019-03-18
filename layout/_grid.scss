@@ -11,3 +11,12 @@
   flex-direction: column;
   padding: 0 $unit-2;
 }
+.grid__columns{
+  display:flex;
+  flex-wrap: wrap;
+  margin-right: - $unit-2;
+  margin-left: - $unit-2;
+  & > *{
+    margin: $unit-2;
+  }
+}

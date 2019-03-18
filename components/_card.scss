@@ -3,3 +3,10 @@
   border-radius: $radius;
   box-shadow: $shadow;
 }
+
+// Card Elements
+// ----------------------
+.card__small{
+  width: $unit * 67.25;
+  display: inline-block;
+}
