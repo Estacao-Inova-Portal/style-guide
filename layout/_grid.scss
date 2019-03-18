@@ -9,10 +9,33 @@
 }
 .grid__columns{
   display:flex;
-  flex-wrap: wrap;
+  margin-top: $unit-2;
+  margin-bottom: $unit-2;
   margin-right: - $unit-2;
   margin-left: - $unit-2;
   & > *{
     margin: $unit-2;
+  }
+}
+
+// Grid Modifiers
+// ----------------------
+.grid--wrap{
+  flex-wrap: wrap;
+}
+
+.grid--align-start{
+  align-items: flex-start;
+}
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  .grid__columns{
+    flex-wrap: wrap;
+  }
+  .grid--overflow-mobile{
+    overflow: auto;
+    flex-wrap: nowrap;
   }
 }
