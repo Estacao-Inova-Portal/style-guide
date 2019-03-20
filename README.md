@@ -133,7 +133,7 @@ Dentro do arquivo `variables--unimed-colors` estão os:
 
 As cores primárias e secundárias se encontram em sua versão principal, assim como também a gradação de 75% 50% 25% de saturação da cor.
 
-**Exemplo:**  
+#### Exemplo
 ~~~
 $secondary-magenta: rgb(237,22,81);
 $secondary-magenta-75: rgb(240,102,111);
