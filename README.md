@@ -131,7 +131,7 @@ Dentro do arquivo `variables--unimed-colors` estão os:
  - Cor Primária (Verde Unimed);
  - Cores Secundárias.
 
-As cores primárias e secundárias se encontram em sua versão principal, assim como também a gradação de 75% 50% 25% de cor, ficando cada vez mais próximas do 0.
+As cores primárias e secundárias se encontram em sua versão principal, assim como também a gradação de 75% 50% 25% de saturação da cor.
 
 **Exemplo:**  
 ~~~
