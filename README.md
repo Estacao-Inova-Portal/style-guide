@@ -122,18 +122,18 @@ Para encontrar a largura mínima tire 30% do resultado da largura ideal; para a 
  - Largura mínima da coluna de texto: **531.125px** ou seja, 118.027 unidades básicas de layout, arredondado para **120 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$min-text-column`.
  - Largura máxima da coluna de texto: **872.5625px** ou seja, 193.90 unidades báscias de layout, arredondado para **195 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$max-text-column`.
 
- ## Cores
- As únicas cores aceitas no projeto são as presentes na [Central da Marca da Unimed](http://www.centraldamarca.unimed.coop.br/group/central-da-marca/paleta-cores). Dentro do repositório elas se encontram em *base/variables--unimed-colors.scss*.  
+## Cores
+As únicas cores aceitas no projeto são as presentes na [Central da Marca da Unimed](http://www.centraldamarca.unimed.coop.br/group/central-da-marca/paleta-cores). Dentro do repositório elas se encontram em *base/variables--unimed-colors.scss*.  
 
- ### Tipos de cores
- Dentro do arquivo `variables--unimed-colors` estão os:
-  - Tons de cinza (Preto até branco);
-  - Cor Primária (Verde Unimed);
-  - Cores Secundárias.
+### Tipos de cores
+Dentro do arquivo `variables--unimed-colors` estão os:
+ - Tons de cinza (Preto até branco);
+ - Cor Primária (Verde Unimed);
+ - Cores Secundárias.
 
 As cores primárias e secundárias se encontram em sua versão principal, assim como também a gradação de 75% 50% 25% de cor, ficando cada vez mais próximas do 0.
 
-Exemplo:  
+**Exemplo:**  
 ~~~
 $secondary-magenta: rgb(237,22,81);
 $secondary-magenta-75: rgb(240,102,111);
