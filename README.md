@@ -7,6 +7,7 @@ Essa folha de estilos tem como objetivo unificar o CSS de todos os projetos web 
  - [Convenção de nomenclatura de classes: BEM](#convenção-de-nomenclatura-de-classes-bem)
  - [Árvore de arquivos](#Árvore-de-arquivos)
  - [Tipografia](#tipografia)
+ - [Cores](#cores)
 
 ## Preprocessador: Sass
 O CSS desse projeto foi criado utilizando o pré-processador Sass.  
@@ -120,3 +121,27 @@ Para encontrar a largura mínima tire 30% do resultado da largura ideal; para a 
  - Largura ideal da coluna de texto: **758.75px** ou seja, 168.61 unidades básicas de layout, arredondado para **170 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$ideal-text-column`.
  - Largura mínima da coluna de texto: **531.125px** ou seja, 118.027 unidades básicas de layout, arredondado para **120 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$min-text-column`.
  - Largura máxima da coluna de texto: **872.5625px** ou seja, 193.90 unidades báscias de layout, arredondado para **195 unidades básicas**. Para acessar essa largura no projeto utiliza a variável `$max-text-column`.
+
+ ## Cores
+ As únicas cores aceitas no projeto são as presentes na [Central da Marca da Unimed](http://www.centraldamarca.unimed.coop.br/group/central-da-marca/paleta-cores). Dentro do repositório elas se encontram em *base/variables--unimed-colors.scss*.  
+
+ ### Tipos de cores
+ Dentro do arquivo `variables--unimed-colors` estão os:
+  - Tons de cinza (Preto até branco);
+  - Cor Primária (Verde Unimed);
+  - Cores Secundárias.
+
+As cores primárias e secundárias se encontram em sua versão principal, assim como também a gradação de 75% 50% 25% de cor, ficando cada vez mais próximas do 0.
+
+Exemplo:  
+~~~
+$secondary-magenta: rgb(237,22,81);
+$secondary-magenta-75: rgb(240,102,111);
+$secondary-magenta-50: rgb(245,150,149);
+$secondary-magenta-25: rgb(250,200,195);
+~~~
+
+### Contraste
+Todo elemento deve seguir as [regras de contraste](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) apresentadas pela W3C. Ou seja, devem ter um contraste mínimo de 4.5:1 para garantir acessibilidade.  
+
+Em caso de dúvidas sobre contraste a ferramenta [Colorable](https://colorable.jxnblk.com/) é gratuíta e entrega resultados na hora avisando se passou (AA) no critério mínimo de contraste ou não.
