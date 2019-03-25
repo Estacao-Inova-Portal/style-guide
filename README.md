@@ -15,9 +15,9 @@ O CSS desse projeto foi criado utilizando o pré-processador Sass.
 O primeiro passo é checar se o Sass está instalado na sua máquina com o comando `_sass --version_`, estando instalado seguir para o próximo passo. Não instalado [visitar essa pagina](https://sass-lang.com/install) e instalar ele.  
 
 ### Comando para deixar o Sass atualizar o style.css automaticamente
-No terminal, chegue até o diretório css e use o seguinte comando:  
+No terminal, chegue até o diretório raiz do repositório e use o seguinte comando:  
 ~~~
-sass --watch main.scss:style.css --style compressed
+sass --watch css/main.scss:css/style.css --style compressed
 ~~~
 
 ## Convenção de nomenclatura de classes: BEM
