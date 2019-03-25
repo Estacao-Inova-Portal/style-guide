@@ -1,6 +1,6 @@
-# Folha de estilo padrão para projetos web - Unimed
+# Guia de estilos para projetos web - Unimed
 
-Essa folha de estilos tem como objetivo unificar o CSS de todos os projetos web da Unimed.  
+Esse Guia de estilos tem como objetivo unificar o CSS de todos os projetos web da Unimed.  
 
 ## Índice
  - [Preprocessador: Sass](#preprocessador-sass)
@@ -77,7 +77,10 @@ Que apresentaria o seguinte código CSS de resultado:
  - [BEM For Beginners: Why You Need BEM](https://www.smashingmagazine.com/2018/06/bem-for-beginners/)
   
 ## Árvore de arquivos
-Os arquivos estão divididos da seguinte forma:  
+Os arquivos CSS estão divididos da seguinte forma:  
+
+
+CSS  
  |  
  |-- base  
  |-- components  
