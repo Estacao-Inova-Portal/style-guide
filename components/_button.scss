@@ -33,8 +33,7 @@ input[type="submit"], input[type="reset"], button{
 
 // Button Modifiers
 // ----------------------
-// Backgrond color Modifiers
-// Base Mixin
+// Base Background color Mixin
 @mixin buttonColor($background-color, $color: $white) {
   border-color: $background-color;
   background-color: $background-color;
@@ -46,6 +45,7 @@ input[type="submit"], input[type="reset"], button{
   }
 }
 
+// Backgrond color Modifiers
 .btn--primary-color{
   @include buttonColor($primary);
 }

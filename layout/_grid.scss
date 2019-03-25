@@ -1,3 +1,7 @@
+.grid{
+  display:flex;
+}
+
 // Grid Elements
 // ----------------------
 .grid__container{
@@ -6,6 +10,10 @@
   display: flex;
   flex-direction: column;
   padding: 0 $unit-2;
+}
+.grid__menu{
+  padding: $unit-2;
+  width: $unit-8 *6;
 }
 .grid__columns{
   display:flex;
@@ -31,6 +39,12 @@
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
+  .grid{
+    display: initial;
+  }
+  .grid__menu{
+    display: none;
+  }
   .grid__columns{
     flex-wrap: wrap;
   }
