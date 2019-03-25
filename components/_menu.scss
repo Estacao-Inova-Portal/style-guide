@@ -4,6 +4,15 @@
   width: 100%;
 }
 
+// Menu Elements
+// ----------------------
+.menu__link-list{
+  list-style:none;
+  a{
+    box-shadow: none;
+  }
+}
+
 // Menu Modifiers
 // ----------------------
 .menu--fixed{
