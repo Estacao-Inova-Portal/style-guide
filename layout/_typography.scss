@@ -56,7 +56,7 @@ pre{
   overflow: auto;
 }
 
-a {
+a:not(.btn) {
   transition: $transition;
   color: $font-color;
   text-decoration: none;
