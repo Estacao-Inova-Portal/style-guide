@@ -2,5 +2,6 @@
 .DS_Store
 .DS_Store?
 
-# Remove files not to be used on CSS Base #
-style.css.map
+/style-guide/node_modules
+/style-guide/node_modules/*
+/style-guide/package-lock.json
