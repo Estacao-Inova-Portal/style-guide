@@ -82,7 +82,7 @@ Os arquivos estão divididos da seguinte forma:
  |-- base  
  |-- components  
  |-- layout  
- |-- typography
+ |-- typography  
  |  
  | main.scss  
  | style.css  
