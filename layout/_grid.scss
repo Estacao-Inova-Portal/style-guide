@@ -43,14 +43,14 @@
   .grid{
     display: initial;
   }
-  .grid__menu{
-    display: none;
-  }
   .grid__columns{
     flex-wrap: wrap;
   }
   .grid--overflow-mobile{
     overflow: auto;
     flex-wrap: nowrap;
+  }
+  .grid--display-none-mobile{
+    display: none;
   }
 }
