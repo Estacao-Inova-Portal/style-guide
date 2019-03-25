@@ -1,0 +1,12 @@
+.menu{
+  border-right: 1px solid $gray-light;
+  height: 100%;
+  width: 100%;
+}
+
+// Menu Modifiers
+// ----------------------
+.menu--fixed{
+  position: fixed;
+  width: $unit-8 *8;
+}

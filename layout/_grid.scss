@@ -13,7 +13,8 @@
 }
 .grid__menu{
   padding: $unit-2;
-  width: $unit-8 *6;
+  min-width: $unit-8 *8;
+  position: relative;
 }
 .grid__columns{
   display:flex;

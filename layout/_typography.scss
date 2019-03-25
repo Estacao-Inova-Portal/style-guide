@@ -70,7 +70,17 @@ a:not(.btn) {
     box-shadow: $button-shadow-focus;
     background: $focus;
     outline: none;
-    color: black;
+    color: $black;
+  }
+}
+
+summary{
+  cursor: pointer;
+  padding: $unit-2 0;
+  &:hover{
+    color: #00401a;
+    background: #c8c9cd;
+    transition: $transition;
   }
 }
 
