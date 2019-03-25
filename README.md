@@ -82,6 +82,7 @@ Os arquivos estão divididos da seguinte forma:
  |-- base  
  |-- components  
  |-- layout  
+ |-- typography
  |  
  | main.scss  
  | style.css  
@@ -103,6 +104,9 @@ Aqui ficam os componentes (como botões por exemplo), tanto de classes como tamb
   
 ### Layout
 A base do layout do Framework. Ficam aqui os arquivos que montam a tipografia e o sistema de grid/apresentação.
+
+### Typography
+Aqui ficam os arquivos de web fonts das fontes Unimed usadas na folha de estilo.
 
 ## Tipografia
 A fonte base do framework é a Unimed Sans no **tamanho base de 18px**. O tamanho de 18px pode ser dividido por 4 e chegar no resultado de **4,5px - a unidade mínima do projeto**, que pode ser acessada pela variável `$unit`.  

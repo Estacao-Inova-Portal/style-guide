@@ -1,66 +1,38 @@
 @font-face {
   font-family: "Unimed Sans";
-  src: url('http://unimed.coop.br/portalunimed/fontes/unimedsans-regular-webfont.eot');
-  src: url('http://unimed.coop.br/portalunimed/fontes/unimedsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-regular-webfont.woff2') format('woff2'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-regular-webfont.woff') format('woff'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-regular-webfont.ttf') format('truetype'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-regular-webfont.svg#unimed_sansregular') format('svg'),
-       url("http://unimed.coop.br/portalunimed/fontes/UnimedSans-Regular.otf") format('opentype');
+  src: url('typography/unimedsans-regular-webfont.eot');
+  src: url('typography/unimedsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('typography/unimedsans-regular-webfont.woff2') format('woff2'),
+       url('typography/unimedsans-regular-webfont.woff') format('woff'),
+       url('typography/unimedsans-regular-webfont.ttf') format('truetype'),
+       url('typography/unimedsans-regular-webfont.svg#unimed_sansregular') format('svg'),
+       url("typography/unimedsans-regular.otf") format('opentype');
   font-display: swap;
 }
 
 @font-face {
   font-family: "Unimed Sans";
-  src: url("http://unimed.coop.br/portalunimed/fontes/UnimedSans-RegularItalic.otf") format('opentype');
+  src: url("typography/unimedsans-regularitalic.otf") format('opentype');
   font-display: swap;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Unimed Sans";
-  src: url('http://unimed.coop.br/portalunimed/fontes/unimedsans-bold-webfont.eot');
-  src: url('http://unimed.coop.br/portalunimed/fontes/unimedsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-bold-webfont.woff2') format('woff2'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-bold-webfont.woff') format('woff'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-bold-webfont.ttf') format('truetype'),
-       url('http://unimed.coop.br/portalunimed/fontes/unimedsans-bold-webfont.svg#unimed_sansbold') format('svg'),
-       url("http://unimed.coop.br/portalunimed/fontes/UnimedSans-Bold.otf") format('opentype');
+  src: url('typography/unimedsans-bold-webfont.eot');
+  src: url('typography/unimedsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('typography/unimedsans-bold-webfont.woff2') format('woff2'),
+       url('typography/unimedsans-bold-webfont.woff') format('woff'),
+       url('typography/unimedsans-bold-webfont.ttf') format('truetype'),
+       url('typography/unimedsans-bold-webfont.svg#unimed_sansbold') format('svg'),
+       url("typography/unimedsans-bold.otf") format('opentype');
   font-display: swap;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Unimed Sans";
-  src: url("http://unimed.coop.br/portalunimed/fontes/UnimedSans-BoldItalic.otf") format('opentype');
-  font-display: swap;
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Unimed Serif";
-  src: url("http://unimed.coop.br/portalunimed/fontes/UnimedSerif-Regular.otf") format('opentype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Unimed Serif";
-  src: url("http://unimed.coop.br/portalunimed/fontes/UnimedSerif-RegularItalic.otf") format('opentype');
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Unimed Serif";
-  src: url("http://unimed.coop.br/portalunimed/fontes/UnimedSerif-Bold.otf") format('opentype');
-  font-display: swap;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Unimed Serif";
-  src: url("http://unimed.coop.br/portalunimed/fontes/UnimedSerif-BoldItalic.otf") format('opentype');
+  src: url("typography/unimedsans-bolditalic.otf") format('opentype');
   font-display: swap;
   font-weight: bold;
   font-style: italic;
