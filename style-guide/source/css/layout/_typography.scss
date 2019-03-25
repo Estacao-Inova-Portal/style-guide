@@ -1,0 +1,135 @@
+// Basic components
+p, span, ul, ol, a, legend, th, td {
+  max-width: $max-text-column;
+  line-height: $line-height;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: $font-size;
+  hanging-punctuation: first;
+}
+
+h1{
+  font-size: $font-size * 2.75;
+  line-height: $unit * 14;
+  margin-top: $font-size * 2.75;
+  margin-bottom: $font-size;
+}
+
+h2{
+  font-size: $font-size * 2.25;
+  font-weight: 400;
+  line-height: $unit * 12;
+  margin-top: $font-size * 2.25;
+  margin-bottom: $font-size;
+}
+
+h3{
+  font-size: $font-size * 1.5;
+  line-height: $unit * 8;
+  margin-top: $font-size * 1.5;
+  margin-bottom: $font-size;
+}
+
+h4{
+  font-size: $font-size * 1.25;
+  line-height: $unit * 7;
+  margin-top: $font-size * 1.25;
+  margin-bottom: $font-size;
+}
+
+h2:first-child, h3:first-child, h4:first-child{
+  margin-top: $unit-2;
+}
+
+code, pre{
+  background: $gray-darker;
+  color: $gray-lighter-max;
+  padding: 0 $unit;
+  border-radius: $radius;
+}
+
+pre{
+  line-height: $line-height;
+  padding: $unit-2;
+  overflow: auto;
+}
+
+a:not(.btn) {
+  transition: $transition;
+  color: $font-color;
+  text-decoration: none;
+  box-shadow: $button-shadow;
+  &:hover{
+    color: $link-color-hover;
+    box-shadow: none;
+    background: $gray-light;
+  }
+  &:focus{
+    box-shadow: $button-shadow-focus;
+    background: $focus;
+    outline: none;
+    color: $black;
+  }
+}
+
+summary{
+  cursor: pointer;
+  padding: $unit-2 0;
+  &:hover{
+    color: #00401a;
+    background: #c8c9cd;
+    transition: $transition;
+  }
+}
+
+hr{
+  border: 1px solid $gray-lighter;
+}
+
+// Typography Modifiers
+// ----------------------
+// Color modifiers
+.text--primary-color{
+  color: $main-color;
+}
+.text--secondary-color{
+  color: $contrast-color;
+}
+
+// Text transform modifiers
+.text--all-caps{
+  text-transform: uppercase;
+}
+
+.text--small{
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  h1{
+    font-size: $font-size * 1.75;
+    line-height: $unit * 9;
+    margin-top: $font-size * 1.75;
+  }
+  h2{
+    font-size: $font-size * 1.5;
+    line-height: $unit * 8;
+    margin-top: $font-size * 1.5;
+  }
+  
+  h3{
+    font-size: $font-size * 1.25;
+    line-height: $unit * 7;
+    margin-top: $font-size * 1.25;
+  }
+  h4{
+    font-size: $font-size;
+    line-height: $font-size * 1.5;
+    margin-top: $font-size;
+  }
+}

@@ -1,0 +1,64 @@
+// ---------
+// Variables
+// ---------
+//
+// 1 - Colors
+// 2 - Units and Sizes
+// 3 - Fonts
+// 4 - Shadows
+// 6 - Transitions
+// 7 - Media Queries
+
+
+// 1 - Colors
+// ---------
+$font-color: $gray-darker;
+$main-color: $primary;
+$contrast-color: $secondary-orange;
+$link-color: $primary-50;
+$link-color-hover: $primary-dark;
+$focus: $secondary-yellow;
+
+// 2 - Units and sizes
+// ---------
+$unit: 4.5px;
+$unit-2: $unit * 2;
+$unit-4: $unit * 4;
+$unit-8: $unit * 8;
+
+// Text Column sizing
+$max-text-column: 195 * $unit;
+$min-text-column: 120 * $unit;
+$ideal-text-column: 170 * $unit;
+
+// Units aplied
+$font-size: $unit-4;
+$radius: $unit * 0.75;
+$container-width: 1.2 * $max-text-column;
+
+// 3 - Fonts
+// ---------
+$font-sans-serif: "Unimed Sans", "Trebuchet MS", sans-serif;
+$font-serif:  "Unimed Serif", Georgia, serif;
+$line-height: $font-size * 1.5;
+
+// 4 - Shadows
+// ---------
+$shadow: 2px 2px 8px 0px $gray-light;
+$shadow-strong: 2px 2px 10px 0px $gray;
+$button-shadow: inset 0 -4px 0 $link-color;
+$button-shadow-focus: inset 0 -4px 0 $focus;
+
+// 5 - Transitions
+// ---------
+$transition-fast: 0.3s;
+$transition: 0.5s;
+$transition-slow: 0.7s;
+
+// 6 - Borders
+// ---------
+$form-border: 2px solid $gray-dark;
+
+// 6 - Media Queries
+// ---------
+$break-default: 178 * $unit;

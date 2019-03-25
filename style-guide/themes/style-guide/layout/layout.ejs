@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Metatags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no">
+
+  <!-- Links -->
+  <%- css('css/style.css') %>
+
+  <!-- Title -->
+  <% if (page.title) { %>
+  <title><%- page.title %> - <%- config.title %></title>
+  <% } else{ %>
+  <title><%- config.title %></title>
+  <% } %>
+</head>
+
+<body class="grid">
+  <aside class="grid__menu grid--display-none-mobile">
+    <div class="menu menu--fixed">
+      <h2>Guia de estilos</h2>
+      <p>Versão: <strong>0.0</strong></p>
+
+      <% site.categories.each(function(category){ %>
+      <details>
+        <summary><%- category.name %></summary>
+        <ul class="menu__link-list">
+          <% site.categories.findOne({name: category.name}).posts.sort('title', 1).each(function(post) {%>
+          <li><a href="<%- url_for(post.path) %>"><%= post.title %></a></li>
+          <% })%>
+        </ul>
+
+      </details>
+      <% }) %>
+
+    </div>
+  </aside>
+  <%- body %>
+</body>
+
+</html>
