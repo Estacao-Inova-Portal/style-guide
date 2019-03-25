@@ -34,15 +34,51 @@ input[type="submit"], input[type="reset"], button{
 // Button Modifiers
 // ----------------------
 // Backgrond color Modifiers
-.btn--primary{
-  border-color: $primary;
-  background-color: $primary;
+// Base Mixin
+@mixin buttonColor($background-color, $color: $white) {
+  border-color: $background-color;
+  background-color: $background-color;
+  color: $color;
   &:hover{
-    background: lighten($primary, 10);
-    border-color: lighten($primary, 10);
+    background: lighten($background-color, 10);
+    border-color: lighten($background-color, 10);
+    color: $color;
   }
 }
 
+.btn--primary-color{
+  @include buttonColor($primary);
+}
+
+.btn--secondary-color-magenta{
+  @include buttonColor($secondary-magenta);
+}
+
+.btn--secondary-color-purple-dark{
+  @include buttonColor($secondary-purple-dark);
+}
+
+.btn--secondary-color-purple{
+  @include buttonColor($secondary-purple);
+}
+
+.btn--secondary-color-brown{
+  @include buttonColor($secondary-brown);
+}
+
+.btn--secondary-color-orange{
+  @include buttonColor($secondary-orange);
+}
+
+.btn--secondary-color-yellow{
+  @include buttonColor($secondary-yellow, $primary-dark);
+}
+
+.btn--secondary-color-lime{
+  @include buttonColor($secondary-lime, $primary-dark);
+}
+
+// No background color Modifier
 .btn--simple{
   background: none;
   border-color: $white;
