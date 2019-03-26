@@ -12,7 +12,7 @@ Esse Guia de estilos tem como objetivo unificar o CSS de todos os projetos web d
 
 ## Site estático: Hexo
 O site do guia de estilos foi criado com [Hexo](https://hexo.io/).  
-O primeiro passo é instalar o Hexo, depois disso para iniciar os projetos utilize `hexo server`, e para resetar os arquivos de cahe o comando é `hexo clean`.
+O primeiro passo é instalar o Hexo. Depois disso para iniciar os projetos, é necessario abrir o terminal dentro da pasta */style-guide*. lá utilize `hexo server`, e para resetar os arquivos de cahe o comando é `hexo clean`.
 
 ## Preprocessador: Sass
 O CSS desse projeto foi criado utilizando o pré-processador Sass.  
