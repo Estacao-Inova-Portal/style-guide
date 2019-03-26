@@ -3,11 +3,16 @@
 Esse Guia de estilos tem como objetivo unificar o CSS de todos os projetos web da Unimed.  
 
 ## Índice
+ - [Site estático: Hexo](#site-estatico-hexo)
  - [Preprocessador: Sass](#preprocessador-sass)
  - [Convenção de nomenclatura de classes: BEM](#convenção-de-nomenclatura-de-classes-bem)
  - [Árvore de arquivos](#Árvore-de-arquivos)
  - [Tipografia](#tipografia)
  - [Cores](#cores)
+
+## Site estático: Hexo
+O site do guia de estilos foi criado com [Hexo](https://hexo.io/).  
+O primeiro passo é instalar o Hexo, depois disso para iniciar os projetos utilize `hexo server`, e para resetar os arquivos de cahe o comando é `hexo clean`.
 
 ## Preprocessador: Sass
 O CSS desse projeto foi criado utilizando o pré-processador Sass.  
