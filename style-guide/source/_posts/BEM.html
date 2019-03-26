@@ -1,0 +1,47 @@
+---
+title: Metodologia BEM
+categories: 4 - Sobre
+---
+<p>A sigla BEM vem do inglês <strong>Block, Element, Modifier</strong>, ou seja Bloco, Elemento e Modificador.</p>
+
+<p>Um exemplo de aplicação:</p>
+
+<pre>/* Block component */
+.btn {}
+
+/* Element that depends upon the block */ 
+.btn__price {}
+
+/* Modifier that changes the style of the block */
+.btn--orange {} 
+.btn--big {}
+</pre>
+
+<p>Nessa convenção um bloco é uma abstração de alto nível de um componente, por exemplo um botão vira <code>.btn`</code>. Esse
+bloco/abstração é um elemento pai.</p>
+
+<p>Os filhos, ou elementos, devem estar dentro de um bloco, e são diferenciados por dois underlines entre o nome do bloco e
+o nome do elemento, por exemplo <code>.btn__price</code>.</p>
+
+<p>Por fim, modificadores podem manipular/modificar o bloco, sendo assim podemos dar um estilo particular para um bloco sem
+ter que criar todo um novo componente. Para criar modificadores utilizamos dois hífens entre os nomes, por exemplo
+<code>.btn--orange</code>.</p>
+
+<p>Seguindo essas regras poderiamos criar um HTML como o seguinte:</p>
+<pre>&lt;a class="btn btn--big btn--orange" href="http://css-tricks.com"&gt;
+  &lt;span class="btn__price"&gt;$9.99&lt;/span&gt;
+  &lt;span class="btn__text"&gt;Subscribe&lt;/span&gt;
+&lt;/a&gt;</pre>
+
+<p>A principal vantagem do BEM é conseguir entender o que está acontecendo no código apenas lendo o nome das classes, e não
+passar pelo inferno de modificar uma classe no CSS sem ter certeza de todos os elementos/partes de uma aplicação que
+serão modificadas.</p>
+
+<h2>Bibliografia BEM</h2>
+<ul>
+  <li><a taget="_blank" href="https://css-tricks.com/bem-101/">BEM 101</a></li>
+  <li><a taget="_blank" href="https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/">BEM: A New Front-End
+    Methodology</a></li>
+  <li><a taget="_blank" href="https://www.smashingmagazine.com/2018/06/bem-for-beginners/">BEM For Beginners: Why You Need
+    BEM</a></li>
+</ul>
