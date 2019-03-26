@@ -30,7 +30,7 @@ categories: Layout
 <p>Para saber mais sobre unidade mínima padrão e larguras de coluna acesse a <a href="../tipografia">seção
     Tipografia</a></p>
 <p>Por padrão o container se encontra centralizado na página, mas existem classes modificadoras que mudam esse
-  comportamento, mais sobre elas pode ser encontrado abaixo no <a href="#modifiers">capítulo sobre modificadores</a>.
+  comportamento, mais sobre elas pode ser encontrado abaixo no <a href="#modifiers">capítulo sobre modificadores</a> na seção sobre o modificador <a href="#no-margin">Grid sem margem</a>.
 </p>
 
 <h2>Os elementos do Grid</h2>
@@ -48,7 +48,7 @@ categories: Layout
 <code>.grid__container</code>. É com esse elemento que é montado o menu ao lado nesse Guia de estilos por exemplo.</p>
 <p>Um ponto importante é que por padrão o menu desaparece em dispositivo móvel, e é necessario alguma função em JavaScript para sobreescrever o <code>display: none;</code> que ele recebe por padrão em dispositivos de tela pequena.</p>
 <pre>&lt;body class="grid"&gt;
-  &lt;aside class="grid__menu"&gt;
+  &lt;aside class="<strong>grid__menu</strong>"&gt;
     ...
   &lt;/aside&gt;
   &lt;main class="grid__container"&gt;
@@ -73,7 +73,7 @@ categories: Layout
     </p>
   </section>
 </div>
-<pre>&lt;div class="grid__columns"&gt;
+<pre>&lt;div class="<strong>grid__columns</strong>"&gt;
   &lt;section&gt;
     &lt;p&gt;Eu sou um texto que está utilizando uma coluna. Tenho também mais elementos aqui comigo, como um botão por exemplo.&lt;/p&gt;
     &lt;hr /&gt;
@@ -102,7 +102,7 @@ categories: Layout
     <p>Entre em contato para solicitar reembolsos</p>
   </div>
 </div>
-<pre>&lt;div class="grid__columns grid--wrap"&gt;
+<pre>&lt;div class="grid__columns <strong>grid--wrap</strong>"&gt;
   &lt;div class="card card__small"&gt;
     &lt;p&gt;Solicite autorização de exame ou procedimento&lt;/p&gt;
   &lt;/div&gt;
@@ -119,6 +119,9 @@ categories: Layout
 
 <h3>Grid sem Wrap</h3>
 <p>Tem o efeito contrário do modificador anterior. O caso de uso principal do <code>.grid--nowrap</code> é quando se deseja forçar, mesmo em dispositivos móveis, que algum conteúdo seja apresentado em colunas.</p>
+
+<h3 id="no-margin">Grid sem Margem</h3>
+<p>O <code>.grid-no-margin</code> pode ser aplicado no <code>.grid__container</code>. Por padrão o container está centralizado na tela, ao aplicar esse modificador ele ficará justificado à esquerda, como no caso desse Guia de estilos.</p>
 
 <h3>Alinhar itens no início</h3>
 O modificador <code>.grid--align-start</code> aplica <code>align-items: flex-start;</code> no elemento alvo.
@@ -143,7 +146,7 @@ O modificador <code>.grid--align-start</code> aplica <code>align-items: flex-sta
     <p>Entre em contato para solicitar reembolsos</p>
   </div>
 </div>
-<pre>&lt;div class="grid__columns grid--wrap grid--overflow-mobile"&gt;
+<pre>&lt;div class="grid__columns grid--wrap <strong>grid--overflow-mobile</strong>"&gt;
   &lt;div class="card card__small"&gt;
     &lt;p&gt;Solicite autorização de exame ou procedimento&lt;/p&gt;
   &lt;/div&gt;
