@@ -22,7 +22,7 @@ O primeiro passo é checar se o Sass está instalado na sua máquina com o coman
 ### Comando para deixar o Sass atualizar o style.css automaticamente
 No terminal, chegue até o diretório raiz do repositório e use o seguinte comando:  
 ~~~
-sass --watch css/main.scss:css/style.css --style compressed
+sass --watch style-guide/source/css/main.scss:style-guide/source/css/style.css --style compressed
 ~~~
 
 ## Convenção de nomenclatura de classes: BEM
