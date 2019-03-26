@@ -94,8 +94,37 @@ hr{
 .text--primary-color{
   color: $main-color;
 }
+
 .text--secondary-color{
   color: $contrast-color;
+}
+
+.text--secondary-color-magenta{
+  color: $secondary-magenta;
+}
+
+.text--secondary-color-purple-dark{
+  color: $secondary-purple-dark;
+}
+
+.text--secondary-color-purple{
+  color: $secondary-purple;
+}
+
+.text--secondary-color-brown{
+  color: $secondary-brown;
+}
+
+.text--secondary-color-orange{
+  color: $secondary-orange;
+}
+
+.text--secondary-color-yellow{
+  color: $secondary-yellow;
+}
+
+.text--secondary-color-lime{
+  color: $secondary-lime;
 }
 
 // Text transform modifiers
