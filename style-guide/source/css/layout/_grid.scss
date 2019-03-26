@@ -24,6 +24,7 @@
   margin-left: - $unit-2;
   & > *{
     margin: $unit-2;
+    flex: 1 1 0;
   }
 }
 
@@ -31,6 +32,13 @@
 // ----------------------
 .grid--wrap{
   flex-wrap: wrap;
+  & > *{
+    flex: initial;
+  }
+}
+
+.grid--nowrap{
+  flex-wrap: nowrap;
 }
 
 .grid--align-start{
@@ -49,6 +57,9 @@
   }
   .grid__columns{
     flex-wrap: wrap;
+    & > *{
+    flex: initial;
+    }
   }
   .grid--overflow-mobile{
     overflow: auto;
