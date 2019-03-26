@@ -1,0 +1,38 @@
+---
+title: Botões
+categories: Componentes
+---
+<p class="text--big">Botões permitem ao usuário fazerem ações/escolhas, com um simples toque ou clique.</p>
+<h2>Botão padrão</h2>
+<p>O botão padrão é um botão com cor de fundo (por padrão a cor secundária laranja) e pode ser utilizado em diversos
+  pontos da interface, como por exemplo em modais, formulários, e confirmações de ação.</p>
+<a class="btn">Eu sou um botão</a>
+<pre>&lt;a class="btn"&gt;Eu sou um botão&lt;/a&gt;</pre>
+
+<h2>Os modificadores de botões</h2>
+<h3>Modificadores de cor</h3>
+<p>Modificam a cor de fundo dos botões em que são aplicados, e em alguns casos, a cor de texto para manterem um bom
+  contraste:</p>
+<a class="btn btn--primary-color">Eu sou verde</a>
+<a class="btn btn--secondary-color-lime">Eu tenho texto em outra cor</a>
+<a class="btn btn--secondary-color-purple">Eu sou roxo</a>
+<h4>Como aplicar</h4>
+<p>A classe que transforma a cor do texto é dividida em duas partes, um prefixo global <code>.btn--secondary-color-</code> e o nome da
+cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a href="/cores">seção de cores</a>).</p>
+<p>A única excessão é o botão na cor primária (verde), onde o prefixo muda e o código é <code>.btn--primary-color</code>
+</p>
+<pre>&lt;a class="btn btn--primary-color"&gt;Eu sou verde&lt;/a&gt;
+&lt;a class="btn btn--secondary-color-lime"&gt;Eu tenho texto em outra cor&lt;/a&gt;
+&lt;a class="btn btn--secondary-color-purple"&gt;Eu sou roxo&lt;/a&gt;</pre>
+
+<h3>Botões sem fundo (Ghost Buttons)</h3>
+<p>O modificador <code>.btn--simple</code> transforma o botão em um <e>Ghost Button</e>, muito útil quando você vai dar duas opções para o usuário e quer montar uma hierarquia onde uma dessas opções é menos importante.</p>
+<a class="btn btn--simple">Eu sou um botão fantasma</a>
+
+<h3>Botões à direita</h3>
+<p>Em alguns casos, como modais por exemplo, por convenção os botões de ação podem se encontram no lado direito. Para aplicar isso você precisa adicionar a classe <code>.btn--float-right</code> em seus botões.</p>
+<pre>&lt;a class="btn btn--secondary-color-brown btn--float-right"&gt;Salvar os dados&lt;/a&gt;
+&lt;a class="btn btn--simple btn--float-right"&gt;Sair sem salvar&lt;/a&gt;</pre>
+<hr />
+<a class="btn btn--secondary-color-brown btn--float-right">Salvar os dados</a>
+<a class="btn btn--simple btn--float-right">Sair sem salvar</a>

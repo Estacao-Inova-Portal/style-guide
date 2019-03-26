@@ -43,7 +43,7 @@ h2:first-child, h3:first-child, h4:first-child{
   margin-top: $unit-2;
 }
 
-code, pre{
+code{
   background: $primary-25;
   color: $primary-dark;
   padding: 0 $unit;
@@ -51,8 +51,11 @@ code, pre{
 }
 
 pre{
+  background: $gray-lighter;
+  color: $primary-dark;
   line-height: $line-height;
   padding: $unit-2;
+  border-radius: $radius;
   overflow: auto;
 }
 
@@ -134,6 +137,11 @@ hr{
 
 .text--small{
   font-size: 0.75em;
+  font-weight: normal;
+}
+
+.text--big{
+  font-size: 1.25em;
   font-weight: normal;
 }
 
