@@ -3,17 +3,41 @@
     <h2>Guia de estilos</h2>
     <p>Versão: <strong>0.0</strong></p>
 
-    <% site.categories.each(function(category){ %>
     <details>
-      <summary><%- category.name %></summary>
+      <summary>Introdução</summary>
       <ul class="menu__link-list">
-        <% site.categories.findOne({name: category.name}).posts.sort('title', 1).each(function(post) {%>
+        <% site.categories.findOne({name: "Introdução"}).posts.sort('title', 1).each(function(post) {%>
         <li><a href="<%- url_for(post.path) %>"><%= post.title %></a></li>
         <% })%>
       </ul>
-
     </details>
-    <% }) %>
+
+    <details>
+      <summary>Layout</summary>
+      <ul class="menu__link-list">
+        <% site.categories.findOne({name: "Layout"}).posts.sort('title', 1).each(function(post) {%>
+        <li><a href="<%- url_for(post.path) %>"><%= post.title %></a></li>
+        <% })%>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Componentes</summary>
+      <ul class="menu__link-list">
+        <% site.categories.findOne({name: "Componentes"}).posts.sort('title', 1).each(function(post) {%>
+        <li><a href="<%- url_for(post.path) %>"><%= post.title %></a></li>
+        <% })%>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Sobre</summary>
+      <ul class="menu__link-list">
+        <% site.categories.findOne({name: "Sobre"}).posts.sort('title', 1).each(function(post) {%>
+        <li><a href="<%- url_for(post.path) %>"><%= post.title %></a></li>
+        <% })%>
+      </ul>
+    </details>
 
   </div>
 </aside>

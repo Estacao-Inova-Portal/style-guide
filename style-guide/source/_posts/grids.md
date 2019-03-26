@@ -1,6 +1,6 @@
 ---
 title: Grids
-categories: 2 - Layout
+categories: Layout
 ---
 Aqui vem um texto  
 

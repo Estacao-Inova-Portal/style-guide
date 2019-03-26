@@ -1,6 +1,6 @@
 ---
 title: Introdução
-categories: 1 - Introdução
+categories: Introdução
 ---
 Aqui vem um texto  
 

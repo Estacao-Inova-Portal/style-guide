@@ -1,6 +1,6 @@
 ---
 title: Botões
-categories: 3 - Componentes
+categories: Componentes
 ---
 Aqui vem um texto  
 
