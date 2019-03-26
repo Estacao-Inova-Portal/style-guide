@@ -16,8 +16,8 @@ input[type="submit"], input[type="reset"], button{
   display: inline-block;
   color: white;
   cursor: pointer;
-  transition: $transition;
   box-shadow: none;
+  transition: background-color $transition, border $transition;
   &:focus{
     outline: 3px solid $focus;
     outline-offset: 0;

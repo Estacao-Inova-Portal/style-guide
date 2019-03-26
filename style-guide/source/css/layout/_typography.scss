@@ -60,7 +60,7 @@ pre{
 }
 
 a:not(.btn) {
-  transition: $transition;
+  transition: background-color $transition, box-shadow $transition;
   color: $font-color;
   text-decoration: none;
   box-shadow: $button-shadow;
