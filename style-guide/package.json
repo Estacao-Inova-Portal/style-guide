@@ -2,6 +2,11 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "scss": "sass --watch source/css/main.scss:source/css/style.css --style compressed",
+    "install": "npm install hexo-cli -g",
+    "start": "hexo clean & hexo server"
+  },
   "hexo": {
     "version": "3.8.0"
   },
