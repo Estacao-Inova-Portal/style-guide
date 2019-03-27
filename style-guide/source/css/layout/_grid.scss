@@ -7,6 +7,7 @@
 .grid__container{
   max-width: $container-width;
   margin: auto;
+  margin-top: $unit-8 + $unit;
   display: flex;
   flex-direction: column;
   padding: 0 $unit-2;
@@ -42,7 +43,8 @@
 }
 
 .grid--no-margin{
-  margin:initial;
+  margin-right:initial;
+  margin-left:initial;
 }
 
 .grid--align-start{
@@ -51,6 +53,10 @@
 
 .grid--background-light{
   background: lighten($gray-lighter-max, 6) ;
+}
+
+.grid--margin-top{
+  margin-top: $unit-8 * 2.5;
 }
 
 // Media Querie
