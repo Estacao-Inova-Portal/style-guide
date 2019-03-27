@@ -1,0 +1,69 @@
+.nav{
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $unit-2;
+  width: 100%;
+  box-shadow: $shadow;
+  .btn, h2{
+    margin: 0;
+  }
+}
+
+
+// Nav Elements
+// ----------------------
+.nav__logo{
+  height: $unit-8 * 1.25;
+}
+
+// Nav Modifiers
+// ----------------------
+.nav--fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: initial;
+}
+
+.nav--primary-color{
+  background: $primary;
+  color: $white;
+}
+
+.nav--secondary-color-purple{
+  background: $secondary-purple;
+  color: $white;
+}
+
+.nav--secondary-color-purple-dark{
+  background: $secondary-purple-dark;
+  color: $white;
+}
+
+.nav--secondary-color-magenta{
+  background: $secondary-magenta;
+  color: $white;
+}
+
+.nav--secondary-color-brown{
+  background: $secondary-brown;
+  color: $white;
+}
+
+.nav--secondary-color-orange{
+  background: $secondary-orange;
+  color: $white;
+}
+
+.nav--secondary-color-yellow{
+  background: $secondary-yellow;
+  color: $secondary-brown
+}
+
+.nav--secondary-color-lime{
+  background: $secondary-lime;
+  color: $primary-dark;
+}
