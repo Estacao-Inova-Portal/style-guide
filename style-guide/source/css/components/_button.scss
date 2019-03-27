@@ -7,14 +7,14 @@ input[type="submit"], input[type="reset"], button{
 
 .btn, button, input[type="submit"], input[type="reset"]{
   text-decoration: none;
-  background: $contrast-color;
-  border: 2px solid $contrast-color;
+  background: $white;
+  border: 2px solid $primary;
   border-radius: $radius;
   padding: $unit-2 $unit-4;
   margin-top: $unit-4;
   margin-bottom: $unit-2; 
   display: inline-block;
-  color: white;
+  color: $primary;
   cursor: pointer;
   box-shadow: none;
   transition: background-color $transition, border $transition;
@@ -25,8 +25,8 @@ input[type="submit"], input[type="reset"], button{
     box-shadow: none;
   }
   &:hover{
-    background: lighten($contrast-color, 10);
-    border-color: lighten($contrast-color, 10);
+    background: lighten($primary, 10);
+    border-color: lighten($primary, 10);
     color: white;
   }
 }
