@@ -49,6 +49,10 @@
   align-items: flex-start;
 }
 
+.grid--background-light{
+  background: lighten($gray-lighter-max, 10) ;
+}
+
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
