@@ -25,8 +25,8 @@ input[type="submit"], input[type="reset"], button{
     box-shadow: none;
   }
   &:hover{
-    background: lighten($primary, 10);
-    border-color: lighten($primary, 10);
+    background: $primary;
+    border-color: $primary;
     color: white;
   }
 }
