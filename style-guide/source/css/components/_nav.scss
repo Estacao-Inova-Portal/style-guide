@@ -67,3 +67,14 @@
   background: $secondary-lime;
   color: $primary-dark;
 }
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  .nav--display-none-mobile{
+    display: none;
+  }
+  .nav__logo{
+    height: $unit-4 + $unit-2;
+  }
+}
