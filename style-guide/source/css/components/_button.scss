@@ -8,7 +8,7 @@ input[type="submit"], input[type="reset"], button{
 .btn, button, input[type="submit"], input[type="reset"]{
   text-decoration: none;
   background: none;
-  border: 2px solid $primary;
+  border: $unit / 2 solid $primary;
   border-radius: $radius;
   padding: $unit-2 $unit-4;
   margin-top: $unit-4;
@@ -19,7 +19,7 @@ input[type="submit"], input[type="reset"], button{
   box-shadow: none;
   transition: background-color $transition, border $transition;
   &:focus{
-    outline: 3px solid $focus;
+    outline: $unit / 2 solid $focus;
     outline-offset: 0;
     border-color: $focus;
     box-shadow: none;
