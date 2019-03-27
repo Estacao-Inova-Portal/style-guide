@@ -7,7 +7,7 @@ input[type="submit"], input[type="reset"], button{
 
 .btn, button, input[type="submit"], input[type="reset"]{
   text-decoration: none;
-  background: $white;
+  background: none;
   border: 2px solid $primary;
   border-radius: $radius;
   padding: $unit-2 $unit-4;
