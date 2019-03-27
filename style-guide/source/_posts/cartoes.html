@@ -1,0 +1,70 @@
+---
+title: Cartões (Cards)
+categories: Componentes
+---
+<p class="text--big">Cartões podem conter conteúdos e ações sobre determinado assunto</p>
+<p>Eles devem ser facilmente escaneáveis pelo usuário e ter informação curta e relevante.</p>
+<div class="card">
+  <h3>Você deseja criar um novo usuário?</h3>
+  <p>Esse usuário terá acesso a todos os documentos presentes nessa pasta, podendo ler editar e apagar arquivos.</p>
+  <hr>
+  <a class="btn btn--primary-color btn--float-right" href="javascript:void(0)">Continuar</a>
+  <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
+</div>
+<pre>&lt;div class="<strong>card</strong>"&gt;
+  &lt;h3&gt;Você deseja criar um novo usuário?&lt;/h3&gt;
+  &lt;p&gt;Esse usuário terá acesso a todos os documentos presentes nessa pasta, podendo ler editar e apagar arquivos.&lt;/p&gt;
+  &lt;hr&gt;
+  &lt;a class="btn btn--primary-color btn--float-right" href="javascript:void(0)"&gt;Continuar&lt;/a&gt;
+  &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+<h2>Cartões em múltiplas colunas</h2>
+<p>Os cartões também podem ser apresentados lado a lado, quando o elemento pai tem a classe <code>.grid__columns</code>. Saiba mais sobre esse <a href="../grid#multipleColumns">elemento dos grids</a>.</p>
+<div class="grid__columns grid--align-start">
+  <div class="card">
+    <h3 class="text--secondary-color-purple-dark">Investimos na valorização dos médicos e praticamos uma medicina humana, ampla e preventiva</h3>
+    <p>Por isso, cuidamos das pessoas com leveza, proximidade e alegria. Incentivamos a busca equilibrada do bem-estar e da
+    felicidade em todos os momentos como melhor forma de prevenção e promoção da saúde.</p>
+    <p>Acreditamos na diversidade, na sinergia, na singularidade, na interdependência e na união como filosofia de vida.</p>
+  </div>
+  <div class="card">
+    <h3>Eu sou um cartão de meia coluna e conteúdo simples</h3>
+    <hr>
+    <a class="btn btn--secondary-color-lime btn--float-right" href="javascript:void(0)">Continuar</a>
+    <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
+  </div>
+</div>
+<pre>&lt;div class="<strong>grid__columns</strong> grid--align-start"&gt;
+  &lt;div class="<strong>card</strong>"&gt;
+    &lt;h3 class="text--secondary-color-purple-dark"&gt;Investimos na valorização dos médicos e praticamos uma medicina humana, ampla e preventiva&lt;/h3&gt;
+    &lt;p&gt;Por isso, cuidamos das pessoas com leveza, proximidade e alegria. Incentivamos a busca equilibrada do bem-estar e da
+    felicidade em todos os momentos como melhor forma de prevenção e promoção da saúde.&lt;/p&gt;
+    &lt;p&gt;Acreditamos na diversidade, na sinergia, na singularidade, na interdependência e na união como filosofia de vida.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="<strong>card</strong>"&gt;
+    &lt;h3&gt;Eu sou um cartão de meia coluna e conteúdo simples&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;a class="btn btn--secondary-color-lime btn--float-right" href="javascript:void(0)"&gt;Continuar&lt;/a&gt;
+    &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<h2>Elementos de cartões</h2>
+<h3>Cartões pequenos</h3>
+<p>O elemento pai dos cartões tem a classe .grid--overflow-mobile, ou seja, esses cartões no mobile ficam em forma de linha
+única.</p>
+<div class="grid__columns grid--wrap grid--overflow-mobile">
+  <div class="card card__small">
+    <p>Solicite autorização de exame ou procedimento</p>
+  </div>
+  <div class="card card__small">
+    <p>Encontre um plano de saúde</p>
+  </div>
+  <div class="card card__small">
+    <p>Solicite o demonstrativo do imposto de renda</p>
+  </div>
+  <div class="card card__small">
+    <p>Entre em contato para solicitar reembolsos</p>
+  </div>
+</div>

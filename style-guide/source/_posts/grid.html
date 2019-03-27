@@ -24,6 +24,7 @@ categories: Layout
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 <p>Pronto! Seguindo esse esqueleto você acaba de montar uma página responsiva com o grid padrão.</p>
+
 <h3>Entendendo o Container</h3>
 <p>O container tem uma largura de 244 unidades padrão (4.5px x 244 = 1098px). Assim ele pode comportar duas colunas de
   texto com tamanho mínimo de coluna e a calha das colunas (espaço de respiro entre elas).</p>
@@ -58,7 +59,7 @@ categories: Layout
 
 <p>O estilo do menu e seus elementos é definido pelo <a href="../menu">componente Menu</a>.</p>
 
-<h3>Layout de múltiplas colunas</h3>
+<h3 id="multipleColumns">Layout de múltiplas colunas</h3>
 <p>Para criar um layout de múltiplas colunas o primeiro passo é criar um elemento com a classe <code>.grid__columns</code>, ele será o pai dos elementos que estarão em colunas.</p>
 <p>A calha (distância entre colunas) é sempre de <strong>18px</strong>, o mesmo tamanho base da fonte.</p>
 <p>Por padrão o grid força quantos elementos você colocar dentro de uma única linha. Existem <a href="#mobile">modificadores que mudam esse comportamento</a>.</p>
@@ -120,6 +121,9 @@ categories: Layout
 
 <h3 id="no-margin">Grid sem Margem</h3>
 <p>O <code>.grid-no-margin</code> pode ser aplicado no <code>.grid__container</code>. Por padrão o container está centralizado na tela, ao aplicar esse modificador ele ficará justificado à esquerda, como no caso desse Guia de estilos.</p>
+
+<h3>Elementos com alturas variáveis</h3>
+<p>Por padrão, todos os elementos dentro de <code>.grid__columns</code> terão a mesma altura do maior elemento. Ao adicionar o modificador <code>.grid--align-start</code> esse comportamento muda e os elementos tem sua altura inicial respeitada.</p>
 
 <h2 id="mobile">Modificadores para dispositivos móveis</h2>
 <p>Existem alguns modificadores que funcionam apenas em telas pequenas, são eles o <code>.grid--overflow-mobile</code> e o <code>.grid--display-none-mobile</code>.</p>
