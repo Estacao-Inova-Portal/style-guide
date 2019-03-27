@@ -10,6 +10,8 @@
   list-style:none;
   a{
     box-shadow: none;
+    display: inline-block;
+    padding: $unit 0;
   }
 }
 

@@ -1,0 +1,89 @@
+---
+title: Tabelas
+categories: Componentes
+---
+<p class="text--big">Tabelas organizam dados.</p>
+<p>As tabelas desse Guia de Estilos são construídas em cima dos elementos semânticos HTML de tabelas, para garantirem os melhores resultados em acessibilidade.</p>
+<p>É importante um elemento pai com a classe <code>.table</code> para trazer os melhores resultados, em especial em dispositivos móveis.</p>
+<div class="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Empresa</th>
+        <th>Contato</th>
+        <th>País</th>
+        <th class="table__number">Contato</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Alemanha</td>
+        <td class="table__number">123456</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>México</td>
+        <td class="table__number">(54) 123 456</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+        <td class="table__number">+12 9123456</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>Reino Unido</td>
+        <td class="table__number">321 654 789</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canadá</td>
+        <td class="table__number">1234 5678</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italia</td>
+        <td class="table__number">123456</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<pre>&lt;div class="<strong>table</strong>"&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Empresa&lt;/th&gt;
+        &lt;th&gt;Contato&lt;/th&gt;
+        &lt;th&gt;País&lt;/th&gt;
+        &lt;th class="table__number"&gt;Contato&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+        &lt;td&gt;Maria Anders&lt;/td&gt;
+        &lt;td&gt;Alemanha&lt;/td&gt;
+        &lt;td class="table__number"&gt;123456&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+        &lt;td&gt;Francisco Chang&lt;/td&gt;
+        &lt;td&gt;México&lt;/td&gt;
+        &lt;td class="table__number"&gt;(54) 123 456&lt;/td&gt;
+      &lt;/tr&gt;
+      ...
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</pre>
+
+<h2>Elementos de tabelas</h2>
+<h3>Elementos numéricos</h3>
+<p>Quando uma coluna está apresentando elementos numéricos (como a coluna Contato no exemplo anterior), é recomendável a adição da classe <code>.table__number</code>.</p>
+<p>Esse elemento troca a fonte sem serifa por uma fonte mono espaçada e alinha o conteúdo à direita.</p>
