@@ -35,6 +35,15 @@
       </ul>
     </details>
 
+    <details>
+      <summary>Sobre</summary>
+      <ul class="menu__link-list">
+        <% site.categories.findOne({name: "Sobre"}).posts.sort('title', 1).each(function(post) {%>
+        <li><a href="<%- url_for(post.path) %>"><%= post.title %></a></li>
+        <% })%>
+      </ul>
+    </details>
+
   </div>
 </aside>
 
