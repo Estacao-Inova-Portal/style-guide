@@ -47,7 +47,6 @@ categories: Layout
 <h3>O menu lateral</h3>
 <p>O elemento <code>.grid__menu</code> deve ser filho direto do <code>.grid</code> ou seja, estar no mesmo nível do
 <code>.grid__container</code>. É com esse elemento que é montado o menu ao lado nesse Guia de estilos por exemplo.</p>
-<p>Um ponto importante é que por padrão o menu desaparece em dispositivo móvel, e é necessario alguma função em JavaScript para sobreescrever o <code>display: none;</code> que ele recebe por padrão em dispositivos de tela pequena.</p>
 <pre>&lt;body class="grid"&gt;
   &lt;aside class="<strong>grid__menu</strong>"&gt;
     ...
@@ -57,7 +56,7 @@ categories: Layout
   &lt;/main&gt;
 &lt;/body&gt;</pre>
 
-<p>O estilo do menu e seus elementos é definido pelo <a href="../menu">componente Menu</a>.</p>
+<p>O estilo do menu e seus elementos é definido pelo <a href="../menu-lateral">componente Menu</a>.</p>
 
 <h3 id="multipleColumns">Layout de múltiplas colunas</h3>
 <p>Para criar um layout de múltiplas colunas o primeiro passo é criar um elemento com a classe <code>.grid__columns</code>, ele será o pai dos elementos que estarão em colunas.</p>
