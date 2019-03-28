@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "scss": "sass --watch source/css/main.scss:source/css/style.css --style compressed",
-    "install": "npm install hexo-cli -g",
+    "install:hexo": "npm install hexo-cli -g",
+    "install:sass": "npm install -g sass",
+    "sass": "sass --watch source/css/main.scss:source/css/style.css --style compressed",
     "start": "hexo clean & hexo server"
   },
   "hexo": {
