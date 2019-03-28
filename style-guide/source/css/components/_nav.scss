@@ -26,6 +26,7 @@
   right: 0;
   left: 0;
   width: initial;
+  z-index: 10;
 }
 
 .nav--primary-color{
@@ -66,4 +67,15 @@
 .nav--secondary-color-lime{
   background: $secondary-lime;
   color: $primary-dark;
+}
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  .nav--display-none-mobile{
+    display: none;
+  }
+  .nav__logo{
+    height: $unit-4 + $unit-2;
+  }
 }
