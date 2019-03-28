@@ -14,6 +14,10 @@ Esse Guia de estilos tem como objetivo unificar o CSS de todos os projetos web d
 O site do guia de estilos foi criado com [Hexo](https://hexo.io/).  
 O primeiro passo é instalar o Hexo. Depois disso para iniciar os projetos, é necessario abrir o terminal dentro da pasta */style-guide*. lá utilize `hexo server`, e para resetar os arquivos de cahe o comando é `hexo clean`.
 
+### Configurando hexo
+Para instalar o Hexo em sua maquina utilize o comando `npm run install:hexo` após a instalação feita utilize o comando `npm run start` para rodar o Hexo. 
+
+
 ## Preprocessador: Sass
 O CSS desse projeto foi criado utilizando o pré-processador Sass.  
 
@@ -24,6 +28,7 @@ No terminal, chegue até o diretório raiz do repositório e use o seguinte coma
 ~~~
 sass --watch style-guide/source/css/main.scss:style-guide/source/css/style.css --style compressed
 ~~~
+Ou utilize o comando `npm run sass`
 
 ## Convenção de nomenclatura de classes: BEM
 A sigla BEM vem do inglês **Block, Element, Modifier**, ou seja Bloco, Elemento e Modificador.  
