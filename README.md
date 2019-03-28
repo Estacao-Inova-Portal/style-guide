@@ -15,13 +15,13 @@ O site do guia de estilos foi criado com [Hexo](https://hexo.io/).
 O primeiro passo é instalar o Hexo. Depois disso para iniciar os projetos, é necessario abrir o terminal dentro da pasta */style-guide*. lá utilize `hexo server`, e para resetar os arquivos de cahe o comando é `hexo clean`.
 
 ### Configurando hexo
-Para instalar o Hexo em sua maquina utilize o comando `npm run install:hexo` após a instalação feita utilize o comando `npm run start` para rodar o Hexo. 
+Para instalar o Hexo em sua maquina entre no diretorio `style-guide` e utilize o comando `npm run install:hexo` após a instalação feita utilize o comando `npm run start` para rodar o Hexo. 
 
 
 ## Preprocessador: Sass
 O CSS desse projeto foi criado utilizando o pré-processador Sass.  
 
-O primeiro passo é checar se o Sass está instalado na sua máquina com o comando `_sass --version_`, estando instalado seguir para o próximo passo. Não instalado [visitar essa pagina](https://sass-lang.com/install) e instalar ele.  
+O primeiro passo é checar se o Sass está instalado na sua máquina com o comando `_sass --version_`, estando instalado seguir para o próximo passo. Não instalado [visitar essa pagina](https://sass-lang.com/install) e instalar ele ou utilizar o comando `npm run install:sass` dentro do diretorio `style-guide`.  
 
 ### Comando para deixar o Sass atualizar o style.css automaticamente
 No terminal, chegue até o diretório raiz do repositório e use o seguinte comando:  
