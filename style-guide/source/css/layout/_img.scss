@@ -1,0 +1,11 @@
+// Image Modifiers
+// ----------------------
+.img--thumbnail{
+  width: $unit-8 * 4;
+  max-width: 90%;
+}
+
+.img--centered{
+  margin: auto;
+  display: block;
+}
