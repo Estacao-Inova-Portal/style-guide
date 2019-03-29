@@ -2,6 +2,18 @@
 // Utilities
 // ---------
 
-.display-none{
-  display: none;
+.util--display-none{
+  display: none!important;
+}
+
+.util--no-style{
+  margin: 0!important;
+  padding: 0!important;
+  border: 0!important;
+  box-shadow: none!important;
+  background: none!important;
+  color: initial!important;
+  height: initial!important;
+  width: initial!important;
+  display: flex;
 }
