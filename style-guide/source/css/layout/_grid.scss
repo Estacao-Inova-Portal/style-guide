@@ -7,7 +7,7 @@
 .grid__container{
   max-width: $container-width;
   margin: auto;
-  margin-top: $unit-8 + $unit;
+  margin-top: $unit-8 + $unit-4;
   display: flex;
   flex-direction: column;
   padding: 0 $unit-2;
@@ -56,7 +56,7 @@
 }
 
 .grid--margin-top{
-  margin-top: $unit-8 * 2.5;
+  margin-top: $unit-8 * 3;
 }
 
 // Media Querie
