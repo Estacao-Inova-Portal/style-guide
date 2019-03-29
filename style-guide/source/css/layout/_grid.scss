@@ -79,3 +79,14 @@
     display: none;
   }
 }
+
+// If Internet Explorer
+// ----------------------
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .grid{
+    display: block;
+  }
+  .grid__container{
+    margin-top: 0;
+  }
+}
