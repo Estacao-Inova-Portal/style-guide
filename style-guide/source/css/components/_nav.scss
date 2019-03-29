@@ -5,8 +5,8 @@
   justify-content: space-between;
   padding: $unit-2;
   width: 100%;
-  box-shadow: $shadow;
-  .btn, h2{
+  box-shadow: $shadow-strong;
+  .btn, h1, ,h2, h3, h4, p{
     margin: 0;
   }
 }
@@ -27,6 +27,13 @@
   left: 0;
   width: initial;
   z-index: 10;
+}
+
+.nav--justify-reset{
+  justify-content: initial;
+  & > *:not(:first-child){
+    margin-left: $unit-2;
+  }
 }
 
 .nav--primary-color{
