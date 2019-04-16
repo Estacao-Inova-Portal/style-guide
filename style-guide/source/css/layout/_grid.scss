@@ -20,7 +20,7 @@
 .grid__columns{
   display:flex;
   margin-top: $unit-2;
-  margin-bottom: $unit-2;
+  margin-bottom: $unit-4;
   margin-right: - $unit-2;
   margin-left: - $unit-2;
   & > *{
@@ -77,6 +77,9 @@
   }
   .grid--display-none-mobile{
     display: none;
+  }
+  .grid--nowrap{
+    flex-wrap: nowrap;
   }
 }
 
