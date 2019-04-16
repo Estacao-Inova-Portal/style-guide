@@ -12,6 +12,47 @@
   width: $container-width / 3 - 48;
 }
 
+// Card modifiers
+// ----------------------
+// Base Background color Mixin
+@mixin cardColor($background-color, $color: $white) {
+  background-color: $background-color;
+  color: $color;
+}
+
+// Backgrond color Modifiers
+.card--primary-color{
+  @include cardColor($primary);
+}
+
+.card--secondary-color-magenta{
+  @include cardColor($secondary-magenta);
+}
+
+.card--secondary-color-purple-dark{
+  @include cardColor($secondary-purple-dark);
+}
+
+.card--secondary-color-purple{
+  @include cardColor($secondary-purple);
+}
+
+.card--secondary-color-brown{
+  @include cardColor($secondary-brown);
+}
+
+.card--secondary-color-orange{
+  @include cardColor($secondary-orange);
+}
+
+.card--secondary-color-yellow{
+  @include cardColor($secondary-yellow, $primary-dark);
+}
+
+.card--secondary-color-lime{
+  @include cardColor($secondary-lime, $primary-dark);
+}
+
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
