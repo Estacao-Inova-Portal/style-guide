@@ -6,7 +6,8 @@
   border: $unit / 2 solid $primary;
   border-radius: $radius;
   padding: $unit-2 $unit-4;
-  margin: $unit-4 $unit-2 $unit;
+  margin-top: $unit-4;
+  margin-bottom: $unit-2;
   display: inline-block;
   color: $primary;
   cursor: pointer;
@@ -23,15 +24,6 @@
     border-color: $primary;
     color: white;
   }
-  &:first-of-type{
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
-input[type="submit"], input[type="reset"]{
-  margin-right: 0;
-  margin-left: 0;
 }
 
 // Button Modifiers
@@ -95,4 +87,8 @@ input[type="submit"], input[type="reset"]{
 
 .btn--float-right{
   float: right;
+  margin-right: $unit;
+  &:first-of-type{
+    margin-right: 0;
+  }
 }
