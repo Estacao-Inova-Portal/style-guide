@@ -70,6 +70,9 @@
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
+  .card{
+    width: 100%;
+  }
   .card__small{
     min-width: $unit * 50;
   }
