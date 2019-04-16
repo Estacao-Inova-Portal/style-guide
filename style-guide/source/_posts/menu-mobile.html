@@ -2,4 +2,98 @@
 title: Menu mobile
 categories: Componentes
 ---
-<p class="text--big">Aqui vem uma descrição.</p>
+<p class="text--big">É o menu responsável pela navegação em dispositivos móveis.</p>
+<p>O Menu mobile por padrão é renderizado em dispositivos móveis (um modificador troca esse comportamento). Para telas maiores a navegação é recomendável pelo <a href="/menu-lateral">Menu Lateral</a> como também pela <a href="/nav">Barra de navegação</a>.</p>
+<p>Ele sempre se encontrará de forma fixa na área inferior da tela do usuário.</p>
+
+<div style="position: relative; display: flex; z-index: 1;" class="mobile-nav">
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_autorizacoes.svg" alt="Autorizações">
+      <figcaption>Autorizações</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_fale-com-a-unimed.svg" alt="Fale com a Unimed">
+      <figcaption>Fale com a Unimed</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_consulta-autorizacoes.svg" alt="Unimed mais próxima">
+      <figcaption>Unimed mais próxima</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_feedback-app.svg" alt="Viver bem">
+      <figcaption>Viver bem</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_mais.svg" alt="Mais">
+      <figcaption>Mais</figcaption>
+    </figure>
+  </a>
+</div>
+<pre>&lt;nav class="<strong>mobile-nav</strong>"&gt;
+  &lt;a href="javascript:void(0)" class="util--no-style"&gt;
+    &lt;figure class="mobile-nav__button"&gt;
+      &lt;img src="../img/icons/ico_autorizacoes.svg" alt="Autorizações"&gt;
+      &lt;figcaption&gt;Autorizações&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/a&gt;
+ ...
+&lt;/nav&gt;</pre>
+
+<h2>Os elementos do menu mobile</h2>
+<h3>Botão de ação</h3>
+<p>São os elementos de botão de navegação. Coloque a classe <code>.mobile-nav__button</code> em uma <code>figure</code> que deve ter como elementos filhos uma <code>img</code> de um ícone e um <code>figcaption</code> com a descrição do botão.</p>
+<p>Caso você encaminhe o usuário para uma página, a recomendação é encapsular o elemento <code>.mobile-nav__button</code> com uma âncora com o estilo <code>.util--no-style</code>.</p>
+<pre>...
+&lt;figure class="<strong>mobile-nav__button</strong>"&gt;
+  &lt;img src="../img/icons/ico_autorizacoes.svg" alt="Autorizações"&gt;
+  &lt;figcaption&gt;Autorizações&lt;/figcaption&gt;
+&lt;/figure&gt;
+...</pre>
+
+<h2>Os modificadores do menu mobile</h2>
+<h3>Botão ativo</h3>
+<p>O modificador <code>.mobile-nav--active</code> deve ser aplicado no elemento <code>.mobile-nav__button</code> que representa a página que está ativa no momento.</p>
+<div style="position: relative; display: flex; z-index: 1;" class="mobile-nav">
+  <a class="util--no-style">
+    <figure class="mobile-nav__button mobile-nav--active">
+      <img src="../img/icons/ico_autorizacoes.svg" alt="Autorizações">
+      <figcaption>Autorizações</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_fale-com-a-unimed.svg" alt="Fale com a Unimed">
+      <figcaption>Fale com a Unimed</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_consulta-autorizacoes.svg" alt="Unimed mais próxima">
+      <figcaption>Unimed mais próxima</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_feedback-app.svg" alt="Viver bem">
+      <figcaption>Viver bem</figcaption>
+    </figure>
+  </a>
+  <a href="javascript:void(0)" class="util--no-style">
+    <figure class="mobile-nav__button">
+      <img src="../img/icons/ico_mais.svg" alt="Mais">
+      <figcaption>Mais</figcaption>
+    </figure>
+  </a>
+</div>
+
+<h3>Aparecer em telas maiores</h3>
+<p>Para fazer o Menu Mobile funcionar também em dispositivos de tela grande, utilize a classe <code>.mobile-nav--desktop</code>.</p>

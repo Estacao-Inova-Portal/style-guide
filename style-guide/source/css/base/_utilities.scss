@@ -17,3 +17,11 @@
   width: initial!important;
   display: flex;
 }
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  .util--no-style{
+    flex: 1 1 0;
+  }
+}

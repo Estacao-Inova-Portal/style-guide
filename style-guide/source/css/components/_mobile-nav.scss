@@ -1,0 +1,60 @@
+.mobile-nav{
+  background: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: initial;
+  z-index: 10;
+  box-shadow: $shadow;
+  display: none;
+  justify-content: space-around;
+}
+
+// Mobile Nav Elements
+// ----------------------
+.mobile-nav__button{
+  text-align: center;
+  line-height: 1.3;
+  font-size: $unit * 3;
+  margin: $unit 0;
+  opacity: 0.6;
+  flex: 1 1 0;
+  &:hover{
+    background: $gray-lighter-max;
+    opacity: 1;
+  }
+  img{
+    object-fit: contain;
+    height: $unit * 8;
+    width: $unit * 8;
+  }
+}
+
+// Mobile Nav Modifiers
+// ----------------------
+.mobile-nav--desktop{
+  display: flex;
+}
+
+.mobile-nav--active{
+  font-weight: bold;
+  color: $primary-dark;
+  opacity: 1;
+}
+
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  .mobile-nav{
+    display: flex;
+  }
+  .mobile-nav__button{
+    font-size: $unit * 2.25;
+    img{
+      height: $unit * 7;
+      width: $unit * 7;
+    }
+  }
+}
