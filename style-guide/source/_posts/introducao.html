@@ -7,15 +7,20 @@ categories: Introdução
 <p>O estilo dos assets digitais da Unimed precisa parecer que foi desenvolvido de forma concisa por uma única pessoa, assim podemos manter a manutenção simples, garantindo projetos flexíveis e escaláveis.</p>
 
 <h2>Instalação</h2>
-<p>Para começar a utilizar a folha de estilos padrão da Unimed, o primeiro passo é <a href="../css/style.css" download>fazer o download</a> dela.</p>
-<p>Agora coloque essa folha dentro da pasta <e>css</e> do seu projeto HTML e adicione o seguinte código no cabeçalho (head) das páginas do seu projeto:</p>
+<h3>Estilos</h3>
+<p>A parte mais importante do Guia de Estilos é a folha de estilos CSS. Para começar a utilizar a folha de estilos padrão da Unimed, o primeiro passo é <a href="../css/style.css" download>fazer o download</a> dela.</p>
+<p>Agora coloque essa folha dentro da pasta <code>css</code> da sua aplicação web e adicione o seguinte código no cabeçalho <code>head</code> das páginas do seu projeto:</p>
 <pre>&lt;link rel="stylesheet" href="/css/style.css"&gt;</pre>
-<p>Pronto! É assim simples e você já pode começar a utilizar tudo que o Guia de Estilos lhe proporciona.</p>
+<p>Pronto! É assim simples e você já pode começar a utilizar todos os estilos que o Guia de Estilos lhe proporciona.</p>
 <details>
   <summary><strong>Dica avançada</strong></summary>
-  <p>Você pode pegar os arquivos SCSS que montam a folha de estilo padrão e as famílias tipográficas no <a
-      href="">repositório desse projeto</a>.</p>
+  <p>Você pode pegar os arquivos SCSS que montam a folha de estilo e montar uma folha própria, apenas com os elementos que interessar acessando o <a
+      href="https://gitlab.portalunimed.com.br/open-source/css-base">repositório desse projeto</a>.</p>
 </details>
+<h3>Famílias tipográficas</h3>
+<p>No Guia de Estilos utilizamos como base da <a href="/tipografia">nossa estrutura tipográfica</a> a família <code>Unimed Sans</code>. Também disponibilizamos acesso as famílias extras da Unimed, que são a <code>Unimed Slab</code>, a <code>Unimed Serif</code> e a <code>Unimed Brush</code>. Caso você não disponibilize elas no seu projeto, o Guia utilizará a família <code>Trebuchet MS</code>.</p>
+<p>Para ter acesso as famílias oficiais no seu projeto primeiro <a href="../typography/familias-tipograficas.zip" download>faça o download delas</a>. O segundo passo é adicionar os arquivos descompactados em uma pasta chamada <code>typography</code> que você criará dentro do diretório do seu projeto.</p>
+<p>Agora você está pronto para utilizar as fontes junto com o a folha de estilos!</p>
 
 <h2>Primeiros passos</h2>
 <p>Para entender melhor como funcionam as classes e as nomenclaturas desse projeto leia a <a href="../bem">seção sobre a metodologia BEM</a>.</p>
