@@ -20,4 +20,5 @@
 .menu--fixed{
   position: fixed;
   width: $unit-8 *8;
+  overflow: auto;
 }
