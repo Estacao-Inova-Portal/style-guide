@@ -81,7 +81,7 @@ input[type="submit"], input[type="reset"], button{
 // No background color Modifier
 .btn--simple{
   background: none;
-  border-color: $white;
+  border-color: rgba(255,255,255,0);
   color: $gray-darker;
    &:hover{
     background: none;

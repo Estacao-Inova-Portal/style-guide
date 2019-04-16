@@ -18,6 +18,21 @@
 @mixin cardColor($background-color, $color: $white) {
   background-color: $background-color;
   color: $color;
+  .btn, button, input[type="submit"], input[type="reset"],.btn--simple{
+    color: $color;
+    border-color: $color;
+    &:hover{
+      background: lighten($background-color, 10);
+    }
+  }
+  .btn--simple{
+    border-color: rgba(255,255,255,0);
+    &:hover{
+      color: $color;
+      border-color: $color;
+      background-color: none;
+    }
+  }
 }
 
 // Backgrond color Modifiers
