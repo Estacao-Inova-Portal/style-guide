@@ -86,7 +86,7 @@ categories: Componentes
 <h2>Os modificadores de cartões</h2>
 
 <h3>Modificadores de cor</h3>
-<p>Modificam a cor do cartão, do texto e do botão padrão onde são aplicados:</p>
+<p>Modificam a cor do cartão, também em alguns casos do texto e do botão padrão onde são aplicados para manterem um bom contraste:</p>
 
 <div class="grid__columns grid--align-start">
   <div class="card card--secondary-color-magenta">
@@ -94,8 +94,13 @@ categories: Componentes
     <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
     <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
   </div>
+  <div class="card card--secondary-color-lime">
+    <h3>Eu sou um cartão verde brilhante</h3>
+    <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
+    <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
+  </div>
   <div class="card card--primary-color">
-    <h3>Eu sou um cartão na cor principal</h3>
+    <h3>Eu sou um cartão com cor principal</h3>
     <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
     <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
   </div>
@@ -106,4 +111,22 @@ categories: Componentes
   <code>.card--secondary-color-</code> e
   o nome da cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a href="/cores">seção de
     cores</a>).</p>
-<p>A única excessão é a cor primária, onde o prefixo muda e o código é <code>.card--primary-color</code></p>
+<p>A única excessão é a cor primária, onde o prefixo muda e o código é <code>.card--primary-color</code>.</p>
+
+<pre>&lt;div class="grid__columns grid--align-start"&gt;
+  &lt;div class="card <strong>card--secondary-color-magenta</strong>"&gt;
+    &lt;h3&gt;Eu sou um cartão colorido magenta&lt;/h3&gt;
+    &lt;a class="btn btn--float-right" href="javascript:void(0)"&gt;Continuar&lt;/a&gt;
+    &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="card <strong>card--secondary-color-lime</strong>"&gt;
+    &lt;h3&gt;Eu sou um cartão verde brilhante&lt;/h3&gt;
+    &lt;a class="btn btn--float-right" href="javascript:void(0)"&gt;Continuar&lt;/a&gt;
+    &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="card <strong>card--primary-color</strong>"&gt;
+    &lt;h3&gt;Eu sou um cartão com cor principal&lt;/h3&gt;
+    &lt;a class="btn btn--float-right" href="javascript:void(0)"&gt;Continuar&lt;/a&gt;
+    &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>

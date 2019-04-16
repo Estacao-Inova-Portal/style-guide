@@ -1,18 +1,12 @@
-input[type="submit"], input[type="reset"], button{
+.btn, button, input[type="submit"], input[type="reset"]{
   -webkit-appearance: none;
   appearance: none;
-  border: 0;
-  background: none;
-}
-
-.btn, button, input[type="submit"], input[type="reset"]{
   text-decoration: none;
   background: none;
   border: $unit / 2 solid $primary;
   border-radius: $radius;
   padding: $unit-2 $unit-4;
-  margin-top: $unit-4;
-  margin-bottom: $unit-2; 
+  margin: $unit-4 $unit-2 $unit;
   display: inline-block;
   color: $primary;
   cursor: pointer;
@@ -29,6 +23,15 @@ input[type="submit"], input[type="reset"], button{
     border-color: $primary;
     color: white;
   }
+  &:first-of-type{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+input[type="submit"], input[type="reset"]{
+  margin-right: 0;
+  margin-left: 0;
 }
 
 // Button Modifiers
