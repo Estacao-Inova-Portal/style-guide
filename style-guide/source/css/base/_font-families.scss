@@ -35,3 +35,24 @@
   font-weight: bold;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Unimed Slab";
+  src: url('../typography/unimedslab-regular-webfont.eot');
+  src: url('../typography/unimedslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../typography/unimedslab-regular-webfont.woff2') format('woff2'),
+       url('../typography/unimedslab-regular-webfont.woff') format('woff'),
+       url('../typography/unimedslab-regular-webfont.ttf') format('truetype'),
+       url('../typography/unimedslab-regular-webfont.svg#unimed_slabregular') format('svg');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unimed Brush";
+  src: url('../typography/unimedbrush-regular-webfont.eot');
+  src: url('../typography/unimedbrush-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../typography/unimedbrush-regular-webfont.woff2') format('woff2'),
+       url('../typography/unimedbrush-regular-webfont.woff') format('woff'),
+       url('../typography/unimedbrush-regular-webfont.ttf') format('truetype');
+  font-display: swap;
+}

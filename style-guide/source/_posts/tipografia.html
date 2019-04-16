@@ -129,10 +129,23 @@ categories: Layout
 <p>A única excessão <span class="text--primary-color">é a cor primária</span>, onde o prefixo muda e o código é
   <code>.text--primary-color</code></p>
 
+<h3>Modificadores de família tipográfica</h3>
+<p>Além da Unimed Sans, existem outras fontes que fazem parte da família tipográfica Unimed e podem ser utilizadas em projetos web.</p>
+<p>Para melhor performance da aplicação, o recomendável é carregar o menor número possível de fontes por página, recomendamos utilizar <strong>no máximo</strong> a fonte principal (Unimed Sans, fonte padrão do projeto) e mais uma.</p>
+<h4>Unimed Slab</h4>
+<p>A Unimed Slab é a fonte semi-serifada do sistema Unimed, ou seja, a fonte de serifas quadradas e bastante pronunciadas. Para utilizar essa fonte, chame-a com a código <code>.text--slab</code>.</p>
+<h2 class="text--slab">Cuidar de você. Esse é o plano.</h2>
+<pre>&lt;h2 class="<strong>text--slab</strong>"&gt;Cuidar de você. Esse é o plano.&lt;/h2&gt;</pre>
+<h4>Unimed Brush</h4>
+<p>Fonte bastante estilizada, <strong>não recomendada para texto corrido</strong>, porém funciona como títulos e textos curtos e grandes.</p>
+<h2 class="text--brush">Cuidar de você. Esse é o plano.</h2>
+<pre>&lt;h2 class="<strong>text--brush</strong>"&gt;Cuidar de você. Esse é o plano.&lt;/h2&gt;</pre>
+
 <h3>Modificadores de transformação de texto</h3>
 <p>O modificador <code>.text--all-caps</code> deixa todos os caracteres que estão sob sua influência em caixa alta (letras maiúsculas).</p>
 <p><span>Cuidar de você. Esse é o plano.</span> - Texto sem o modificador</p>
 <p><span class="text--all-caps">Cuidar de você. Esse é o plano.</span> - Mesmo texto com o modificador</p>
+<pre>&lt;p class="<strong>text--all-caps</strong>"&gt;Cuidar de você. Esse é o plano.&lt;/p&gt;</pre>
 <h4>Quando esse modificador é útil?</h4>
 <p>Os principais pontos são a acessibilidade e SEO. Quando esse modificador é aplicado, apesar do navegador renderizar o texto em letras maiúsculas, a versão original é preservada, sendo assim programas que fazem a leitura do site e buscadores conseguem compreender o texto.</p>
 
@@ -141,6 +154,8 @@ categories: Layout
 <p>O texto está normal <span class="text--small">agora ele está menor</span></p>
 <p>Já o modificador <code>.text--big</code> deixa o texto <strong>25% maior</strong>.</p>
 <p>O texto está normal <span class="text--big">agora ele está maior</span></p>
+<pre>&lt;p&gt;O texto está normal &lt;span class="<strong>text--small</strong>"&gt;agora ele está menor&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O texto está normal &lt;span class="<strong>text--big</strong>"&gt;agora ele está maior&lt;/span&gt;&lt;/p&gt;</pre>
 
 <h3>Modificadores de alinhamento</h3>
 <h4>Texto centralizado</h4>
