@@ -1,3 +1,5 @@
+// Unimed Sans Serif
+// Regular
 @font-face {
   font-family: "Unimed Sans";
   src: url('../typography/unimedsans-regular-webfont.eot');
@@ -9,6 +11,8 @@
   font-display: swap;
 }
 
+// Unimed Sans Serif
+// Italic
 @font-face {
   font-family: "Unimed Sans";
   src: url("../typography/unimedsans-regularitalic.otf") format('opentype');
@@ -16,6 +20,8 @@
   font-style: italic;
 }
 
+// Unimed Sans Serif
+// Bold
 @font-face {
   font-family: "Unimed Sans";
   src: url('../typography/unimedsans-bold-webfont.eot');
@@ -28,6 +34,8 @@
   font-weight: bold;
 }
 
+// Unimed Sans Serif
+// Bold Italic
 @font-face {
   font-family: "Unimed Sans";
   src: url("../typography/unimedsans-bolditalic.otf") format('opentype');
@@ -36,6 +44,8 @@
   font-style: italic;
 }
 
+// Unimed Slab
+// Regular
 @font-face {
   font-family: "Unimed Slab";
   src: url('../typography/unimedslab-regular-webfont.eot');
@@ -47,6 +57,8 @@
   font-display: swap;
 }
 
+// Unimed Brush
+// Regular
 @font-face {
   font-family: "Unimed Brush";
   src: url('../typography/unimedbrush-regular-webfont.eot');
@@ -54,5 +66,57 @@
        url('../typography/unimedbrush-regular-webfont.woff2') format('woff2'),
        url('../typography/unimedbrush-regular-webfont.woff') format('woff'),
        url('../typography/unimedbrush-regular-webfont.ttf') format('truetype');
+  font-display: swap;
+}
+
+// Unimed Serif
+// Regular
+@font-face {
+  font-family: 'Unimed Serif';
+  src: url('../typography/UnimedSerif-Regular.eot');
+  src: url('../typography/UnimedSerif-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../typography/UnimedSerif-Regular.woff2') format('woff2'),
+      url('../typography/UnimedSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Unimed Serif
+// Italic
+@font-face {
+  font-family: "Unimed Serif";
+  src: url('../typography/UnimedSerif-RegularItalic.eot');
+  src: url('../typography/UnimedSerif-RegularItalic.eot?#iefix') format('embedded-opentype'),
+      url('../typography/UnimedSerif-RegularItalic.woff2') format('woff2'),
+      url('../typography/UnimedSerif-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Unimed Serif
+// Bold
+@font-face {
+  font-family: 'Unimed Serif';
+  src: url('../typography/UnimedSerif-Bold.eot');
+  src: url('../typography/UnimedSerif-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../typography/UnimedSerif-Bold.woff2') format('woff2'),
+      url('../typography/UnimedSerif-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Unimed Serif
+// Bold Italic
+@font-face {
+  font-family: 'Unimed Serif';
+  src: url('../typography/UnimedSerif-BoldItalic.eot');
+  src: url('../typography/UnimedSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../typography/UnimedSerif-BoldItalic.woff2') format('woff2'),
+      url('../typography/UnimedSerif-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
   font-display: swap;
 }
