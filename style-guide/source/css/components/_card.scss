@@ -22,7 +22,7 @@
     color: $color;
     border-color: $color;
     &:hover{
-      background: lighten($background-color, 10);
+      background: lighten($background-color, 12);
     }
   }
   .btn--simple{
@@ -30,7 +30,6 @@
     &:hover{
       color: $color;
       border-color: $color;
-      background: none;
     }
   }
 }
