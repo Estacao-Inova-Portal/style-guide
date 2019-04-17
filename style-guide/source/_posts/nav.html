@@ -7,9 +7,11 @@ categories: Componentes
 <p>Se encontra no topo da tela do usuário, pode contar elementos da marca como o logo, assim como elementos de
   navegação.</p>
 <p>O elemento com a classe <code>nav</code> deve ser adicionado como filho direto do elemento <code>grid</code>.</p>
-<div class="nav">
-  <p>Seja bem vindo, <strong>Usuário!</strong></p>
-  <a class="btn">Fazer logoff</a>
+<div class="grid__columns grid--align-start">
+  <div class="nav">
+    <p>Seja bem vindo, <strong>Usuário!</strong></p>
+    <a class="btn">Fazer logoff</a>
+  </div>
 </div>
 <pre>&lt;nav class="<strong>nav</strong>"&gt;
   &lt;p&gt;Seja bem vindo, &lt;strong&gt;Usuário!&lt;/strong&gt;&lt;/p&gt;
@@ -19,9 +21,11 @@ categories: Componentes
 <h2>Elementos da barra de navegação</h2>
 <h3>O logo</h3>
 <p>O elemento <code>.nav__logo</code> deve ser adicionado na imagem, seja <code>img</code> ou <code>figure</code>. Esse elemento ajuda a controlar o tamanho dessa figura.</p>
-<div class="nav nav--justify-reset">
-  <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
-  <p>O nosso plano é cuidar de você</p>
+<div class="grid__columns grid--align-start">
+  <div class="nav nav--justify-reset">
+    <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
+    <p>O nosso plano é cuidar de você</p>
+  </div>
 </div>
 <pre>&lt;nav class="nav nav--justify-reset"&gt;
   &lt;img src="/img/logo/unimed.svg" alt="logo Unimed" class="<strong>nav__logo</strong>"&gt;
@@ -33,20 +37,25 @@ categories: Componentes
 <h3>Modificadores de cor</h3>
 <p>Modificam a cor de fundo das barras de navegação em que são aplicados, e em alguns casos, a cor de texto para manterem um bom
 contraste:</p>
-<div class="nav nav--primary-color nav--justify-reset">
-  <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
-  <p>O nosso plano é cuidar de você</p>
+<div class="grid__columns grid--align-start">
+  <div class="nav nav--primary-color nav--justify-reset">
+    <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
+    <p>O nosso plano é cuidar de você</p>
+  </div>
 </div>
-<br>
-<div class="nav nav--secondary-color-lime nav--justify-reset">
-  <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
-  <p>O nosso plano é cuidar de você</p>
+<div class="grid__columns grid--align-start">
+  <div class="nav nav--secondary-color-lime nav--justify-reset">
+    <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
+    <p>O nosso plano é cuidar de você</p>
+  </div>
 </div>
-<br>
-<div class="nav nav--secondary-color-magenta nav--justify-reset">
-  <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
-  <p>O nosso plano é cuidar de você</p>
+<div class="grid__columns grid--align-start">
+  <div class="nav nav--secondary-color-magenta nav--justify-reset">
+    <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
+    <p>O nosso plano é cuidar de você</p>
+  </div>
 </div>
+
 <h4>Como aplicar</h4>
 <p>A classe que transforma a cor das barras de navegação é dividida em duas partes, um prefixo global .nav--secondary-color- e o nome da
 cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a href="/cores/">seção de cores</a>).</p>
@@ -75,14 +84,17 @@ cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a 
 
 <h3>Elementos justificados na esquerda</h3>
 <p>O comportamento padrão da barra de navegação coloca os elementos espalhados por ela. Com a classe <code>.nav--justify-reset</code> o comportamento muda, e os elementos ficam justificados à esquerda.</p>
-<div class="nav">
-  <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
-  <p>Barra sem justificar</p>
+<div class="grid__columns grid--align-start">
+  <div class="nav">
+    <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
+    <p>Barra sem justificar</p>
+  </div>
 </div>
-<br>
-<div class="nav nav--justify-reset">
-  <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
-  <p>Conteúdo justificado</p>
+<div class="grid__columns grid--align-start">
+  <div class="nav nav--justify-reset">
+    <img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo">
+    <p>Conteúdo justificado</p>
+  </div>
 </div>
 <pre>&lt;nav class="nav <strong>nav--justify-reset</strong>"&gt;
   &lt;img src="/img/logo/unimed.svg" alt="logo Unimed" class="nav__logo"&gt;
@@ -93,3 +105,6 @@ cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a 
 
 <h3>Esconder em telas pequenas</h3>
 <p>Elementos com a classe <code>.nav--display-none-mobile</code> não serão renderizados em dispositivos com telas pequenas.</p>
+
+<h3>Mostrar apenas em telas pequenas</h3>
+<p>Quando elementos tem a classe <code>.nav--display-only-mobile</code> aplicada, eles serão renderizados apenas em dispositivos móveis.</p>

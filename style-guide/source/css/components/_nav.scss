@@ -36,44 +36,51 @@
   }
 }
 
+.nav--display-only-mobile{
+    display: none;
+}
+
+// Base Background color Mixin
+@mixin navColor($background-color, $color: $white) {
+  background-color: $background-color;
+  color: $color;
+  @if $color == $white {
+    .img--clickable-icon{
+      filter: invert(100%);
+    }
+  }
+}
+
 .nav--primary-color{
-  background: $primary;
-  color: $white;
+  @include navColor($primary);
 }
 
 .nav--secondary-color-purple{
-  background: $secondary-purple;
-  color: $white;
+  @include navColor($secondary-purple);
 }
 
 .nav--secondary-color-purple-dark{
-  background: $secondary-purple-dark;
-  color: $white;
+  @include navColor($secondary-purple-dark);
 }
 
 .nav--secondary-color-magenta{
-  background: $secondary-magenta;
-  color: $white;
+  @include navColor($secondary-magenta);
 }
 
 .nav--secondary-color-brown{
-  background: $secondary-brown;
-  color: $white;
+  @include navColor($secondary-brown);
 }
 
 .nav--secondary-color-orange{
-  background: $secondary-orange;
-  color: $white;
+  @include navColor($secondary-orange);
 }
 
 .nav--secondary-color-yellow{
-  background: $secondary-yellow;
-  color: $secondary-brown
+  @include navColor($secondary-yellow, $secondary-brown);
 }
 
 .nav--secondary-color-lime{
-  background: $secondary-lime;
-  color: $primary-dark;
+  @include navColor($secondary-lime, $primary-dark);
 }
 
 // Media Querie
@@ -81,6 +88,9 @@
 @media (max-width: $break-default){
   .nav--display-none-mobile{
     display: none;
+  }
+  .nav--display-only-mobile{
+    display: initial;
   }
   .nav__logo{
     height: $unit-4 * 1.75;

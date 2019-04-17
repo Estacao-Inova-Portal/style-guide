@@ -11,3 +11,14 @@
   margin: auto;
   display: block;
 }
+
+.img--clickable-icon{
+  height: $unit-4 * 1.75;
+  width: $unit-4 * 1.75;
+  float: right;
+  object-fit: contain;
+  margin-left: $unit;
+  &:last-of-type{
+    margin-left: 0;
+  }
+}
