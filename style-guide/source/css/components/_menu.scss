@@ -21,6 +21,7 @@
   position: fixed;
   width: $unit-8 *8;
   overflow: auto;
+  height: calc(100% - 117px);
 }
 
 // Media Querie
