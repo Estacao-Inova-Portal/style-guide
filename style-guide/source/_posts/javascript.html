@@ -1,0 +1,20 @@
+---
+title: Introdução
+categories: JavaScript
+---
+<p class="text--big">Usamos JavaScript para tornar alguns dos nossos componentes interativos</p>
+<p>Para conseguir executar todas as interações do Guia de Estilos você deve utilizar nossa folha de scripts <code>controllers.js</code> e colocar ela na pasta <code>/js</code> do diretório da sua aplicação.</p>
+<a href="../js/controllers.js" download class="btn btn--secondary-color-purple">Baixar scripts (.js)</a>
+
+<h2>Troca de classes</h2>
+<p>A função <code>toggleClass()</code> é a responsável por fazer a alternância de classes. Ela é muito útil na hora de mostrar/esconder elementos, como um menu por exemplo.</p>
+<h3>Como usar</h3>
+<p>Ela precisa de dois parâmetros para funcionar, primeiro o <code>id</code> do elemento que vai sofrer a alternância e depois a <code>classe CSS</code> que será alternada.</p>
+<p>Clique no botão a seguir para entender o seu funcionamento.</p>
+<a onclick="toggleClass('exampleButton','btn--secondary-color-purple-dark')" id="exampleButton" class="btn btn--secondary-color-purple-dark">Troco de cor</a>
+<pre>&lt;a 
+  onclick="<strong>toggleClass('exampleButton','btn--secondary-color-purple-dark')</strong>"
+  id="exampleButton"
+  class="btn btn--secondary-color-purple-dark"&gt;
+Troco de cor
+&lt;/a&gt;</pre>

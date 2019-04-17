@@ -29,6 +29,15 @@
       </ul>
     </details>
 
+    <details>
+      <summary>JavaScript</summary>
+      <ul class="menu__link-list">
+        <% site.categories.findOne({name: "JavaScript"}).posts.sort('title', 1).each(function(post) {%>
+        <li><a href="<%- url_for(post.path) %>"><%= post.title %></a></li>
+        <% })%>
+      </ul>
+    </details>
+
   </div>
 </aside>
 
