@@ -17,15 +17,15 @@ categories: Introdução
 .nav--secondary-color-magenta {}
 </pre>
 
-<p>Nessa convenção um bloco é uma abstração de alto nível de um componente, por exemplo um botão vira <code>.btn</code>. Esse
+<p>Nessa convenção um <strong>bloco</strong> é uma abstração de alto nível de um componente, por exemplo um botão vira <code>.nav</code>. Esse
 bloco/abstração é um elemento pai.</p>
 
-<p>Os filhos, ou elementos, devem estar dentro de um bloco, e são diferenciados por dois underlines entre o nome do bloco e
-o nome do elemento, por exemplo <code>.btn__price</code>.</p>
+<p>Os filhos, ou <strong>elementos</strong>, devem estar dentro de um bloco, e são diferenciados por dois underlines entre o nome do bloco e
+o nome do elemento, por exemplo <code>.nav__logo</code>.</p>
 
-<p>Por fim, modificadores podem manipular/modificar o bloco, sendo assim podemos dar um estilo particular para um bloco sem
+<p>Por fim, <strong>modificadores</strong> podem manipular/modificar o bloco, sendo assim podemos dar um estilo particular para um bloco sem
 ter que criar todo um novo componente. Para criar modificadores utilizamos dois hífens entre os nomes, por exemplo
-<code>.btn--orange</code>.</p>
+<code>.nav--secondary-color-magenta</code>.</p>
 
 <p>Seguindo essas regras poderiamos criar um HTML como o seguinte:</p>
 <pre>&lt;nav class="<strong>nav nav--secondary-color-magenta nav--justify-reset</strong>"&gt;
