@@ -44,9 +44,9 @@
     <p class="text--big nav--display-none-mobile"><strong>Guia de Estilos Unimed</strong></p>
     <a href="/css/style.css" download
       class="btn btn--float-right btn--secondary-color-orange nav--display-none-mobile">Baixar agora</a>
-    <a class="nav--display-only-mobile util--no-style"><img class="img--clickable-icon" src="/img/icons/ico_menu-popup.svg"/></a>
+    <a class="nav--display-only-mobile util--no-style" onclick="toggleClass('sideMenu', 'grid--display-none-mobile')"><img class="img--clickable-icon" src="/img/icons/ico_menu-popup.svg"/></a>
   </nav>
   <%- body %>
 </body>
-
+<%- js('js/controllers.js') %>
 </html>
