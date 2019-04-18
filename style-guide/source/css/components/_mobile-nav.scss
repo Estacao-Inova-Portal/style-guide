@@ -28,6 +28,7 @@
     object-fit: contain;
     height: $unit * 8;
     width: $unit * 8;
+    padding: $unit 0;
   }
 }
 
@@ -39,8 +40,17 @@
 
 .mobile-nav--active{
   font-weight: bold;
-  color: $primary-dark;
   opacity: 1;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    background: $primary-75;
+    right: 0;
+    top: -$unit;
+    height: $unit;
+    width: 100%;
+  }
 }
 
 
