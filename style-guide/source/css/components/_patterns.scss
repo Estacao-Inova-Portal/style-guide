@@ -49,7 +49,7 @@
 
 .pattern--dinamic-lines-top, .pattern--dinamic-lines-bottom, .pattern--dinamic-lines-left{
   padding: $unit-2 * 6;
-  & p:last-of-type{
+  & *:last-child{
     margin-bottom: 0;
   }
 }

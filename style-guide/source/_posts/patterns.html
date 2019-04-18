@@ -51,7 +51,7 @@ categories: Componentes
 &lt;/div&gt;</pre>
 <h3>Modificadores de fundo dinâmico</h3>
 <p>Os seguintes padrões, só serão visíveis em elementos que já tem uma cor de fundo aplicada. Esses modificadores forçam uma margem maior no elemento para acomodar o pattern.</p>
-<p>Eles são definidos pelo prefixo <code>pattern--dinamic-</code>, e aqui estão os exemplos aplicados:</p>
+<p>Eles são definidos pelo prefixo <code>pattern--dinamic-</code>, e podem ser aplicados no topo <code>top</code>, na esquerda <code>left</code> e na parte inferior <code>bottom</code>. Aqui estão os exemplos aplicados:</p>
 <div class="grid__columns grid--wrap">
   <div class="card card--secondary-color-lime pattern pattern--dinamic-lines-top util--overflow-hidden">
     <h4>Sou um cartão colorido com um padrão aplicado em mim</h4>
@@ -66,3 +66,15 @@ categories: Componentes
     <p>Tenho um elemento de texto aqui.</p>
   </div>
 </div>
+<pre>&lt;section class="card card--secondary-color-lime pattern <strong>pattern--dinamic-lines-top</strong> util--overflow-hidden"&gt;
+    &lt;h4&gt;Sou um cartão colorido com um padrão aplicado em mim&lt;/h4&gt;
+    &lt;p&gt;Tenho um elemento de texto aqui.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section class="card card--primary-color pattern <strong>pattern--dinamic-lines-bottom</strong> util--overflow-hidden"&gt;
+    &lt;h4&gt;Sou um cartão colorido com um padrão aplicado em mim&lt;/h4&gt;
+    &lt;p&gt;Tenho um elemento de texto aqui.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section class="card card--secondary-color-orange pattern <strong>pattern--dinamic-lines-left</strong> util--overflow-hidden"&gt;
+    &lt;h4&gt;Sou um cartão colorido com um padrão aplicado em mim&lt;/h4&gt;
+    &lt;p&gt;Tenho um elemento de texto aqui.&lt;/p&gt;
+  &lt;/section&gt;</pre>
