@@ -2,11 +2,11 @@ html{
   scroll-behavior: smooth;
   overflow-x: hidden;
   ::selection {
-    background: $primary-75;
+    background: $primary;
     color: white;
   }
   ::-moz-selection {
-    background: $primary-75;
+    background: $primary;
     color: white;
   }
 }

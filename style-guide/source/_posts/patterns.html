@@ -16,15 +16,14 @@ categories: Componentes
 <h2>Os modificadores de Padrões de fundo</h2>
 <p>São os modificadores que trazem os grafismos e padrões.</p>
 <h3>Modificadores base</h3>
-<p>Os modificadores base automaticamente deixam o fundo do elemento em que são aplicados branco, independente do elemento em que são aplicados.</p>
-<p>Ao todo são 4 modificadores base:</p>
+<p>A recomendação é que esses patterns sejam aplicados em fundos brancos ou muito próximos de branco. Ao todo são 4 modificadores base:</p>
 <ul>
   <li><code>.pattern--orange-goop</code></li>
   <li><code>.pattern--gray-goop</code></li>
   <li><code>.pattern--orange-goop-right-side</code></li>
   <li><code>.pattern--gray-goop-right-side</code></li>
 </ul>
-<div class="grid--columns">
+<div class="grid__columns">
   <div class="card pattern pattern--orange-goop util--overflow-hidden">
     <div style="height: 270px; width: 200px;"></div>
   </div>
@@ -51,4 +50,19 @@ categories: Componentes
   ...
 &lt;/div&gt;</pre>
 <h3>Modificadores de fundo dinâmico</h3>
-<p>Os seguintes padrões, quando aplicados em um <code>.card</code> mudam a sua cor automaticamente dependendo da cor do fundo do cartão.</p>
+<p>Os seguintes padrões, só serão visíveis em elementos que já tem uma cor de fundo aplicada. Esses modificadores forçam uma margem maior no elemento para acomodar o pattern.</p>
+<p>Eles são definidos pelo prefixo <code>pattern--dinamic-</code>, e aqui estão os exemplos aplicados:</p>
+<div class="grid__columns grid--wrap">
+  <div class="card card--secondary-color-lime pattern pattern--dinamic-lines-top util--overflow-hidden">
+    <h4>Sou um cartão colorido com um padrão aplicado em mim</h4>
+    <p>Tenho um elemento de texto aqui.</p>
+  </div>
+  <div class="card card--primary-color pattern pattern--dinamic-lines-bottom util--overflow-hidden">
+    <h4>Sou um cartão colorido com um padrão aplicado em mim</h4>
+    <p>Tenho um elemento de texto aqui.</p>
+  </div>
+  <div class="card card--secondary-color-orange pattern pattern--dinamic-lines-left util--overflow-hidden">
+    <h4>Sou um cartão colorido com um padrão aplicado em mim</h4>
+    <p>Tenho um elemento de texto aqui.</p>
+  </div>
+</div>

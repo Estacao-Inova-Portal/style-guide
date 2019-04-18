@@ -43,6 +43,14 @@
 // Backgrond color Modifiers
 .btn--primary-color{
   @include buttonColor($primary);
+  ::selection {
+    background: $secondary-orange;
+    color: white;
+  }
+  ::-moz-selection {
+    background: $secondary-orange;
+    color: white;
+  }
 }
 
 .btn--secondary-color-magenta{

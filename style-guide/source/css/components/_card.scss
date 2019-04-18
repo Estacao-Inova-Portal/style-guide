@@ -37,6 +37,14 @@
 // Backgrond color Modifiers
 .card--primary-color{
   @include cardColor($primary);
+  ::selection {
+    background: $secondary-orange;
+    color: white;
+  }
+  ::-moz-selection {
+    background: $secondary-orange;
+    color: white;
+  }
 }
 
 .card--secondary-color-magenta{

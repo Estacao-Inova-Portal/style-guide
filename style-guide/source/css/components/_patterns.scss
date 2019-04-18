@@ -14,34 +14,74 @@
 // ----------------------
 .pattern--orange-goop{
   &:before{
-    background: white url('../img/patterns/orange-goop.svg') no-repeat center -20%;
-    background-size: 130%;
+    background: url('../img/patterns/orange-goop.svg') no-repeat center top;
+    background-size: 120%;
   }
 }
 
 .pattern--gray-goop{
   &:before{
-    background: white url('../img/patterns/gray-goop.svg') no-repeat center -20%;
-    background-size: 130%;
+    background: url('../img/patterns/gray-goop.svg') no-repeat center top;
+    background-size: 120%;
+  }
+}
+
+.pattern--orange-goop-right-side, .pattern--gray-goop-right-side{
+  &:before{
+  background-size: 100%;
+    transform: rotate(90deg);
+    top: 20 * $unit;
+    bottom: -20 * $unit;
   }
 }
 
 .pattern--orange-goop-right-side{
   &:before{
-    background: white url('../img/patterns/orange-goop.svg') no-repeat;
-    background-size: 100%;
-    transform: rotate(90deg);
-    top: 20 * $unit;
-    bottom: -20 * $unit;
+    background: url('../img/patterns/orange-goop.svg') no-repeat;
   }
 }
 
 .pattern--gray-goop-right-side{
   &:before{
-    background: white url('../img/patterns/gray-goop.svg') no-repeat;
-    background-size: 100%;
-    transform: rotate(90deg);
-    top: 20 * $unit;
-    bottom: -20 * $unit;
+    background: url('../img/patterns/gray-goop.svg') no-repeat;
+  }
+}
+
+.pattern--dinamic-lines-top, .pattern--dinamic-lines-bottom, .pattern--dinamic-lines-left{
+  padding: $unit-2 * 6;
+  & p:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.pattern--dinamic-lines-top{
+  &:before{
+    background: url('../img/patterns/line_top.svg') no-repeat;
+    background-size: 20%;
+  }
+}
+
+.pattern--dinamic-lines-bottom{
+  &:before{
+    background: url('../img/patterns/line_bottom.svg') no-repeat bottom left;
+    background-size: 20%;
+  }
+}
+
+.pattern--dinamic-lines-left{
+  &:before{
+    background: url('../img/patterns/line_left.svg') no-repeat -4%;
+  }
+}
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  .pattern--orange-goop-right-side, .pattern--gray-goop-right-side{
+    &:before{
+      top: 0;
+      bottom: 0;
+      height: 235%;
+    }
   }
 }
