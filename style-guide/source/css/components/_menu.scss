@@ -11,7 +11,10 @@
   a{
     box-shadow: none;
     display: inline-block;
-    padding: $unit 0;
+    padding: $unit * 3 0;
+  }
+  ul{
+    margin: 0;
   }
 }
 

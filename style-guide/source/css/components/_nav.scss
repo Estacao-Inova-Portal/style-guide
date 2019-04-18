@@ -3,10 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: $unit-2;
+  padding: $unit * 3;
   width: 100%;
   box-shadow: $shadow-strong;
-  .btn, h1, ,h2, h3, h4, p{
+  min-height: $line-height * 2;
+  .btn, h1, ,h2, h3, h4, p {
     margin: 0;
   }
 }

@@ -5,9 +5,9 @@
   background: none;
   border: $unit / 2 solid $primary;
   border-radius: $radius;
-  padding: $unit-2 $unit-4;
-  margin-top: $unit-4;
-  margin-bottom: $unit-2;
+  padding: 10px $unit-4;
+  margin-top: $line-height;
+  margin-bottom: $line-height;
   display: inline-block;
   color: $primary;
   cursor: pointer;

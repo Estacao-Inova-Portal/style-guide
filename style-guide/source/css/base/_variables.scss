@@ -57,7 +57,7 @@ $transition-slow: 0.7s;
 
 // 6 - Borders
 // ---------
-$form-border: 2px solid $gray-dark;
+$form-border: $unit/2 solid $gray-dark;
 
 // 6 - Media Queries
 // ---------

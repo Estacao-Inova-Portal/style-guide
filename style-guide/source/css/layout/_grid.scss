@@ -7,24 +7,23 @@
 .grid__container{
   max-width: $container-width;
   margin: auto;
-  margin-top: $unit-8 + $unit-4;
+  margin-top: $line-height * 2;
   display: flex;
   flex-direction: column;
   padding: 0 $unit-2;
 }
 .grid__menu{
-  padding: $unit-2;
+  padding-right: $unit-2;
+  padding-left: $unit-2;
   min-width: $unit-8 *8;
   position: relative;
 }
 .grid__columns{
   display:flex;
-  margin-top: $unit-2;
-  margin-bottom: $unit-4;
   margin-right: - $unit-2;
   margin-left: - $unit-2;
   & > *{
-    margin: $unit-2;
+    margin: $unit * 3;
     flex: 1 1 0;
   }
 }

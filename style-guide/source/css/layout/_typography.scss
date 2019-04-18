@@ -1,46 +1,46 @@
 // Basic components
-p, span, ul, ol, a, legend, th, td {
+p, span, ul, ol, a, label, legend, th, td, figcaption, input {
   max-width: $max-text-column;
   line-height: $line-height;
 }
 
 p{
   margin-top: 0;
-  margin-bottom: $font-size;
+  margin-bottom: $line-height;
   hanging-punctuation: first;
 }
 
 h1{
   font-size: $font-size * 2.75;
-  line-height: $unit * 14;
-  margin-top: $font-size * 2.75;
-  margin-bottom: $font-size;
+  line-height: $line-height * 2;
+  margin-top: $line-height * 2;
+  margin-bottom: $line-height;
 }
 
 h2{
   font-size: $font-size * 2.25;
   font-weight: 400;
-  line-height: $unit * 12;
-  margin-top: $font-size * 2.75;
-  margin-bottom: $font-size;
+  line-height: $line-height * 2;
+  margin-top: $line-height * 2;
+  margin-bottom: $line-height;
 }
 
 h3{
   font-size: $font-size * 1.5;
-  line-height: $unit * 8;
-  margin-top: $font-size * 2.25;
-  margin-bottom: $font-size;
+  line-height: $line-height;
+  margin-top: $line-height * 2;
+  margin-bottom: $line-height;
 }
 
 h4{
   font-size: $font-size * 1.25;
-  line-height: $unit * 7;
-  margin-top: $font-size * 2;
-  margin-bottom: $font-size;
+  line-height: $line-height;
+  margin-top: $line-height;
+  margin-bottom: $line-height;
 }
 
 h2:first-child, h3:first-child, h4:first-child{
-  margin-top: $unit-2;
+  margin-top: 0;
 }
 
 code{
@@ -54,9 +54,14 @@ pre{
   background: $gray-lighter;
   color: $primary-dark;
   line-height: $line-height;
-  padding: $unit-2;
   border-radius: $radius;
   overflow: auto;
+  padding: $unit * 3;
+  margin: $line-height 0;
+}
+
+ul{
+  margin: $line-height 0;
 }
 
 a:not(.btn) {
@@ -77,9 +82,17 @@ a:not(.btn) {
   }
 }
 
+details{
+  line-height: $line-height * 2;
+  display: inline-block;
+  width: 100%;
+  &:first-of-type{
+    margin-top: $unit * 3;
+  }
+}
+
 summary{
   cursor: pointer;
-  padding: $unit-2 0;
   &:hover{
     color: #00401a;
     background: #c8c9cd;

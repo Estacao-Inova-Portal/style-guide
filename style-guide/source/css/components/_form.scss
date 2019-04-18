@@ -9,32 +9,29 @@ form, fieldset{
 }
 
 fieldset{
-  margin-top: $unit-4;
+  margin-top: $line-height;
   border: 1px solid $gray-lighter;
   border-radius: $radius;
-  padding: $unit-4;
+  padding: $line-height;
   & > legend:first-child{
     font-weight: 800;
   }
 }
 
 label, legend{
-  margin-top: $unit-4;
+  margin-top: $line-height;
   display: inline-block;
-}
-
-legend{
-  margin-top: $unit-8;
 }
 
 input, textarea, select{
   &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]){
-    padding: $unit-2;
-    margin: $unit 0 $unit-8;
+    padding: $unit * 2;
+    margin: 0 0 $line-height;
     width: $min-text-column;
     max-width: 80vw;
     border: $form-border;
     border-radius: $radius;
+    line-height: $line-height + $unit;
     &:focus{
       outline: 3px solid $focus;
       outline-offset: 0;

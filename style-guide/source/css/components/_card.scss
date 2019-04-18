@@ -1,9 +1,12 @@
 .card{
-  padding: $unit-4;
+  padding: $line-height;
   border-radius: $radius;
   box-shadow: $shadow;
   display: inline-block;
   background: $white;
+  & *:last-child{
+    margin-bottom: 0;
+  }
 }
 
 // Card Elements

@@ -1,10 +1,11 @@
 // Image Modifiers
 // ----------------------
 .img--thumbnail{
-  width: $unit-8 * 4;
-  height: $unit-8 * 4;
+  width: $line-height * 6;
+  height: $line-height * 6;
   object-fit: contain;
   max-width: 90%;
+  margin-bottom: - $unit;
 }
 
 .img--centered{
@@ -13,12 +14,26 @@
 }
 
 .img--clickable-icon{
-  height: $unit-8;
-  width: $unit-8;
+  height: $unit * 8;
+  width: $unit * 8;
+  margin: $unit-2;
   float: right;
   object-fit: contain;
-  margin-left: $unit;
+  &:first-of-type{
+    margin-right: 0;
+  }
   &:last-of-type{
     margin-left: 0;
+  }
+}
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  .img--thumbnail{
+    width: $line-height * 4;
+    height: $line-height * 4;
+    margin: auto;
+    display: block;
   }
 }
