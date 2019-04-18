@@ -101,7 +101,9 @@ summary{
 }
 
 hr{
-  border: 1px solid $gray-lighter;
+  outline: 1px solid $gray-lighter;
+  border: none;
+  margin: $unit * 3 0;
 }
 
 // Typography Modifiers
@@ -196,5 +198,8 @@ hr{
     font-size: $font-size;
     line-height: $font-size * 1.5;
     margin-top: $font-size;
+  }
+  pre, figcaption{
+    font-size: 16px;
   }
 }

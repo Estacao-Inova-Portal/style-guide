@@ -10,7 +10,7 @@
   margin-top: $line-height * 2;
   display: flex;
   flex-direction: column;
-  padding: 0 $unit-2;
+  padding: 0 $unit * 3;
 }
 .grid__menu{
   padding-right: $unit-2;
@@ -63,6 +63,9 @@
 @media (max-width: $break-default){
   .grid{
     display: initial;
+  }
+  .grid__container{
+    margin-top: $line-height * 3;
   }
   .grid__columns{
     flex-wrap: wrap;
