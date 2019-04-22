@@ -12,10 +12,9 @@ Esse Guia de estilos tem como objetivo unificar o CSS de todos os projetos web d
 
 ## Site estático: Hexo
 O site do guia de estilos foi criado com [Hexo](https://hexo.io/).  
-O primeiro passo é instalar o Hexo. Depois disso para iniciar os projetos, é necessario abrir o terminal dentro da pasta */style-guide*. lá utilize `hexo server`, e para resetar os arquivos de cahe o comando é `hexo clean`.
+O primeiro passo é instalar o Hexo, para isso entre no diretorio `style-guide` e utilize o comando `npm run install:hexo`.
 
-### Configurando hexo
-Para instalar o Hexo em sua maquina entre no diretorio `style-guide` e utilize o comando `npm run install:hexo` após a instalação feita utilize o comando `npm run start` para rodar o Hexo. 
+Depois disso para iniciar os projetos, é necessario abrir o terminal dentro da pasta `/style-guide`, utilize o comando `npm run start` para rodar o Hexo, ele irá executar os comandos `hexo clean` e `hexo serve` automaticamente.
 
 
 ## Preprocessador: Sass
