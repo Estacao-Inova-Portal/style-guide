@@ -54,3 +54,7 @@ $secondary-lime: rgb(177,211,75);
 $secondary-lime-75: rgb(194,219,121);
 $secondary-lime-50: rgb(212,229,163);
 $secondary-lime-25: rgb(231,240,206);
+
+//Gradients
+$orange-to-magenta: linear-gradient(to right,$secondary-orange,$secondary-magenta);
+$lime-to-green: linear-gradient(to right,$secondary-lime,$primary);

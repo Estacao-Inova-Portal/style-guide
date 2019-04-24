@@ -175,6 +175,20 @@ hr{
   color: $secondary-lime;
 }
 
+.text--gradient-hot-colors{
+  background: $orange-to-magenta;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text--gradient-cool-colors{
+  background: $lime-to-green;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
