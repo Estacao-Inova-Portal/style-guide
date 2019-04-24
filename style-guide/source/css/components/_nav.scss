@@ -87,6 +87,9 @@
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
+  .nav{
+    padding: $unit / 2 $unit-2;
+  }
   .nav--display-none-mobile{
     display: none;
   }

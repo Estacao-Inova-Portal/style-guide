@@ -65,7 +65,7 @@
     display: initial;
   }
   .grid__container{
-    margin-top: $line-height * 3;
+    margin-top: $line-height * 2 + $unit;
   }
   .grid__columns{
     flex-wrap: wrap;
