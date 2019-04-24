@@ -7,7 +7,7 @@ img{
 .img--thumbnail{
   width: $line-height * 6;
   height: $line-height * 6;
-  object-fit: contain;
+  object-fit: scale-down;
   max-width: 90%;
   margin-bottom: - $unit;
 }
