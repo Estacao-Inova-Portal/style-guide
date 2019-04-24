@@ -20,7 +20,7 @@ fieldset{
 
 label, legend{
   margin-top: $line-height;
-  display: inline-block;
+  display: block;
 }
 
 input, textarea, select{
@@ -69,6 +69,12 @@ input, textarea, select{
 .form__hint{
   display: block;
   color: $gray;
+}
+
+.form__multiple-choice{
+  label{
+    display: inline-block;
+  }
 }
 
 .form__multiple-choice:last-of-type{

@@ -27,6 +27,10 @@
   }
 }
 
+input[type="submit"], input[type="reset"]{
+  display:block;
+}
+
 // Button Modifiers
 // ----------------------
 // Base Background color Mixin
@@ -107,5 +111,6 @@
 @media (max-width: $break-default){
   .btn, button, input[type="submit"], input[type="reset"]{
     margin-top: 0;
+    display: block;
   }
 }
