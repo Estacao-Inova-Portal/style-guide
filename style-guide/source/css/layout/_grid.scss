@@ -71,11 +71,15 @@
     flex-wrap: wrap;
     & > *{
     flex: initial;
+    min-width: $unit * 28;
     }
   }
   .grid--overflow-mobile{
     overflow: auto;
     flex-wrap: nowrap;
+    & > *:last-child{
+      padding-right: $unit * 3;
+    }
   }
   .grid--display-none-mobile{
     display: none;

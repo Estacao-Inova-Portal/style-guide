@@ -35,8 +35,8 @@ img{
 // ----------------------
 @media (max-width: $break-default){
   .img--thumbnail{
-    width: $line-height * 4;
-    height: $line-height * 4;
+    width: $unit * 22;
+    height: $unit * 22;
     margin: auto;
     display: block;
   }
