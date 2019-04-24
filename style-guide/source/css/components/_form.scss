@@ -80,3 +80,19 @@ input, textarea, select{
 .form__multiple-choice:last-of-type{
   margin-bottom: $unit-2;
 }
+
+// Media Querie
+// ----------------------
+@media (max-width: $break-default){
+  fieldset{
+    padding: $unit-2;
+  }
+  input, textarea, select{
+    &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]){
+      width: 100%;
+      width: -moz-available;
+      width: -webkit-fill-available;
+      width: fill-available;
+    }
+  }
+}
