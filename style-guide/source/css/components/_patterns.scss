@@ -68,6 +68,7 @@
 .pattern--dinamic-lines-left{
   &:before{
     background: url('../img/patterns/line_left.svg') no-repeat -4%;
+    background-size: 25%;
   }
 }
 
@@ -77,8 +78,12 @@
   .pattern--orange-goop-right-side, .pattern--gray-goop-right-side{
     &:before{
       top: 0;
-      bottom: 0;
-      height: 235%;
+      background-size: 90%;
+    }
+  }
+  .pattern--dinamic-lines-top, .pattern--dinamic-lines-bottom, .pattern--dinamic-lines-left{
+    &:before{
+      background-size: 30%;
     }
   }
 }

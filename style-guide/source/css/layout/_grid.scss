@@ -20,8 +20,8 @@
 }
 .grid__columns{
   display:flex;
-  margin-right: - $unit-2;
-  margin-left: - $unit-2;
+  margin-right: - $unit * 3;
+  margin-left: - $unit * 3;
   & > *{
     margin: $unit * 3;
     flex: 1 1 0;
@@ -91,7 +91,7 @@
 // If Internet Explorer
 // ----------------------
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .grid{
+  .grid, .grid__container{
     display: block;
   }
   .grid__container{
