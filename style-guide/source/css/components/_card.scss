@@ -2,8 +2,9 @@
   padding: $line-height;
   border-radius: $radius;
   box-shadow: $shadow;
-  display: inline-block;
   background: $white;
+  overflow: hidden;
+  position: relative;
   & *:last-child{
     margin-bottom: 0;
   }
@@ -17,6 +18,25 @@
 // ----------------------
 .card__small{
   width: $container-width / 3 - 48;
+}
+.card--contains-full-size{
+  height: calc(100% - 40px); 
+  &> * {
+    flex: initial;
+  }
+  .card__full-size-element{
+    float: left;
+    margin-left: - $unit * 6;
+    margin-top: - $unit * 6;
+    margin-bottom: - $unit * 6;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .card--to-the-right{
+    float: right;
+    margin-left: 0;
+    margin-right: - $unit * 6;
+  }
 }
 
 // Card modifiers
@@ -87,8 +107,27 @@
 @media (max-width: $break-default){
   .card{
     width: 100%;
+    &.grid__columns > *{
+      margin: $unit-2 0;
+    }
   }
   .card__small{
     min-width: $unit * 50;
+  }
+  .card--contains-full-size{
+    height: initial; 
+    & > *:not(.card__full-size-element){
+      order: 1;
+    }
+    .card__full-size-element, .card--to-the-right{
+      min-width: calc(100% + 54px);
+      min-height: $line-height * 5;
+      max-height: $line-height * 8;
+      float: left;
+      margin-left: - $unit * 6;
+      margin-right: - $unit * 6;
+      margin-top: - $unit * 6;
+      order: 0;
+    }
   }
 }

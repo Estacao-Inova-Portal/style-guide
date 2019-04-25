@@ -133,3 +133,45 @@ categories: Componentes
     &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+
+<h3>Elementos sem padding</h3>
+<p>São elementos que transcendem o padding original dos cartões. Normalmente utilizado em imagens para que elas não tenham uma moldura montada pelo padding do cartão.</p>
+<p>Para chegar ao resultado desejado, utilize a classe <code>.card__full-size-element</code> no elemento de tamanho inteiro e <code>.card--contains-full-size</code> no elemento pai, o cartão. Por padrão quando aplicada essa classe, o elemento ficará na esquerda, é com a classe <code>.card--to-the-right</code> que esse elemento irá para o lado direito.</p>
+<div class="grid__columns">
+  <section class="card card--contains-full-size grid__columns">
+    <img class="img--thumbnail card__full-size-element" src="/img/pictures/girl-swing.jpg" />
+    <div>
+      <h3 class="text--serif"><strong>Portal Unimed inicia novo ano de transformações digitais</strong></h3>
+      <a href="javascript:void(0)">Continuar lendo →</a>
+    </div>
+  </section>
+</div>
+<div class="grid__columns">
+  <section class="card grid__columns card--contains-full-size">
+    <div>
+      <h1 class="text--slab text--gradient-hot-colors">Bem-vindo!</h1>
+      <p>Nós somos a Unimed, a <strong>maior coperativa</strong> de saúde do mundo. Com 345 cooperativas, estamos sempre perto de você.</p>
+      <button>Conheça a nossa história</button>
+    </div>
+    <img class="card__full-size-element card--to-the-right" src="/img/pictures/girl-swing.jpg" />
+  </section>
+</div>
+<pre>&lt;div class="grid__columns"&gt;
+  &lt;section class="card <strong>card--contains-full-size</strong> grid__columns"&gt;
+    &lt;img class="img--thumbnail <strong>card__full-size-element</strong>" src="/img/pictures/girl-swing.jpg" /&gt;
+    &lt;div&gt;
+      &lt;h3 class="text--serif"&gt;&lt;strong&gt;Portal Unimed inicia novo ano de transformações digitais&lt;/strong&gt;&lt;/h3&gt;
+      &lt;a href="javascript:void(0)"&gt;Continuar lendo →&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;div class="grid__columns"&gt;
+  &lt;section class="card <strong>card--contains-full-size</strong> grid__columns"&gt;
+    &lt;div&gt;
+      &lt;h1 class="text--slab text--gradient-hot-colors"&gt;Bem-vindo!&lt;/h1&gt;
+      &lt;p&gt;Nós somos a Unimed, a &lt;strong&gt;maior coperativa&lt;/strong&gt; de saúde do mundo. Com 345 cooperativas, estamos sempre perto de você.&lt;/p&gt;
+      &lt;button&gt;Conheça a nossa história&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;img class="<strong>card__full-size-element</strong> <strong>card--to-the-right</strong>" src="/img/pictures/girl-swing.jpg" /&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</pre>
