@@ -17,6 +17,9 @@
   width: initial!important;
   line-height: 0!important;
   display: flex;
+  &:focus{
+    outline: $focus auto $unit-2;
+  }
 }
 
 .util--overflow-hidden{

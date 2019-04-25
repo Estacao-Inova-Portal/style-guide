@@ -98,6 +98,9 @@ summary{
     background: #c8c9cd;
     transition: $transition;
   }
+  &:focus{
+    outline: $focus auto $unit-2;
+  }
 }
 
 hr{
