@@ -13,6 +13,14 @@ img{
   margin-bottom: - $unit;
 }
 
+.img--thumbnail-padding{
+  width: $unit * 30;
+  height: $unit * 30;
+  padding: $unit * 3;
+  object-fit: scale-down;
+  margin-bottom: - $unit;
+}
+
 .img--centered{
   margin: auto;
   display: block;
@@ -35,10 +43,15 @@ img{
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
-  .img--thumbnail{
+  .img--thumbnail, .img--thumbnail-padding{
     width: $unit * 22;
     height: $unit * 22;
     margin: auto;
     display: block;
+  }
+  .img--thumbnail-padding{
+    display: inline-block;
+    max-width: 25%;
+    padding: $unit * 6 $unit * 2;
   }
 }
