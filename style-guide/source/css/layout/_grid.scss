@@ -41,6 +41,10 @@
   flex-wrap: nowrap;
 }
 
+.grid--column{
+  flex-direction: column;
+}
+
 .grid--no-margin{
   margin-right:initial;
   margin-left:initial;
