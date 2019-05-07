@@ -4,16 +4,15 @@ categories: Componentes
 ---
 <p class="text--big">Padrões de fundo trazem grafismos para o background dos seus elementos</p>
 <div class="grid__columns grid--wrap">
-  <div class="card pattern pattern--orange-goop util--overflow-hidden">
+  <div class="card pattern pattern--orange-goop">
     <div style="height: 265px; width: 200px;"></div>
   </div>
 </div>
-<pre>&lt;div class="card <strong>pattern</strong> pattern--orange-goop util--overflow-hidden"&gt;
+<pre>&lt;div class="card <strong>pattern</strong> pattern--orange-goop"&gt;
   ...
 &lt;/div&gt;</pre>
 
 <p>A classe <code>.pattern</code> faz modificações nos pseudo-elementos <code>:before</code> e <code>:after</code> do elemento em que é aplicado, assim garantindo que os elementos de padrões funcionarão.</p>
-<p>Em <code>.cards</code> é recomendável adicionar a <a href="/utils">classe global de utilidade</a> chamada de <code>.util--overflow-hidden</code>, assim ela garante que o desenho do padrão não será pintado para fora do espaço do cartão.</p>
 
 <h2>Os modificadores de Padrões de fundo</h2>
 <p>São os modificadores que trazem os grafismos e padrões.</p>
@@ -26,57 +25,57 @@ categories: Componentes
   <li><code>.pattern--gray-goop-right-side</code></li>
 </ul>
 <div class="grid__columns">
-  <div class="card pattern pattern--orange-goop util--overflow-hidden">
+  <div class="card pattern pattern--orange-goop">
     <div style="height: 265px; width: 200px;"></div>
   </div>
-  <div class="card pattern pattern--gray-goop util--overflow-hidden">
+  <div class="card pattern pattern--gray-goop">
     <div style="height: 265px; width: 200px;"></div>
   </div>
-  <div class="card pattern pattern--orange-goop-right-side util--overflow-hidden">
+  <div class="card pattern pattern--orange-goop-right-side">
     <div style="height: 265px; width: 200px;"></div>
   </div>
-  <div class="card pattern pattern--gray-goop-right-side util--overflow-hidden">
+  <div class="card pattern pattern--gray-goop-right-side">
     <div style="height: 265px; width: 200px;"></div>
   </div>
 </div>
-<pre>&lt;div class="card pattern <strong>pattern--orange-goop</strong> util--overflow-hidden"&gt;
+<pre>&lt;div class="card pattern <strong>pattern--orange-goop</strong>"&gt;
   ...
 &lt;/div&gt;
-&lt;div class="card pattern <strong>pattern--gray-goop</strong> util--overflow-hidden"&gt;
+&lt;div class="card pattern <strong>pattern--gray-goop</strong>"&gt;
   ...
 &lt;/div&gt;
-&lt;div class="card pattern <strong>pattern--orange-goop-right-side</strong> util--overflow-hidden"&gt;
+&lt;div class="card pattern <strong>pattern--orange-goop-right-side</strong>"&gt;
   ...
 &lt;/div&gt;
-&lt;div class="card pattern <strong>pattern--gray-goop-right-side</strong> util--overflow-hidden"&gt;
+&lt;div class="card pattern <strong>pattern--gray-goop-right-side</strong>"&gt;
   ...
 &lt;/div&gt;</pre>
 <h3>Modificadores de fundo dinâmico</h3>
 <p>Os seguintes padrões, só serão visíveis em elementos que já tem uma cor de fundo aplicada. Esses modificadores forçam uma margem maior no elemento para acomodar o pattern.</p>
 <p>Eles são definidos pelo prefixo <code>pattern--dinamic-</code>, e podem ser aplicados no topo <code>top</code>, na esquerda <code>left</code> e na parte inferior <code>bottom</code>. Aqui estão os exemplos aplicados:</p>
 <div class="grid__columns grid--wrap">
-  <div class="card card--secondary-color-lime pattern pattern--dinamic-lines-top util--overflow-hidden">
+  <div class="card card--secondary-color-lime pattern pattern--dinamic-lines-top">
     <h4>Sou um cartão colorido com um padrão aplicado em mim</h4>
     <p>Tenho um elemento de texto aqui.</p>
   </div>
-  <div class="card card--primary-color pattern pattern--dinamic-lines-bottom util--overflow-hidden">
+  <div class="card card--primary-color pattern pattern--dinamic-lines-bottom">
     <h4>Sou um cartão colorido com um padrão aplicado em mim</h4>
     <p>Tenho um elemento de texto aqui.</p>
   </div>
-  <div class="card card--secondary-color-orange pattern pattern--dinamic-lines-left util--overflow-hidden">
+  <div class="card card--secondary-color-orange pattern pattern--dinamic-lines-left">
     <h4>Sou um cartão colorido com um padrão aplicado em mim</h4>
     <p>Tenho um elemento de texto aqui.</p>
   </div>
 </div>
-<pre>&lt;section class="card card--secondary-color-lime pattern <strong>pattern--dinamic-lines-top</strong> util--overflow-hidden"&gt;
+<pre>&lt;section class="card card--secondary-color-lime pattern <strong>pattern--dinamic-lines-top</strong>"&gt;
   &lt;h4&gt;Sou um cartão colorido com um padrão aplicado em mim&lt;/h4&gt;
   &lt;p&gt;Tenho um elemento de texto aqui.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section class="card card--primary-color pattern <strong>pattern--dinamic-lines-bottom</strong> util--overflow-hidden"&gt;
+&lt;section class="card card--primary-color pattern <strong>pattern--dinamic-lines-bottom</strong>"&gt;
   &lt;h4&gt;Sou um cartão colorido com um padrão aplicado em mim&lt;/h4&gt;
   &lt;p&gt;Tenho um elemento de texto aqui.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section class="card card--secondary-color-orange pattern <strong>pattern--dinamic-lines-left</strong> util--overflow-hidden"&gt;
+&lt;section class="card card--secondary-color-orange pattern <strong>pattern--dinamic-lines-left</strong>"&gt;
   &lt;h4&gt;Sou um cartão colorido com um padrão aplicado em mim&lt;/h4&gt;
   &lt;p&gt;Tenho um elemento de texto aqui.&lt;/p&gt;
 &lt;/section&gt;</pre>
