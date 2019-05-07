@@ -86,6 +86,10 @@ input[type="submit"], input[type="reset"]{
   @include buttonColor($secondary-lime, $primary-dark);
 }
 
+.btn--secondary-color-gray{
+  @include buttonColor($gray);
+}
+
 // No background color Modifier
 .btn--simple{
   background: none;

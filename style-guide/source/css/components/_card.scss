@@ -102,6 +102,10 @@
   @include cardColor($secondary-lime, $primary-dark);
 }
 
+.card--secondary-color-gray{
+  @include cardColor($gray);
+}
+
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
