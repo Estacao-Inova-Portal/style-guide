@@ -36,11 +36,6 @@
     margin-left: $unit-2;
   }
 }
-
-.nav--display-only-mobile{
-    display: none;
-}
-
 // Base Background color Mixin
 @mixin navColor($background-color, $color: $white) {
   background-color: $background-color;
@@ -89,12 +84,6 @@
 @media (max-width: $break-default){
   .nav{
     padding: $unit / 2 $unit-2;
-  }
-  .nav--display-none-mobile{
-    display: none;
-  }
-  .nav--display-only-mobile{
-    display: initial;
   }
   .nav__logo{
     height: $unit-4 * 1.75;
