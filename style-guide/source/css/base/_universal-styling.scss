@@ -21,3 +21,8 @@ body, html{
   font-size: $font-size;
   color: $font-color;
 }
+
+iframe{
+  box-sizing: border-box;
+  max-width: calc(100% - 27px);
+}
