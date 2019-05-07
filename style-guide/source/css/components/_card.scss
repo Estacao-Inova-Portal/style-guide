@@ -45,6 +45,9 @@
 @mixin cardColor($background-color, $color: $white) {
   background-color: $background-color;
   color: $color;
+  a{
+    color: $color;
+  }
   .btn, button, input[type="submit"], input[type="reset"],.btn--simple{
     color: $color;
     border-color: $color;
