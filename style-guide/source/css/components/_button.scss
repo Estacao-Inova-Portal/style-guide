@@ -52,7 +52,7 @@ input[type="submit"], input[type="reset"]{
 }
 
 // Backgrond color Modifiers
-.btn--primary-color{
+.btn--primary-color, input[type="submit"].btn--primary-color, input[type="reset"].btn--primary-color{
   @include buttonColor($primary);
   ::selection {
     background: $secondary-orange;
@@ -64,35 +64,35 @@ input[type="submit"], input[type="reset"]{
   }
 }
 
-.btn--secondary-color-magenta{
+.btn--secondary-color-magenta, input[type="submit"].btn--secondary-color-magenta, input[type="reset"].btn--secondary-color-magenta{
   @include buttonColor($secondary-magenta);
 }
 
-.btn--secondary-color-purple-dark{
+.btn--secondary-color-purple-dark, input[type="submit"].btn--secondary-color-purple-dark, input[type="reset"].btn--secondary-color-purple-dark{
   @include buttonColor($secondary-purple-dark);
 }
 
-.btn--secondary-color-purple{
+.btn--secondary-color-purple, input[type="submit"].btn--secondary-color-purple, input[type="reset"].btn--secondary-color-purple{
   @include buttonColor($secondary-purple);
 }
 
-.btn--secondary-color-brown{
+.btn--secondary-color-brown, input[type="submit"].btn--secondary-color-brown, input[type="reset"].btn--secondary-color-brown{
   @include buttonColor($secondary-brown);
 }
 
-.btn--secondary-color-orange{
+.btn--secondary-color-orange, input[type="submit"].btn--secondary-color-orange, input[type="reset"].btn--secondary-color-orange{
   @include buttonColor($secondary-orange);
 }
 
-.btn--secondary-color-yellow{
+.btn--secondary-color-yellow, input[type="submit"].btn--secondary-color-yellow, input[type="reset"].btn--secondary-color-yellow{
   @include buttonColor($secondary-yellow, $primary-dark);
 }
 
-.btn--secondary-color-lime{
+.btn--secondary-color-lime, input[type="submit"].btn--secondary-color-lime, input[type="reset"].btn--secondary-color-lime{
   @include buttonColor($secondary-lime, $primary-dark);
 }
 
-.btn--secondary-color-gray{
+.btn--secondary-color-gray, input[type="submit"].btn--secondary-color-gray, input[type="reset"].btn--secondary-color-gray{
   @include buttonColor($gray);
 }
 
