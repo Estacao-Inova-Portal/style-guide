@@ -27,7 +27,7 @@ input, textarea, select{
   &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]){
     padding: $unit * 2;
     margin: 0 0 $line-height;
-    width: 100%;
+    width: 90%;
     max-width: $ideal-text-column;
     border: $form-border;
     border-radius: $radius;
