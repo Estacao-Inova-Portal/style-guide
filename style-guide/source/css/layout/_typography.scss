@@ -196,12 +196,12 @@ hr{
 // ----------------------
 @media (max-width: $break-default){
   h1{
-    font-size: $font-size * 1.75;
+    font-size: $font-size * 2;
     line-height: $unit * 9;
     margin-top: $font-size * 1.75;
   }
   h2{
-    font-size: $font-size * 1.5;
+    font-size: $font-size * 1.75;
     line-height: $unit * 8;
     margin-top: $font-size * 1.5;
   }
@@ -212,11 +212,15 @@ hr{
     margin-top: $font-size * 1.25;
   }
   h4{
-    font-size: $font-size;
+    font-size: $font-size * 1.1;
     line-height: $font-size * 1.5;
     margin-top: $font-size;
   }
   pre, figcaption{
     font-size: 16px;
+  }
+  .text--big{
+    font-size: 1.1em;
+    font-weight: bold;
   }
 }
