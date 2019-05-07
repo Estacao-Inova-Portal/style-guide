@@ -64,6 +64,19 @@
   margin-top: $unit-8 * 3;
 }
 
+.grid--overflow{
+    overflow: auto;
+    flex-wrap: nowrap;
+    padding-bottom: $line-height;
+    & > *{
+    flex: initial;
+    min-width: $unit * 65;
+    }
+    & > *:last-child{
+      padding-right: $unit * 3;
+    }
+  }
+
 .grid--ideal-type{
   display: block;
   width: $ideal-text-column;
@@ -90,6 +103,7 @@
   .grid--overflow-mobile{
     overflow: auto;
     flex-wrap: nowrap;
+    padding-bottom: $line-height;
     & > *:last-child{
       padding-right: $unit * 3;
     }

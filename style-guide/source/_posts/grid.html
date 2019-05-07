@@ -175,13 +175,51 @@ categories: Layout
   &lt;a class="btn btn--primary-color"&gt;Quero saber mais!&lt;/a&gt;
 &lt;/div&gt;</pre>
 
+<h3>Scroll de linha única</h3>
+<p>Ao aplicar a classe <code>.grid__overflow</code> os cards estão sendo apresentados na mesma linha, com uma barra de
+  rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
+<div class="grid__columns grid--overflow">
+  <div class="card card__small">
+    <p>Solicite autorização de exame ou procedimento</p>
+  </div>
+  <div class="card card__small">
+    <p>Encontre um plano de saúde</p>
+  </div>
+  <div class="card card__small">
+    <p>Solicite o demonstrativo do imposto de renda</p>
+  </div>
+  <div class="card card__small">
+    <p>Entre em contato para solicitar reembolsos</p>
+  </div>
+  <div class="card card__small">
+    <p>Precisando de um médico? Agende aqui</p>
+  </div>
+</div>
+<pre>&lt;div class="grid__columns <strong>grid--overflow</strong>"&gt;
+  &lt;div class="card card__small"&gt;
+    &lt;p&gt;Solicite autorização de exame ou procedimento&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card card__small"&gt;
+    &lt;p&gt;Encontre um plano de saúde&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card card__small"&gt;
+    &lt;p&gt;Solicite o demonstrativo do imposto de renda&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card card__small"&gt;
+    &lt;p&gt;Entre em contato para solicitar reembolsos&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card card__small"&gt;
+    &lt;p&gt;Precisando de um médico? Agende aqui&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
 <h2 id="mobile">Modificadores para dispositivos móveis</h2>
 <h3>Scroll de linha única mobile</h3>
 <p>Vamos pegar o mesmo exemplo com cards que utilizamos no <code>.grid--wrap</code>, mas agora vamos também adicionar a
   classe <code>.grid--overflow-mobile</code>.</p>
 <p>O que acontece aqui é que, em dispositivos móveis, os cards estão sendo apresentados na mesma linha, com uma barra de
   rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
-  <p>Enquanto isso, em dispositivos de tela grande eles seguem o padrão apontado pelas classes <code>.grid__columns</code> e <code>.grid--wrap</code>.</p>
+<p>Enquanto isso, em dispositivos de tela grande eles seguem o padrão apontado pelas classes <code>.grid__columns</code> e <code>.grid--wrap</code>.</p>
 <div class="grid__columns grid--wrap grid--overflow-mobile">
   <div class="card card__small">
     <p>Solicite autorização de exame ou procedimento</p>

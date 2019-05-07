@@ -17,7 +17,8 @@
 // Card Elements
 // ----------------------
 .card__small{
-  width: $container-width / 3 - 48;
+  width: 100%;
+  max-width: $unit * 65;
 }
 .card--contains-full-size{
   height: calc(100% - 40px); 
