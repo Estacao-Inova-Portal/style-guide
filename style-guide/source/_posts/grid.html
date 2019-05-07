@@ -164,7 +164,7 @@ categories: Layout
 <h3>Tamanho ideal de texto</h3>
 <p>Como pode ser visto na <a href="/tipografia">página de Tipografia</a>, existe um tamanho ideal de texto, e ele é uma coluna de até 170 unidades básicas de largura, ou seja 765px.</p>
 <p>Utilize o modificador <code>.grid--ideal-type</code> para garantir que a coluna de texto respeitara exatamente o tamanho ideal de linha.</p>
-<div class="grid__columns grid--ideal-type text--centered">
+<div style="outline: 2px solid rgb(223,224,225);" class="grid__columns grid--ideal-type text--centered">
   <h2 class="text--gradient-hot-colors"><strong>Sua Unimed a um toque de você</strong></h2>
   <p>Os novos aplicativos Unimed foram desenvolvidos pensando nas necessidades de seus cooperados e beneficiários. Monte agora o app ideal dpara a sua Unimed e surpreenda-se!</p>
   <a class="btn btn--primary-color">Quero saber mais!</a>
@@ -176,12 +176,12 @@ categories: Layout
 &lt;/div&gt;</pre>
 
 <h2 id="mobile">Modificadores para dispositivos móveis</h2>
-<h3>Linha com scroll</h3>
-<p>Já o <code>.grid--overflow-mobile</code> tem um efeito bastante interessante.</p>
+<h3>Scroll de linha única mobile</h3>
 <p>Vamos pegar o mesmo exemplo com cards que utilizamos no <code>.grid--wrap</code>, mas agora vamos também adicionar a
   classe <code>.grid--overflow-mobile</code>.</p>
 <p>O que acontece aqui é que, em dispositivos móveis, os cards estão sendo apresentados na mesma linha, com uma barra de
   rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
+  <p>Enquanto isso, em dispositivos de tela grande eles seguem o padrão apontado pelas classes <code>.grid__columns</code> e <code>.grid--wrap</code>.</p>
 <div class="grid__columns grid--wrap grid--overflow-mobile">
   <div class="card card__small">
     <p>Solicite autorização de exame ou procedimento</p>
