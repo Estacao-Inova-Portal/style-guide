@@ -25,6 +25,12 @@
     border-color: $primary;
     color: white;
   }
+  &:disabled{
+    cursor: default;
+    border-color: $gray;
+    color: $gray;
+    pointer-events: none;
+  }
 }
 
 input[type="submit"], input[type="reset"]{

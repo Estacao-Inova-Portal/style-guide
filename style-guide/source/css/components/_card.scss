@@ -51,6 +51,13 @@
     &:hover{
       background: lighten($background-color, 12);
     }
+    &:disabled{
+      cursor: default;
+      border-color: $gray-darker;
+      color: $gray-darker;
+      pointer-events: none;
+      background: rgba($gray-darker, 0.25);
+    }
   }
   .btn--simple{
     border-color: rgba(255,255,255,0);
