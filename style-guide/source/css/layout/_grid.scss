@@ -101,7 +101,7 @@
     min-width: $unit * 28;
     }
   }
-  .grid--overflow-mobile{
+  .grid--overflow, .grid--overflow-mobile{
     overflow: auto;
     flex-wrap: nowrap;
     padding-bottom: $line-height;
