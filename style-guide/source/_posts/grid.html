@@ -140,24 +140,24 @@ categories: Layout
 <h3>Cores de fundo</h3>
 <p>O modificador <code>.grid--background-light</code> aplica a cor cinza claríssimo como a cor de fundo do grid.</p>
 
-<h3>Conteúdo em coluna</h3>
-<p>Com <code>.grid--column</code> você força o elemento de grid a seguir a direção de coluna, e não o padrão de linha.
-  Útil para páginas que não tem elementos ou menus laterais.</p>
+<h3>Conteúdo na vertical</h3>
+<p>Com <code>.grid--vertical</code> você força o elemento de grid a seguir a direção de coluna, e não o padrão de linha.
+  Útil quando aplicado diretamento no element <code>.grid</code>, para páginas que não tem elementos ou menus laterais.</p>
 
-<h4>Sem grid--column</h4>
+<h4>Sem grid--vertical</h4>
 <div style="outline: 2px solid rgb(223,224,225);" class="grid__columns">
   <div class="grid">
-    <span style="outline: 2px solid rgb(223,224,225);">Sou um elemento</span>
-    <span style="outline: 2px solid rgb(223,224,225);">Sou outro elemento</span>
-    <span style="outline: 2px solid rgb(223,224,225);">Sou mais um elemento</span>
+    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou um elemento</div>
+    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou outro elemento</div>
+    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou mais um elemento</div>
   </div>
 </div>
-<h4>Com grid--column</h4>
+<h4>Com grid--vertical</h4>
 <div style="outline: 2px solid rgb(223,224,225);" class="grid__columns">
-  <div class="grid grid--column">
-    <span style="outline: 2px solid rgb(223,224,225);">Sou um elemento</span>
-    <span style="outline: 2px solid rgb(223,224,225);">Sou outro elemento</span>
-    <span style="outline: 2px solid rgb(223,224,225);">Sou mais um elemento</span>
+  <div class="grid grid--vertical">
+    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou um elemento</div>
+    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou outro elemento</div>
+    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou mais um elemento</div>
   </div>
 </div>
 
@@ -211,6 +211,18 @@ categories: Layout
   &lt;div class="card card__small"&gt;
     &lt;p&gt;Precisando de um médico? Agende aqui&lt;/p&gt;
   &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<h3>Espaçador</h3>
+<p>Utilize a classe <code>.grid--spacer</code> para adicionar espaços de respiro no elemento em que for adicionado. 
+  Em dispositivos de tela grande esse espaço é de altura de 2 linhas (12 Unidades Básicas, 54px) para cima e para baixo, enquanto em dispositivos móveis 
+  ele é reduzido para 1 linha (6 Unidades Básicas, 27px).</p>
+
+<div class="grid--spacer" style="outline: 2px solid rgb(223,224,225);">
+  <span>Eu tenho um <strong>espaço de respiro</strong> em cima e embaixo de mim.</span>
+</div>
+<pre>&lt;div class="<strong>grid--spacer</strong>"&gt;
+  &lt;span&gt;Eu tenho um &lt;strong&gt;espaço de respiro&lt;/strong&gt;&lt;/span&gt;
 &lt;/div&gt;</pre>
 
 <h2 id="mobile">Modificadores para dispositivos móveis</h2>
