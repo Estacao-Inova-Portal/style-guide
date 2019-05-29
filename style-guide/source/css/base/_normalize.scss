@@ -105,6 +105,13 @@ strong {
 }
 
 /**
+ * Makes the dialog color the same as in the rest of the system
+ */
+dialog{
+  color: inherit;
+}
+
+/**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
