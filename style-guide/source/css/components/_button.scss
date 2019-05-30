@@ -53,7 +53,7 @@ input[type="submit"], input[type="reset"]{
 
 // Backgrond color Modifiers
 //.btn-primary is a Liferay class
-.btn--primary-color, input[type="submit"].btn--primary-color, input[type="reset"].btn--primary-color, .btn-primary{
+.btn--primary-color, input[type="submit"].btn--primary-color, input[type="reset"].btn--primary-color, .btn-primary,.btn-primary.btn-default{
   @include buttonColor($primary);
   ::selection {
     background: $secondary-orange;
@@ -65,7 +65,8 @@ input[type="submit"], input[type="reset"]{
   }
 }
 
-.btn--secondary-color-magenta, input[type="submit"].btn--secondary-color-magenta, input[type="reset"].btn--secondary-color-magenta{
+//.btn-link.btn-default.btn-cancel are Liferay classes
+.btn--secondary-color-magenta, input[type="submit"].btn--secondary-color-magenta, input[type="reset"].btn--secondary-color-magenta,.btn-link.btn-default.btn-cancel{
   @include buttonColor($secondary-magenta);
 }
 

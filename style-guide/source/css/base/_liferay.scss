@@ -32,6 +32,12 @@
       min-height: $line-height * 2;
     }
   }
+  fieldset.panel{
+    padding: 0;
+    a:not(.btn){
+      box-shadow: none;
+    }
+  }
   .panel nav, .panel .nav, nav.menubar{
     background: none;
     box-shadow: none;
@@ -65,10 +71,18 @@
   .portlet:hover>.portlet-topper, .portlet.focus>.portlet-topper{
     opacity: 1;
     transform: translateY(-97%);
+    z-index:10;
   }
 
   .portlet-title-default{
     flex: 1 1 auto;
+  }
+
+  .portlet-body{
+    fieldset, .textboxlist-content, .card-horizontal{
+      border: 0px;
+      padding: 0;
+    }
   }
 
 }
@@ -88,4 +102,13 @@
   height: initial!important;
   min-height: $line-height * 3;
   max-height: $line-height * 4!important;
+}
+
+.drop-zone.drop-enabled:not(.no-border){
+  outline: 2px dashed $gray-lighter;
+}
+
+.radio input{
+  position: absolute;
+  left: $unit * 3;
 }

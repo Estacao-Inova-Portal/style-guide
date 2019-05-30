@@ -32,6 +32,7 @@ input, textarea, select{
     border: $form-border;
     border-radius: $radius;
     line-height: $line-height + $unit;
+    height: initial;
     &:focus{
       outline: 3px solid $focus;
       outline-offset: 0;
@@ -62,6 +63,9 @@ input, textarea, select{
       outline: none;
       border-color: $focus;
     }
+  }
+  &:only-child{
+    margin: 0;
   }
 }
 
