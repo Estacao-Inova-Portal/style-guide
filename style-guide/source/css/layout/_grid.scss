@@ -8,10 +8,10 @@
   width: 100%;
   max-width: $container-width;
   margin: auto;
-  margin-top: $line-height * 2;
+  margin-top: $line-height * 3;
   display: flex;
   flex-direction: column;
-  padding: 0 $unit * 3;
+  padding: $unit * 3;
 }
 
 .grid__menu{

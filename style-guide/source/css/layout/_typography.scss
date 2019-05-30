@@ -43,6 +43,12 @@ h2:first-child, h3:first-child, h4:first-child{
   margin-top: 0;
 }
 
+.grid__container{
+  * > h1:first-child{
+    margin-top:$unit * 3;
+  }
+}
+
 code{
   background: $primary-25;
   color: $primary-dark;
