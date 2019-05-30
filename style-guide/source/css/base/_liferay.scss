@@ -1,0 +1,49 @@
+.control-menu, .product-menu, .sidenav-menu{
+  a:not(.btn){
+    box-shadow: none;
+    &:hover{
+      background: rgba($gray-lighter, 0.2);
+      color: inherit;
+    }
+  }
+}
+
+.control-menu-nav{
+  font-size: inherit;
+  margin-top: 0;
+  ul{
+    margin: 0;
+  }
+}
+
+.panel{
+  .panel-header, .panel-heading, .panel-title a{
+    min-height: $line-height * 2;
+  }
+}
+
+.panel nav, .panel .nav, nav.menubar{
+  background: none;
+  box-shadow: none;
+  align-items: baseline;
+  margin-top: 0;
+  a:not(.btn){
+    color: white;
+  }
+}
+
+.list-unstyled, ul.navbar-nav, .component-action{
+  margin: 0;
+}
+
+.nav-btn-monospaced{
+  padding: $unit * 3;
+  height: initial;
+  line-height: 0;
+}
+
+.list-group-item.layout-item{
+  height: initial;
+  min-height: $line-height * 3;
+  max-height: $line-height * 4;
+}
