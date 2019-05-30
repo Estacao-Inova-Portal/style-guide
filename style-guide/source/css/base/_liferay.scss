@@ -1,4 +1,4 @@
-.control-menu, .product-menu, .sidenav-menu{
+.control-menu, .product-menu, .sidenav-menu, li{
   a:not(.btn){
     box-shadow: none;
     &:hover{
@@ -32,8 +32,9 @@
   }
 }
 
-.list-unstyled, ul.navbar-nav, .component-action{
+.list-unstyled, ul.navbar-nav, .component-action, .icon-monospaced{
   margin: 0;
+  box-shadow: none;
 }
 
 .nav-btn-monospaced{
@@ -43,7 +44,11 @@
 }
 
 .list-group-item.layout-item{
-  height: initial;
+  height: initial!important;
   min-height: $line-height * 3;
-  max-height: $line-height * 4;
+  max-height: $line-height * 4!important;
+}
+
+.hide-accessible, .quick-access-nav{
+  display:none;
 }

@@ -7,6 +7,7 @@
   width: 100%;
   box-shadow: $shadow-strong;
   min-height: $line-height * 2;
+  flex-direction: row;
   h1,h2, h3, h4, p, button, & .btn{
     margin: 0;
   }
