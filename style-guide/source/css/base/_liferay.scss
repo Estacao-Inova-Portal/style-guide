@@ -1,35 +1,76 @@
-.control-menu, .product-menu, .sidenav-menu, li{
-  a:not(.btn){
-    box-shadow: none;
-    &:hover{
-      background: rgba($gray-lighter, 0.2);
-      color: inherit;
+.signed-in{
+  .control-menu, .product-menu, .sidenav-menu, li{
+    a:not(.btn){
+      box-shadow: none;
+      &:hover{
+        background: rgba($gray-lighter, 0.2);
+        color: inherit;
+      }
     }
   }
-}
+  .nav--fixed{
+    top: 57px;
+  }
+  &.open{
+    .nav--fixed{
+      left: 320px;
+      width: calc(100% - 320px);
+    }
+  }
+  #wrapper{
+    padding: 0!important;
+  }
+  .control-menu-nav{
+    font-size: inherit;
+    margin-top: 0;
+    ul{
+      margin: 0;
+    }
+  }
+  .panel{
+    .panel-header, .panel-heading, .panel-title a{
+      min-height: $line-height * 2;
+    }
+  }
+  .panel nav, .panel .nav, nav.menubar{
+    background: none;
+    box-shadow: none;
+    align-items: baseline;
+    margin-top: 0;
+    a:not(.btn){
+      color: white;
+    }
+  }
 
-.control-menu-nav{
-  font-size: inherit;
-  margin-top: 0;
-  ul{
+  .portlet>.portlet-topper {
+  display: flex;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transition: opacity .25s,transform .25s;
+  top: 0;
+  align-items: center;
+  background: $gray-lighter;
+  padding: $unit;
+  border-radius: $unit $unit 0 0;
+  menu{
     margin: 0;
+    a:note(.btn){
+      box-shadow: none;
+      }
+    }
   }
-}
 
-.panel{
-  .panel-header, .panel-heading, .panel-title a{
-    min-height: $line-height * 2;
+  .portlet:hover>.portlet-topper, .portlet.focus>.portlet-topper{
+    opacity: 1;
+    transform: translateY(-97%);
   }
-}
 
-.panel nav, .panel .nav, nav.menubar{
-  background: none;
-  box-shadow: none;
-  align-items: baseline;
-  margin-top: 0;
-  a:not(.btn){
-    color: white;
+  .portlet-title-default{
+    flex: 1 1 auto;
   }
+
 }
 
 .list-unstyled, ul.navbar-nav, .component-action, .icon-monospaced{
@@ -47,8 +88,4 @@
   height: initial!important;
   min-height: $line-height * 3;
   max-height: $line-height * 4!important;
-}
-
-.hide-accessible, .quick-access-nav{
-  display:none;
 }

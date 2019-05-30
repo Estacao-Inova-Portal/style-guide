@@ -52,7 +52,8 @@ input[type="submit"], input[type="reset"]{
 }
 
 // Backgrond color Modifiers
-.btn--primary-color, input[type="submit"].btn--primary-color, input[type="reset"].btn--primary-color{
+//.btn-primary is a Liferay class
+.btn--primary-color, input[type="submit"].btn--primary-color, input[type="reset"].btn--primary-color, .btn-primary{
   @include buttonColor($primary);
   ::selection {
     background: $secondary-orange;
@@ -97,7 +98,8 @@ input[type="submit"], input[type="reset"]{
 }
 
 // No background color Modifier
-.btn--simple{
+// The .btn-outline-borderless class is a Liferay class
+.btn--simple, .btn-outline-borderless{
   background: none;
   border-color: rgba(255,255,255,0);
   color: $gray-darker;

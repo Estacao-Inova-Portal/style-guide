@@ -2,13 +2,10 @@
 // Utilities
 // ---------
 
-.util--display-none{
+//.hide-accessible and .quick-access-nav are Liferay classes
+.util--display-none, .util--display-none-desktop, .hide-accessible, .quick-access-nav{
   display: none!important;
 }
-
-.util--display-none-desktop{
-    display: none!important;
-  }
 
 .util--no-style{
   margin: 0!important;
