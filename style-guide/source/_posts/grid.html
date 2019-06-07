@@ -26,7 +26,7 @@ categories: Layout
 <p>Pronto! Seguindo esse esqueleto você acaba de montar uma página responsiva com o grid padrão.</p>
 
 <h3>Entendendo o Container</h3>
-<p>O container tem uma largura de 244 unidades padrão (4.5px x 244 = 1098px). Assim ele pode comportar duas colunas de
+<p>O container padrão tem uma largura de 244 unidades padrão (4.5px x 244 = 1098px). Assim ele pode comportar duas colunas de
   texto com tamanho mínimo de coluna e a calha das colunas (espaço de respiro entre elas).</p>
 <p>Para saber mais sobre unidade mínima padrão e larguras de coluna acesse a <a href="../tipografia">seção
     Tipografia</a></p>
@@ -34,6 +34,10 @@ categories: Layout
   comportamento, mais sobre elas pode ser encontrado abaixo no <a href="#modifiers">capítulo sobre modificadores</a> na
   seção sobre o modificador <a href="#no-margin">Grid sem margem</a>.
 </p>
+<h4>Container de largura máxima</h4>
+<p>Em alguns casos alguns elementos funcionam melhor com o comprimento total da tela, e não a largura limitada do <code>.grid__container</code>. Para esses
+elementos existe o <code>.grid__container-full</code>, seu funcionamento é parecido com o <code>.grid__container</code>, e também é esperado que seja um filho
+de um bloco <code>.grid</code>.</p>
 
 <h2>Os elementos do Grid</h2>
 <p>Além do elemento de container, existem mais alguns elementos no grid:</p>
