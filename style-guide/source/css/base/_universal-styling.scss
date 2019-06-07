@@ -23,6 +23,9 @@ body, html{
 }
 
 iframe{
-  box-sizing: border-box;
+  width: 90%;
   max-width: calc(100% - 27px);
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
 }

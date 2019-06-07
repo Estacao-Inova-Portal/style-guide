@@ -1,6 +1,9 @@
 //public page and site added because of Liferay
 .grid, .public-page, .site{
   display:flex;
+  & > .grid__container, & > .flipped{
+    margin-top: $line-height * 3;
+  }
 }
 
 // Grid Elements
@@ -10,10 +13,10 @@
   width: 100%;
   max-width: $container-width;
   margin: auto;
-  margin-top: $line-height * 3;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
-  padding: $unit * 3;
+  padding: 0 $unit * 3;
 }
 
 .grid__menu{
@@ -26,10 +29,20 @@
   display:flex;
   margin-right: - $unit * 3;
   margin-left: - $unit * 3;
+  min-width: 0; //Firefox
   & > *{
     margin: $unit * 3;
     flex: 1 1 0;
   }
+}
+
+.grid__container-full{
+  padding: 0 $unit * 3;
+  width: calc(100% - 27px);
+  margin: auto;
+  margin-top: $line-height;
+  display: flex;
+  flex-direction: column;
 }
 
 // Grid Modifiers
@@ -95,6 +108,7 @@
 @media (max-width: $break-default){
   .grid__container{
     margin-top: $line-height * 2 + $unit;
+    width: calc(100% - 27px);
   }
   .grid__columns{
     flex-wrap: wrap;

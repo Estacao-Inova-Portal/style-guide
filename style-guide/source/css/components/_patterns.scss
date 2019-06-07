@@ -9,6 +9,9 @@
     right: 0;
     pointer-events: none;
   }
+  & > *{
+    z-index: 1;
+  }
 }
 
 // Pattern Modifiers
@@ -70,6 +73,16 @@
   &:before{
     background: url('../img/patterns/line_left.svg') no-repeat -4%;
     background-size: 25%;
+  }
+}
+
+.pattern--gray-box{
+&:before{
+    background: $gray-lighter-max;
+    height: 62.5%;
+    width: 80%;
+    left: initial;
+    top: 17.5%;
   }
 }
 

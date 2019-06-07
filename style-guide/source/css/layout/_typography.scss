@@ -1,10 +1,10 @@
 // Basic components
-p, span, ul, ol, a, label, legend, th, td, figcaption, input, select, button {
+p, span, ul, ol, a, label, legend, th, td, figcaption, input, select, button, q {
   max-width: $max-text-column;
   line-height: $line-height;
 }
 
-p{
+p, q{
   margin-top: 0;
   margin-bottom: $line-height;
   hanging-punctuation: first;
@@ -45,7 +45,7 @@ h2:first-child, h3:first-child, h4:first-child{
 
 .grid__container{
   * > h1:first-child{
-    margin-top:$unit * 3;
+    margin-top:$line-height;
   }
 }
 
@@ -113,6 +113,7 @@ hr{
   outline: 1px solid $gray-lighter;
   border: none;
   margin: $unit * 3 0;
+  display: flex;
 }
 
 // Typography Modifiers
@@ -135,6 +136,11 @@ hr{
   text-align: center;
 }
 
+.text--display{
+  line-height: $line-height * 3;
+  font-size: $line-height * 3;
+}
+
 .text--slab{
   font-family: 'Unimed Slab', 'Trebuchet MS', 'Unimed Sans', serif;
 }
@@ -144,7 +150,7 @@ hr{
 }
 
 .text--serif{
-  font-family: $font-serif;
+  font-family: 'Unimed Serif', $font-serif;
 }
 
 // Color modifiers
@@ -228,5 +234,9 @@ hr{
   .text--big{
     font-size: 1.1em;
     font-weight: bold;
+  }
+  .text--display{
+    line-height: $line-height * 2;
+    font-size: $line-height * 2;
   }
 }

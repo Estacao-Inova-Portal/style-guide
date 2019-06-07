@@ -14,6 +14,9 @@
   cursor: pointer;
   box-shadow: none;
   transition: background-color $transition, border $transition;
+  & > * {
+    pointer-events: none;
+  }
   &:focus{
     outline: $unit / 2 solid $focus;
     outline-offset: 0;
@@ -119,10 +122,14 @@ input[type="submit"], input[type="reset"]{
   }
 }
 
+.btn--small-margins, button.btn--small-margins, input[type="submit"].btn--small-margins, input[type="reset"].btn--small-margins{
+  margin: $unit * 3 0;
+}
+
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){
-  .btn, button, input[type="submit"], input[type="reset"]{
+  .btn, button, input[type="submit"], input[type="reset"], .btn--small-margins, button.btn--small-margins, input[type="submit"].btn--small-margins, input[type="reset"].btn--small-margins{
     margin-top: 0;
     display: block;
   }
