@@ -33,8 +33,26 @@ cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a 
 
 <h3>Botões à direita</h3>
 <p>Em alguns casos, como modais por exemplo, por convenção os botões de ação podem se encontram no lado direito. Para aplicar isso você precisa adicionar a classe <code>.btn--float-right</code> em seus botões.</p>
+<div class="card">
+  <a class="btn btn--secondary-color-brown btn--float-right">Salvar os dados</a>
+  <a class="btn btn--simple btn--float-right">Sair sem salvar</a>
+</div>
 <pre>&lt;a class="btn btn--secondary-color-brown <strong>btn--float-right</strong>"&gt;Salvar os dados&lt;/a&gt;
 &lt;a class="btn btn--simple <strong>btn--float-right</strong>"&gt;Sair sem salvar&lt;/a&gt;</pre>
-<hr />
-<a class="btn btn--secondary-color-brown btn--float-right">Salvar os dados</a>
-<a class="btn btn--simple btn--float-right">Sair sem salvar</a>
+
+<h3>Botões de margem menor</h3>
+<p>O modificador <code>.btn--small-margins</code> diminui a margem dos botões, para compactar um pouco a visualização</p>
+<div class="grid__columns">
+  <div>
+    <h4>Botões com margem normal</h4>
+    <a class="btn btn--primary-color">Eu sou verde</a><br>
+    <a class="btn btn--secondary-color-lime">Eu tenho texto em outra cor</a>
+  </div>
+    <div>
+      <h4>Botões com margem menor</h4>
+      <a class="btn btn--secondary-color-orange btn--small-margins">Eu sou laranja</a><br>
+      <a class="btn btn--secondary-color-yellow btn--small-margins">Eu tenho fundo amarelo</a>
+    </div>
+</div>
+<pre>&lt;a class="btn btn--secondary-color-orange <strong>btn--small-margins</strong>"&gt;Eu sou laranja&lt;/a&gt;&lt;br&gt;
+&lt;a class="btn btn--secondary-color-yellow <strong>btn--small-margins</strong>"&gt;Eu tenho fundo amarelo&lt;/a&gt;</pre>
