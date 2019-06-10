@@ -10,7 +10,7 @@
 // ----------------------
 //Flipped because of Liferay
 .grid__container, .flipped{
-  width: 100%;
+  width: calc(100% - #{$line-height});
   max-width: $container-width;
   margin: auto;
   margin-top: 0;
