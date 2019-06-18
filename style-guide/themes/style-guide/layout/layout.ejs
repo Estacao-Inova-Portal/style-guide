@@ -34,6 +34,16 @@
   <% } else{ %>
   <title><%- config.title %></title>
   <% } %>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142312182-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142312182-1');
+  </script>
 </head>
 
 <body class="grid grid--background-light">
@@ -44,11 +54,13 @@
     <p class="text--big util--display-none-mobile"><strong>Guia de Estilos Unimed</strong></p>
     <a href="/css/style.css" download
       class="btn btn--float-right btn--secondary-color-purple util--display-none-mobile">Baixar agora</a>
-    <button aria-label="Menu de navegação" id="menuButton" class="util--display-none-desktop util--no-style" onclick="toggleClass('sideMenu', 'util--display-none-mobile')">
+    <button aria-label="Menu de navegação" id="menuButton" class="util--display-none-desktop util--no-style"
+      onclick="toggleClass('sideMenu', 'util--display-none-mobile')">
       <img class="img--clickable-icon" src="/img/icons/ico_menu-popup.svg" alt="Menu" />
     </button>
   </nav>
   <%- body %>
 </body>
 <%- js('js/controllers.js') %>
+
 </html>
