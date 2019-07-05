@@ -138,7 +138,7 @@
   .grid__menu{
     margin-top: 0;
   }
-  .grid--spacer{
+  .grid--spacer, .grid__container.grid--spacer{
   padding: $unit * 6 0;
 }
 }
