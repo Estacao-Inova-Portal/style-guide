@@ -119,6 +119,10 @@
     & > *:not(img){
       width: 100%;
     }
+    & > img{
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
   .grid--overflow, .grid--overflow-mobile{
     overflow: auto;
