@@ -116,6 +116,9 @@
     flex: initial;
     min-width: $unit * 28;
     }
+    & > *:not(img){
+      width: 100%;
+    }
   }
   .grid--overflow, .grid--overflow-mobile{
     overflow: auto;
