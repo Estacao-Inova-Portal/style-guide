@@ -22,23 +22,28 @@ categories: Componentes
   &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
 &lt;/div&gt;</pre>
 
-<h2>Cartões em múltiplas colunas</h2>
-<p>Os cartões também podem ser apresentados lado a lado, quando o elemento pai tem a classe <code>.grid__columns</code>. Saiba mais sobre esse <a href="../grid#multipleColumns">elemento dos grids</a>.</p>
-<div class="grid__columns grid--align-start">
-  <div class="card">
-    <h3 class="text--secondary-color-purple-dark text--slab">Investimos na valorização dos médicos e praticamos uma medicina humana, ampla e preventiva</h3>
-    <p>Por isso, cuidamos das pessoas com leveza, proximidade e alegria. Incentivamos a busca equilibrada do bem-estar e da
-    felicidade em todos os momentos como melhor forma de prevenção e promoção da saúde.</p>
-    <p>Acreditamos na diversidade, na sinergia, na singularidade, na interdependência e na união como filosofia de vida.</p>
+<div class="grid--spacer">
+  <h2>Cartões em múltiplas colunas</h2>
+  <p>Os cartões também podem ser apresentados lado a lado, quando o elemento pai tem a classe
+    <code>.grid__columns</code>. Saiba mais sobre esse <a href="../grid#multipleColumns">elemento dos grids</a>.</p>
+  <div class="grid__columns grid--align-start">
+    <div class="card">
+      <h3 class="text--secondary-color-purple-dark text--slab">Investimos na valorização dos médicos e praticamos uma
+        medicina humana, ampla e preventiva</h3>
+      <p>Por isso, cuidamos das pessoas com leveza, proximidade e alegria. Incentivamos a busca equilibrada do bem-estar
+        e da
+        felicidade em todos os momentos como melhor forma de prevenção e promoção da saúde.</p>
+      <p>Acreditamos na diversidade, na sinergia, na singularidade, na interdependência e na união como filosofia de
+        vida.</p>
+    </div>
+    <div class="card">
+      <h3>Eu sou um cartão de meia coluna e conteúdo simples</h3>
+      <hr>
+      <a class="btn btn--secondary-color-lime btn--float-right" href="javascript:void(0)">Continuar</a>
+      <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
+    </div>
   </div>
-  <div class="card">
-    <h3>Eu sou um cartão de meia coluna e conteúdo simples</h3>
-    <hr>
-    <a class="btn btn--secondary-color-lime btn--float-right" href="javascript:void(0)">Continuar</a>
-    <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
-  </div>
-</div>
-<pre>&lt;div class="<strong>grid__columns</strong> grid--align-start"&gt;
+  <pre>&lt;div class="<strong>grid__columns</strong> grid--align-start"&gt;
   &lt;div class="<strong>card</strong>"&gt;
     &lt;h3 class="text--secondary-color-purple-dark text--slab"&gt;Investimos na valorização dos médicos e praticamos uma medicina humana, ampla e preventiva&lt;/h3&gt;
     &lt;p&gt;Por isso, cuidamos das pessoas com leveza, proximidade e alegria. Incentivamos a busca equilibrada do bem-estar e da
@@ -52,26 +57,29 @@ categories: Componentes
     &lt;a class="btn btn--simple btn--float-right" href="javascript:void(0)"&gt;Cancelar&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-
-<h2>Elementos de cartões</h2>
-<h3>Cartões pequenos</h3>
-<p>No exemplo abaixo, o elemento pai dos cartões tem a classe <code>.grid--overflow-mobile</code>, ou seja, aqui esses cartões em dispositivos de tela pequena ficam em forma de linha
-única, não se dividem em múltiplas linhas.</p>
-<div class="grid__columns grid--wrap grid--overflow-mobile">
-  <div class="card card__small">
-    <p>Solicite autorização de exame ou procedimento</p>
-  </div>
-  <div class="card card__small">
-    <p>Encontre um plano de saúde</p>
-  </div>
-  <div class="card card__small">
-    <p>Solicite o demonstrativo do imposto de renda</p>
-  </div>
-  <div class="card card__small">
-    <p>Entre em contato para solicitar reembolsos</p>
-  </div>
 </div>
-<pre>&lt;div class="grid__columns grid--wrap grid--overflow-mobile"&gt;
+
+<div class="grid--spacer">
+  <h2>Elementos de cartões</h2>
+  <h3>Cartões pequenos</h3>
+  <p>No exemplo abaixo, o elemento pai dos cartões tem a classe <code>.grid--overflow-mobile</code>, ou seja, aqui esses
+    cartões em dispositivos de tela pequena ficam em forma de linha
+    única, não se dividem em múltiplas linhas.</p>
+  <div class="grid__columns grid--wrap grid--overflow-mobile">
+    <div class="card card__small">
+      <p>Solicite autorização de exame ou procedimento</p>
+    </div>
+    <div class="card card__small">
+      <p>Encontre um plano de saúde</p>
+    </div>
+    <div class="card card__small">
+      <p>Solicite o demonstrativo do imposto de renda</p>
+    </div>
+    <div class="card card__small">
+      <p>Entre em contato para solicitar reembolsos</p>
+    </div>
+  </div>
+  <pre>&lt;div class="grid__columns grid--wrap grid--overflow-mobile"&gt;
   &lt;div class="card <strong>card__small</strong>"&gt;
     &lt;p&gt;Solicite autorização de exame ou procedimento&lt;/p&gt;
   &lt;/div&gt;
@@ -85,38 +93,41 @@ categories: Componentes
     &lt;p&gt;Entre em contato para solicitar reembolsos&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-
-<h2>Os modificadores de cartões</h2>
-
-<h3>Modificadores de cor</h3>
-<p>Modificam a cor do cartão, também em alguns casos do texto e do botão padrão onde são aplicados para manterem um bom contraste:</p>
-
-<div class="grid__columns grid--align-start">
-  <div class="card card--secondary-color-magenta">
-    <h3>Eu sou um cartão colorido magenta</h3>
-    <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
-    <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
-  </div>
-  <div class="card card--secondary-color-lime">
-    <h3>Eu sou um cartão verde brilhante</h3>
-    <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
-    <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
-  </div>
-  <div class="card card--primary-color">
-    <h3>Eu sou um cartão com cor principal</h3>
-    <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
-    <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
-  </div>
 </div>
 
-<h4>Como aplicar</h4>
-<p>A classe que transforma a cor do cartão é dividida em duas partes, um prefixo global
-  <code>.card--secondary-color-</code> e
-  o nome da cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a href="/cores">seção de
-    cores</a>).</p>
-<p>A única excessão é a cor primária, onde o prefixo muda e o código é <code>.card--primary-color</code>.</p>
+<div class="grid--spacer">
+  <h2>Os modificadores de cartões</h2>
 
-<pre>&lt;div class="grid__columns grid--align-start"&gt;
+  <h3>Modificadores de cor</h3>
+  <p>Modificam a cor do cartão, também em alguns casos do texto e do botão padrão onde são aplicados para manterem um
+    bom contraste:</p>
+
+  <div class="grid__columns grid--align-start">
+    <div class="card card--secondary-color-magenta">
+      <h3>Eu sou um cartão colorido magenta</h3>
+      <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
+      <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
+    </div>
+    <div class="card card--secondary-color-lime">
+      <h3>Eu sou um cartão verde brilhante</h3>
+      <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
+      <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
+    </div>
+    <div class="card card--primary-color">
+      <h3>Eu sou um cartão com cor principal</h3>
+      <a class="btn btn--float-right" href="javascript:void(0)">Continuar</a>
+      <a class="btn btn--simple btn--float-right" href="javascript:void(0)">Cancelar</a>
+    </div>
+  </div>
+
+  <h4>Como aplicar</h4>
+  <p>A classe que transforma a cor do cartão é dividida em duas partes, um prefixo global
+    <code>.card--secondary-color-</code> e
+    o nome da cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a href="/cores">seção de
+      cores</a>).</p>
+  <p>A única excessão é a cor primária, onde o prefixo muda e o código é <code>.card--primary-color</code>.</p>
+
+  <pre>&lt;div class="grid__columns grid--align-start"&gt;
   &lt;div class="card <strong>card--secondary-color-magenta</strong>"&gt;
     &lt;h3&gt;Eu sou um cartão colorido magenta&lt;/h3&gt;
     &lt;a class="btn btn--float-right" href="javascript:void(0)"&gt;Continuar&lt;/a&gt;
@@ -134,29 +145,34 @@ categories: Componentes
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 
-<h3>Elementos sem padding</h3>
-<p>São elementos que transcendem o padding original dos cartões. Normalmente utilizado em imagens para que elas não tenham uma moldura montada pelo padding do cartão.</p>
-<p>Para chegar ao resultado desejado, utilize a classe <code>.card__full-size-element</code> no elemento de tamanho inteiro e <code>.card--contains-full-size</code> no elemento pai, o cartão. Por padrão quando aplicada essa classe, o elemento ficará na esquerda, é com a classe <code>.card--to-the-right</code> que esse elemento irá para o lado direito.</p>
-<div class="grid__columns">
-  <section class="card card--contains-full-size grid__columns">
-    <img class="img--thumbnail card__full-size-element" src="/img/pictures/girl-swing.jpg" />
-    <div>
-      <h3 class="text--serif"><strong>Portal Unimed inicia novo ano de transformações digitais</strong></h3>
-      <a href="javascript:void(0)">Continuar lendo →</a>
-    </div>
-  </section>
-</div>
-<div class="grid__columns">
-  <section class="card grid__columns card--contains-full-size">
-    <div>
-      <h1 class="text--slab text--gradient-hot-colors">Bem-vindo!</h1>
-      <p>Nós somos a Unimed, a <strong>maior coperativa</strong> de saúde do mundo. Com 345 cooperativas, estamos sempre perto de você.</p>
-      <button>Conheça a nossa história</button>
-    </div>
-    <img class="card__full-size-element card--to-the-right" src="/img/pictures/girl-swing.jpg" />
-  </section>
-</div>
-<pre>&lt;div class="grid__columns"&gt;
+  <h3>Elementos sem padding</h3>
+  <p>São elementos que transcendem o padding original dos cartões. Normalmente utilizado em imagens para que elas não
+    tenham uma moldura montada pelo padding do cartão.</p>
+  <p>Para chegar ao resultado desejado, utilize a classe <code>.card__full-size-element</code> no elemento de tamanho
+    inteiro e <code>.card--contains-full-size</code> no elemento pai, o cartão. Por padrão quando aplicada essa classe,
+    o elemento ficará na esquerda, é com a classe <code>.card--to-the-right</code> que esse elemento irá para o lado
+    direito.</p>
+  <div class="grid__columns">
+    <section class="card card--contains-full-size grid__columns">
+      <img class="img--thumbnail card__full-size-element" src="/img/pictures/girl-swing.jpg" />
+      <div>
+        <h3 class="text--serif"><strong>Portal Unimed inicia novo ano de transformações digitais</strong></h3>
+        <a href="javascript:void(0)">Continuar lendo →</a>
+      </div>
+    </section>
+  </div>
+  <div class="grid__columns">
+    <section class="card grid__columns card--contains-full-size">
+      <div>
+        <h1 class="text--slab text--gradient-hot-colors">Bem-vindo!</h1>
+        <p>Nós somos a Unimed, a <strong>maior coperativa</strong> de saúde do mundo. Com 345 cooperativas, estamos
+          sempre perto de você.</p>
+        <button>Conheça a nossa história</button>
+      </div>
+      <img class="card__full-size-element card--to-the-right" src="/img/pictures/girl-swing.jpg" />
+    </section>
+  </div>
+  <pre>&lt;div class="grid__columns"&gt;
   &lt;section class="card <strong>card--contains-full-size</strong> grid__columns"&gt;
     &lt;img class="img--thumbnail <strong>card__full-size-element</strong>" src="/img/pictures/girl-swing.jpg" /&gt;
     &lt;div&gt;
@@ -175,3 +191,4 @@ categories: Componentes
     &lt;img class="<strong>card__full-size-element</strong> <strong>card--to-the-right</strong>" src="/img/pictures/girl-swing.jpg" /&gt;
   &lt;/section&gt;
 &lt;/div&gt;</pre>
+</div>

@@ -4,15 +4,19 @@ categories: Layout
 ---
 <p class="text--big">O grid responsivo se adapta a tela do usuário, seu tamanho e orientação, garantindo consistência
   entre diferentes layouts</p>
-<h2>Como funciona</h2>
-<p>O grid é baseado no módulo de layout <em>"Flexible Box"</em>, conhecido como <a target="_blank"
-    href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>. O elemento bloco <code>.grid</code> tem
-  um elemento principal, <code>.grid__container</code> e juntos eles formam a base desse sistema.</p>
-<p>O primeiro passo é adicionar a classe <code>.grid</code> no elemento de hierarquia mais alta dentro da sua folha de
-  marcação (HTML), esse provavelmente sendo o <code>body</code>.</p>
-<p>O segundo passo é adicionar o elemento de conteiner no elemento que funcionará como container no conteúdo, a sugestão
-  é que esse seja o <code>main</code>.</p>
-<pre>&lt;!DOCTYPE html&gt;
+
+<div class="grid--spacer">
+  <h2>Como funciona</h2>
+  <p>O grid é baseado no módulo de layout <em>"Flexible Box"</em>, conhecido como <a target="_blank"
+      href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>. O elemento bloco <code>.grid</code>
+    tem
+    um elemento principal, <code>.grid__container</code> e juntos eles formam a base desse sistema.</p>
+  <p>O primeiro passo é adicionar a classe <code>.grid</code> no elemento de hierarquia mais alta dentro da sua folha de
+    marcação (HTML), esse provavelmente sendo o <code>body</code>.</p>
+  <p>O segundo passo é adicionar o elemento de conteiner no elemento que funcionará como container no conteúdo, a
+    sugestão
+    é que esse seja o <code>main</code>.</p>
+  <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="pt-br"&gt;
 &lt;head&gt;
   ...
@@ -23,36 +27,43 @@ categories: Layout
   &lt;/main&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p>Pronto! Seguindo esse esqueleto você acaba de montar uma página responsiva com o grid padrão.</p>
+  <p>Pronto! Seguindo esse esqueleto você acaba de montar uma página responsiva com o grid padrão.</p>
 
-<h3>Entendendo o Container</h3>
-<p>O container padrão tem uma largura de 244 unidades padrão (4.5px x 244 = 1098px). Assim ele pode comportar duas colunas de
-  texto com tamanho mínimo de coluna e a calha das colunas (espaço de respiro entre elas).</p>
-<p>Para saber mais sobre unidade mínima padrão e larguras de coluna acesse a <a href="../tipografia">seção
-    Tipografia</a></p>
-<p>Por padrão o container se encontra centralizado na página, mas existem classes modificadoras que mudam esse
-  comportamento, mais sobre elas pode ser encontrado abaixo no <a href="#modifiers">capítulo sobre modificadores</a> na
-  seção sobre o modificador <a href="#no-margin">Grid sem margem</a>.
-</p>
-<h4>Container de largura máxima</h4>
-<p>Em alguns casos alguns elementos funcionam melhor com o comprimento total da tela, e não a largura limitada do <code>.grid__container</code>. Para esses
-elementos existe o <code>.grid__container-full</code>, seu funcionamento é parecido com o <code>.grid__container</code>, e também é esperado que seja um filho
-de um bloco <code>.grid</code>.</p>
+  <h3>Entendendo o Container</h3>
+  <p>O container padrão tem uma largura de 244 unidades padrão (4.5px x 244 = 1098px). Assim ele pode comportar duas
+    colunas de
+    texto com tamanho mínimo de coluna e a calha das colunas (espaço de respiro entre elas).</p>
+  <p>Para saber mais sobre unidade mínima padrão e larguras de coluna acesse a <a href="../tipografia">seção
+      Tipografia</a></p>
+  <p>Por padrão o container se encontra centralizado na página, mas existem classes modificadoras que mudam esse
+    comportamento, mais sobre elas pode ser encontrado abaixo no <a href="#modifiers">capítulo sobre modificadores</a>
+    na
+    seção sobre o modificador <a href="#no-margin">Grid sem margem</a>.
+  </p>
+  <h4>Container de largura máxima</h4>
+  <p>Em alguns casos alguns elementos funcionam melhor com o comprimento total da tela, e não a largura limitada do
+    <code>.grid__container</code>. Para esses
+    elementos existe o <code>.grid__container-full</code>, seu funcionamento é parecido com o
+    <code>.grid__container</code>, e também é esperado que seja um filho
+    de um bloco <code>.grid</code>.</p>
+</div>
 
-<h2>Os elementos do Grid</h2>
-<p>Além do elemento de container, existem mais alguns elementos no grid:</p>
-<ul>
-  <li>
-    <p>Elemento de menu <code>.grid__menu</code></p>
-  </li>
-  <li>
-    <p>Elemento de coluna <code>.grid__columns</code></p>
-  </li>
-</ul>
-<h3>O menu lateral</h3>
-<p>O elemento <code>.grid__menu</code> deve ser filho direto do <code>.grid</code> ou seja, estar no mesmo nível do
-  <code>.grid__container</code>. É com esse elemento que é montado o menu ao lado nesse Guia de estilos por exemplo.</p>
-<pre>&lt;body class="grid"&gt;
+<div class="grid--spacer">
+  <h2>Os elementos do Grid</h2>
+  <p>Além do elemento de container, existem mais alguns elementos no grid:</p>
+  <ul>
+    <li>
+      <p>Elemento de menu <code>.grid__menu</code></p>
+    </li>
+    <li>
+      <p>Elemento de coluna <code>.grid__columns</code></p>
+    </li>
+  </ul>
+  <h3>O menu lateral</h3>
+  <p>O elemento <code>.grid__menu</code> deve ser filho direto do <code>.grid</code> ou seja, estar no mesmo nível do
+    <code>.grid__container</code>. É com esse elemento que é montado o menu ao lado nesse Guia de estilos por exemplo.
+  </p>
+  <pre>&lt;body class="grid"&gt;
   &lt;aside class="<strong>grid__menu</strong>"&gt;
     ...
   &lt;/aside&gt;
@@ -61,26 +72,26 @@ de um bloco <code>.grid</code>.</p>
   &lt;/main&gt;
 &lt;/body&gt;</pre>
 
-<p>O estilo do menu e seus elementos é definido pelo <a href="../menu-lateral">componente Menu</a>.</p>
+  <p>O estilo do menu e seus elementos é definido pelo <a href="../menu-lateral">componente Menu</a>.</p>
 
-<h3 id="multipleColumns">Layout de múltiplas colunas</h3>
-<p>Para criar um layout de múltiplas colunas o primeiro passo é criar um elemento com a classe
-  <code>.grid__columns</code>, ele será o pai dos elementos que estarão em colunas.</p>
-<p>A calha (distância entre colunas) é sempre de <strong>27px</strong>, o mesmo tamanho base da altura de linha.</p>
-<p>Por padrão o grid força quantos elementos você colocar dentro de uma única linha. Existem <a
-    href="#mobile">modificadores que mudam esse comportamento</a>.</p>
-<div class="grid__columns">
-  <section style="outline: 2px solid rgb(223,224,225);">
-    <p>Eu sou um texto que está utilizando uma coluna. Tenho também mais elementos aqui comigo, como um botão por
-      exemplo.</p>
-    <a class="btn">Ok</a>
-  </section>
-  <section style="outline: 2px solid rgb(223,224,225);">
-    <p>Eu sou uma coluna mais simples e todo o meu conteúdo se resume a apenas texto...
-    </p>
-  </section>
-</div>
-<pre>&lt;div class="<strong>grid__columns</strong>"&gt;
+  <h3 id="multipleColumns">Layout de múltiplas colunas</h3>
+  <p>Para criar um layout de múltiplas colunas o primeiro passo é criar um elemento com a classe
+    <code>.grid__columns</code>, ele será o pai dos elementos que estarão em colunas.</p>
+  <p>A calha (distância entre colunas) é sempre de <strong>27px</strong>, o mesmo tamanho base da altura de linha.</p>
+  <p>Por padrão o grid força quantos elementos você colocar dentro de uma única linha. Existem <a
+      href="#mobile">modificadores que mudam esse comportamento</a>.</p>
+  <div class="grid__columns">
+    <section style="outline: 2px solid rgb(223,224,225);">
+      <p>Eu sou um texto que está utilizando uma coluna. Tenho também mais elementos aqui comigo, como um botão por
+        exemplo.</p>
+      <a class="btn">Ok</a>
+    </section>
+    <section style="outline: 2px solid rgb(223,224,225);">
+      <p>Eu sou uma coluna mais simples e todo o meu conteúdo se resume a apenas texto...
+      </p>
+    </section>
+  </div>
+  <pre>&lt;div class="<strong>grid__columns</strong>"&gt;
   &lt;section&gt;
     &lt;p&gt;Eu sou um texto que está utilizando uma coluna. Tenho também mais elementos aqui comigo, como um botão por exemplo.&lt;/p&gt;
     &lt;a class="btn"&gt;Ok&lt;/a&gt;
@@ -89,30 +100,34 @@ de um bloco <code>.grid</code>.</p>
     &lt;p&gt;Eu sou uma coluna mais simples e todo o meu conteúdo se resume a apenas texto...&lt;/p&gt;
   &lt;/section&gt;
 &lt;/div&gt;</pre>
-
-<h2 id="modifiers">Modificadores do Grid</h2>
-<h3>Grid Wrap</h3>
-<p>Por padrão o <code>.grid__columns</code> vai forçar todos os seus filhos diretos dentro de uma mesma linha se estiver
-  renderizando em dispositivos de tela grande. Esse modificador força o grid a separar esses elementos em múltiplas
-  linhas, respeitando o tamanho atribuido para esses blocos/elementos.</p>
-<p>Importante lembrar que no comportamento padrão do <code>.grid__columns</code> todos os seus filhos diretos vão ter a
-  mesma largura, ao aplicar o <code>.grid--wrap</code> eles poderão ter tamanho variável, caso não tenham uma largura
-  fixa atribuída.</p>
-<div class="grid__columns grid--wrap">
-  <div class="card card__small">
-    <p>Solicite autorização de exame ou procedimento</p>
-  </div>
-  <div class="card card__small">
-    <p>Encontre um plano de saúde</p>
-  </div>
-  <div class="card card__small">
-    <p>Solicite o demonstrativo do imposto de renda</p>
-  </div>
-  <div class="card card__small">
-    <p>Entre em contato para solicitar reembolsos</p>
-  </div>
 </div>
-<pre>&lt;div class="grid__columns <strong>grid--wrap</strong>"&gt;
+
+<div class="grid--spacer">
+  <h2 id="modifiers">Modificadores do Grid</h2>
+  <h3>Grid Wrap</h3>
+  <p>Por padrão o <code>.grid__columns</code> vai forçar todos os seus filhos diretos dentro de uma mesma linha se
+    estiver
+    renderizando em dispositivos de tela grande. Esse modificador força o grid a separar esses elementos em múltiplas
+    linhas, respeitando o tamanho atribuido para esses blocos/elementos.</p>
+  <p>Importante lembrar que no comportamento padrão do <code>.grid__columns</code> todos os seus filhos diretos vão ter
+    a
+    mesma largura, ao aplicar o <code>.grid--wrap</code> eles poderão ter tamanho variável, caso não tenham uma largura
+    fixa atribuída.</p>
+  <div class="grid__columns grid--wrap">
+    <div class="card card__small">
+      <p>Solicite autorização de exame ou procedimento</p>
+    </div>
+    <div class="card card__small">
+      <p>Encontre um plano de saúde</p>
+    </div>
+    <div class="card card__small">
+      <p>Solicite o demonstrativo do imposto de renda</p>
+    </div>
+    <div class="card card__small">
+      <p>Entre em contato para solicitar reembolsos</p>
+    </div>
+  </div>
+  <pre>&lt;div class="grid__columns <strong>grid--wrap</strong>"&gt;
   &lt;div class="card card__small"&gt;
     &lt;p&gt;Solicite autorização de exame ou procedimento&lt;/p&gt;
   &lt;/div&gt;
@@ -127,79 +142,88 @@ de um bloco <code>.grid</code>.</p>
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 
-<h3>Grid sem Wrap</h3>
-<p>Tem o efeito contrário do modificador anterior. O caso de uso principal do <code>.grid--nowrap</code> é quando se
-  deseja forçar, mesmo em dispositivos móveis, que algum conteúdo seja apresentado em colunas.</p>
+  <h3>Grid sem Wrap</h3>
+  <p>Tem o efeito contrário do modificador anterior. O caso de uso principal do <code>.grid--nowrap</code> é quando se
+    deseja forçar, mesmo em dispositivos móveis, que algum conteúdo seja apresentado em colunas.</p>
 
-<h3 id="no-margin">Grid sem Margem</h3>
-<p>O <code>.grid-no-margin</code> pode ser aplicado no <code>.grid__container</code>. Por padrão o container está
-  centralizado na tela, ao aplicar esse modificador ele ficará justificado à esquerda, como no caso desse Guia de
-  estilos.</p>
+  <h3 id="no-margin">Grid sem Margem</h3>
+  <p>O <code>.grid-no-margin</code> pode ser aplicado no <code>.grid__container</code>. Por padrão o container está
+    centralizado na tela, ao aplicar esse modificador ele ficará justificado à esquerda, como no caso desse Guia de
+    estilos.</p>
 
-<h3>Elementos com alturas variáveis</h3>
-<p>Por padrão, todos os elementos dentro de <code>.grid__columns</code> terão a mesma altura do maior elemento. Ao
-  adicionar o modificador <code>.grid--align-start</code> esse comportamento muda e os elementos tem sua altura inicial
-  respeitada.</p>
+  <h3>Elementos com alturas variáveis</h3>
+  <p>Por padrão, todos os elementos dentro de <code>.grid__columns</code> terão a mesma altura do maior elemento. Ao
+    adicionar o modificador <code>.grid--align-start</code> esse comportamento muda e os elementos tem sua altura
+    inicial
+    respeitada.</p>
 
-<h3>Cores de fundo</h3>
-<p>O modificador <code>.grid--background-light</code> aplica a cor cinza claríssimo como a cor de fundo do grid.</p>
+  <h3>Cores de fundo</h3>
+  <p>O modificador <code>.grid--background-light</code> aplica a cor cinza claríssimo como a cor de fundo do grid.</p>
 
-<h3>Conteúdo na vertical</h3>
-<p>Com <code>.grid--vertical</code> você força o elemento de grid a seguir a direção de coluna, e não o padrão de linha.
-  Útil quando aplicado diretamento no element <code>.grid</code>, para páginas que não tem elementos ou menus laterais.</p>
+  <h3>Conteúdo na vertical</h3>
+  <p>Com <code>.grid--vertical</code> você força o elemento de grid a seguir a direção de coluna, e não o padrão de
+    linha.
+    Útil quando aplicado diretamento no element <code>.grid</code>, para páginas que não tem elementos ou menus
+    laterais.
+  </p>
 
-<h4>Sem grid--vertical</h4>
-<div class="grid__columns">
-  <div style="outline: 2px solid rgb(223,224,225);" class="grid">
-    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou um elemento</div>
-    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou outro elemento</div>
-    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou mais um elemento</div>
+  <h4>Sem grid--vertical</h4>
+  <div class="grid__columns">
+    <div style="outline: 2px solid rgb(223,224,225);" class="grid">
+      <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou um elemento</div>
+      <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou outro elemento</div>
+      <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou mais um elemento</div>
+    </div>
   </div>
-</div>
-<h4>Com grid--vertical</h4>
-<div class="grid__columns">
-  <div style="outline: 2px solid rgb(223,224,225);" class="grid grid--vertical">
-    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou um elemento</div>
-    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou outro elemento</div>
-    <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou mais um elemento</div>
+  <h4>Com grid--vertical</h4>
+  <div class="grid__columns">
+    <div style="outline: 2px solid rgb(223,224,225);" class="grid grid--vertical">
+      <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou um elemento</div>
+      <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou outro elemento</div>
+      <div style="outline: 2px solid rgb(223,224,225); margin: 1rem;">Sou mais um elemento</div>
+    </div>
   </div>
-</div>
 
-<h3>Tamanho ideal de texto</h3>
-<p>Como pode ser visto na <a href="/tipografia">página de Tipografia</a>, existe um tamanho ideal de texto, e ele é uma coluna de até 170 unidades básicas de largura, ou seja 765px.</p>
-<p>Utilize o modificador <code>.grid--ideal-type</code> para garantir que a coluna de texto respeitara exatamente o tamanho ideal de linha.</p>
-<div style="outline: 2px solid rgb(223,224,225);" class="grid--ideal-type text--centered">
-  <h2 class="text--gradient-hot-colors"><strong>Sua Unimed a um toque de você</strong></h2>
-  <p>Os novos aplicativos Unimed foram desenvolvidos pensando nas necessidades de seus cooperados e beneficiários. Monte agora o app ideal dpara a sua Unimed e surpreenda-se!</p>
-  <a class="btn btn--primary-color">Quero saber mais!</a>
-</div>
-<pre>&lt;div class="grid__columns <strong>grid--ideal-type</strong> text--centered"&gt;
+  <h3>Tamanho ideal de texto</h3>
+  <p>Como pode ser visto na <a href="/tipografia">página de Tipografia</a>, existe um tamanho ideal de texto, e ele é
+    uma
+    coluna de até 170 unidades básicas de largura, ou seja 765px.</p>
+  <p>Utilize o modificador <code>.grid--ideal-type</code> para garantir que a coluna de texto respeitara exatamente o
+    tamanho ideal de linha.</p>
+  <div style="outline: 2px solid rgb(223,224,225);" class="grid--ideal-type text--centered">
+    <h2 class="text--gradient-hot-colors"><strong>Sua Unimed a um toque de você</strong></h2>
+    <p>Os novos aplicativos Unimed foram desenvolvidos pensando nas necessidades de seus cooperados e beneficiários.
+      Monte
+      agora o app ideal dpara a sua Unimed e surpreenda-se!</p>
+    <a class="btn btn--primary-color">Quero saber mais!</a>
+  </div>
+  <pre>&lt;div class="grid__columns <strong>grid--ideal-type</strong> text--centered"&gt;
   &lt;h2 class="text--gradient-hot-colors"&gt;&lt;strong&gt;Sua Unimed a um toque de você&lt;/strong&gt;&lt;/h2&gt;
   &lt;p&gt;Os novos aplicativos Unimed foram desenvolvidos pensando nas necessidades de seus cooperados e beneficiários. Monte agora o app ideal dpara a sua Unimed e surpreenda-se!&lt;/p&gt;
   &lt;a class="btn btn--primary-color"&gt;Quero saber mais!&lt;/a&gt;
 &lt;/div&gt;</pre>
 
-<h3>Scroll de linha única</h3>
-<p>Ao aplicar a classe <code>.grid__overflow</code> os cards estão sendo apresentados na mesma linha, com uma barra de
-  rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
-<div class="grid__columns grid--overflow">
-  <div class="card card__small">
-    <p>Solicite autorização de exame ou procedimento</p>
+  <h3>Scroll de linha única</h3>
+  <p>Ao aplicar a classe <code>.grid__overflow</code> os cards estão sendo apresentados na mesma linha, com uma barra de
+    rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
+  <div class="grid__columns grid--overflow">
+    <div class="card card__small">
+      <p>Solicite autorização de exame ou procedimento</p>
+    </div>
+    <div class="card card__small">
+      <p>Encontre um plano de saúde</p>
+    </div>
+    <div class="card card__small">
+      <p>Solicite o demonstrativo do imposto de renda</p>
+    </div>
+    <div class="card card__small">
+      <p>Entre em contato para solicitar reembolsos</p>
+    </div>
+    <div class="card card__small">
+      <p>Precisando de um médico? Agende aqui</p>
+    </div>
   </div>
-  <div class="card card__small">
-    <p>Encontre um plano de saúde</p>
-  </div>
-  <div class="card card__small">
-    <p>Solicite o demonstrativo do imposto de renda</p>
-  </div>
-  <div class="card card__small">
-    <p>Entre em contato para solicitar reembolsos</p>
-  </div>
-  <div class="card card__small">
-    <p>Precisando de um médico? Agende aqui</p>
-  </div>
-</div>
-<pre>&lt;div class="grid__columns <strong>grid--overflow</strong>"&gt;
+  <pre>&lt;div class="grid__columns <strong>grid--overflow</strong>"&gt;
   &lt;div class="card card__small"&gt;
     &lt;p&gt;Solicite autorização de exame ou procedimento&lt;/p&gt;
   &lt;/div&gt;
@@ -217,40 +241,48 @@ de um bloco <code>.grid</code>.</p>
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 
-<h3>Espaçador</h3>
-<p>Utilize a classe <code>.grid--spacer</code> para adicionar espaços de respiro no elemento em que for adicionado. 
-  Em dispositivos de tela grande esse espaço é de altura de 2 linhas (12 Unidades Básicas, 54px) para cima e para baixo, enquanto em dispositivos móveis 
-  ele é reduzido para 1 linha (6 Unidades Básicas, 27px).</p>
+  <h3>Espaçador</h3>
+  <p>Utilize a classe <code>.grid--spacer</code> para adicionar espaços de respiro no elemento em que for adicionado.
+    Em dispositivos de tela grande esse espaço é de altura de 2 linhas (12 Unidades Básicas, 54px) para cima e para
+    baixo,
+    enquanto em dispositivos móveis
+    ele é reduzido para 1 linha (6 Unidades Básicas, 27px).</p>
 
-<div class="grid--spacer" style="outline: 2px solid rgb(223,224,225);">
-  <span>Eu tenho um <strong>espaço de respiro</strong> em cima e embaixo de mim.</span>
-</div>
-<pre>&lt;div class="<strong>grid--spacer</strong>"&gt;
+  <div class="grid--spacer" style="outline: 2px solid rgb(223,224,225);">
+    <span>Eu tenho um <strong>espaço de respiro</strong> em cima e embaixo de mim.</span>
+  </div>
+  <pre>&lt;div class="<strong>grid--spacer</strong>"&gt;
   &lt;span&gt;Eu tenho um &lt;strong&gt;espaço de respiro&lt;/strong&gt;&lt;/span&gt;
 &lt;/div&gt;</pre>
-
-<h2 id="mobile">Modificadores para dispositivos móveis</h2>
-<h3>Scroll de linha única mobile</h3>
-<p>Vamos pegar o mesmo exemplo com cards que utilizamos no <code>.grid--wrap</code>, mas agora vamos também adicionar a
-  classe <code>.grid--overflow-mobile</code>.</p>
-<p>O que acontece aqui é que, em dispositivos móveis, os cards estão sendo apresentados na mesma linha, com uma barra de
-  rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
-<p>Enquanto isso, em dispositivos de tela grande eles seguem o padrão apontado pelas classes <code>.grid__columns</code> e <code>.grid--wrap</code>.</p>
-<div class="grid__columns grid--wrap grid--overflow-mobile">
-  <div class="card card__small">
-    <p>Solicite autorização de exame ou procedimento</p>
-  </div>
-  <div class="card card__small">
-    <p>Encontre um plano de saúde</p>
-  </div>
-  <div class="card card__small">
-    <p>Solicite o demonstrativo do imposto de renda</p>
-  </div>
-  <div class="card card__small">
-    <p>Entre em contato para solicitar reembolsos</p>
-  </div>
 </div>
-<pre>&lt;div class="grid__columns grid--wrap <strong>grid--overflow-mobile</strong>"&gt;
+
+<div class="grid--spacer">
+  <h2 id="mobile">Modificadores para dispositivos móveis</h2>
+  <h3>Scroll de linha única mobile</h3>
+  <p>Vamos pegar o mesmo exemplo com cards que utilizamos no <code>.grid--wrap</code>, mas agora vamos também adicionar
+    a
+    classe <code>.grid--overflow-mobile</code>.</p>
+  <p>O que acontece aqui é que, em dispositivos móveis, os cards estão sendo apresentados na mesma linha, com uma barra
+    de
+    rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
+  <p>Enquanto isso, em dispositivos de tela grande eles seguem o padrão apontado pelas classes
+    <code>.grid__columns</code>
+    e <code>.grid--wrap</code>.</p>
+  <div class="grid__columns grid--wrap grid--overflow-mobile">
+    <div class="card card__small">
+      <p>Solicite autorização de exame ou procedimento</p>
+    </div>
+    <div class="card card__small">
+      <p>Encontre um plano de saúde</p>
+    </div>
+    <div class="card card__small">
+      <p>Solicite o demonstrativo do imposto de renda</p>
+    </div>
+    <div class="card card__small">
+      <p>Entre em contato para solicitar reembolsos</p>
+    </div>
+  </div>
+  <pre>&lt;div class="grid__columns grid--wrap <strong>grid--overflow-mobile</strong>"&gt;
   &lt;div class="card card__small"&gt;
     &lt;p&gt;Solicite autorização de exame ou procedimento&lt;/p&gt;
   &lt;/div&gt;
@@ -264,3 +296,4 @@ de um bloco <code>.grid</code>.</p>
     &lt;p&gt;Entre em contato para solicitar reembolsos&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+</div>

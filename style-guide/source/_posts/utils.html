@@ -4,40 +4,56 @@ categories: Layout
 ---
 <p>O Guia de estilo tem algumas classes de utilidade pública globais (utilities).</p>
 <p>Elas existem para <strong>forçar</strong> alguns estilos e devem ser utilizadas com cautela.</p>
-<p>Sempre que possível utilize alguma classe do bloco de elementos que está trabalhando, utilize as <code>utils</code> como <strong>último recurso</strong>.</p>
+<p>Sempre que possível utilize alguma classe do bloco de elementos que está trabalhando, utilize as <code>utils</code>
+  como <strong>último recurso</strong>.</p>
 
-<h2>Não mostrar</h2>
-<p>A classe <code>.util--display-none</code> pode ser utilizada quando se deseja carregar algum elemento no DOM porém sem torná-lo visível.</p>
-<h3>Quando pode ser útil?</h3>
-<p>Seu uso faz sentido quando o JavaScript está modificando algum conteúdo dinâmico e deseja retirar parte da interface por um período de tempo.</p>
-<button onclick="toggleClass('toBeHidden','util--display-none')">Conteúdo oculto</button>
-<p id="toBeHidden" class="text--primary-color text--big util--display-none text--all-caps">Agora eu apareço</p>
-<pre>&lt;button onclick="toggleClass('toBeHidden','util--display-none')"&gt;Conteúdo oculto&lt;/button&gt;
+<div class="grid--spacer">
+  <h2>Não mostrar</h2>
+  <p>A classe <code>.util--display-none</code> pode ser utilizada quando se deseja carregar algum elemento no DOM porém
+    sem torná-lo visível.</p>
+  <h3>Quando pode ser útil?</h3>
+  <p>Seu uso faz sentido quando o JavaScript está modificando algum conteúdo dinâmico e deseja retirar parte da
+    interface
+    por um período de tempo.</p>
+  <button onclick="toggleClass('toBeHidden','util--display-none')">Conteúdo oculto</button>
+  <p id="toBeHidden" class="text--primary-color text--big util--display-none text--all-caps">Agora eu apareço</p>
+  <pre>&lt;button onclick="toggleClass('toBeHidden','util--display-none')"&gt;Conteúdo oculto&lt;/button&gt;
 &lt;p id="toBeHidden" class="text--primary-color text--big <strong>util--display-none</strong> text--all-caps"&gt;Agora eu apareço&lt;/p&gt;</pre>
+</div>
 
-<h3>Segmentada por tamanho de tela</h3>
-<p>Essa utilidade também tem versões segmentadas por tamanho de tela, são duas versões:</p>
-<ul>
-  <li><code>.util--display-none-mobile</code>: Esconde conteúdo apenas em dispositivos móveis</li>
-  <li><code>.util--display-none-desktop</code>: Esconde conteúdo apenas em dispositivos de mesa</li>
-</ul>
+<div class="grid--spacer">
+  <h2>Segmentada por tamanho de tela</h2>
+  <p>Essa utilidade também tem versões segmentadas por tamanho de tela, são duas versões:</p>
+  <ul>
+    <li><code>.util--display-none-mobile</code>: Esconde conteúdo apenas em dispositivos móveis</li>
+    <li><code>.util--display-none-desktop</code>: Esconde conteúdo apenas em dispositivos de mesa</li>
+  </ul>
 
-<span>Eu só apareço em <strong class="util--display-none-desktop">celulares</strong><strong class="util--display-none-mobile">computadores</strong></span>
-<pre>&lt;span&gt;Eu só apareço em 
+  <span>Eu só apareço em <strong class="util--display-none-desktop">celulares</strong><strong
+      class="util--display-none-mobile">computadores</strong></span>
+  <pre>&lt;span&gt;Eu só apareço em 
   &lt;strong class="<strong>util--display-none-desktop</strong>"&gt;celulares&lt;/strong&gt;
   &lt;strong class="<strong>util--display-none-mobile</strong>"&gt;computadores&lt;/strong&gt;
 &lt;/span&gt;</pre>
+</div>
 
-<h2>Sem estilo</h2>
-<p>A utilidade <code>util--no-style</code> tira todos os estilos de um elemento.</p>
-<h3>Quando pode ser útil?</h3>
-<p>Um caso de uso é quando você deseja transformar uma <code>img</code> em link mas não quer que ela mantenha os estilos herdados da âncora <code>a</code>.</p>
-<p><a href="javascript:void(0)">Sou uma âncora com estilo</a></p>
-<a href="javascript:void(0)" class="util--no-style">Sou uma âncora sem estilo</a>
-<pre>&lt;p&gt;&lt;a href="javascript:void(0)"&gt;Sou uma âncora com estilo&lt;/a&gt;&lt;/p&gt;
+<div class="grid--spacer">
+  <h2>Sem estilo</h2>
+  <p>A utilidade <code>util--no-style</code> tira todos os estilos de um elemento.</p>
+  <h3>Quando pode ser útil?</h3>
+  <p>Um caso de uso é quando você deseja transformar uma <code>img</code> em link mas não quer que ela mantenha os
+    estilos herdados da âncora <code>a</code>.</p>
+  <p><a href="javascript:void(0)">Sou uma âncora com estilo</a></p>
+  <a href="javascript:void(0)" class="util--no-style">Sou uma âncora sem estilo</a>
+  <pre>&lt;p&gt;&lt;a href="javascript:void(0)"&gt;Sou uma âncora com estilo&lt;/a&gt;&lt;/p&gt;
 &lt;a href="javascript:void(0)" class="util--no-style"&gt;Sou uma âncora sem estilo&lt;/a&gt;</pre>
+</div>
 
-<h2>Sem Overflow</h2>
-<p>Com a classe <code>util--overflow-hidden</code> o elemento em que a classe é aplicada não terá mais a possibilidade de scroll ou de elementos filhos sairem de dentro da sua estrutura.</p>
-<h3>Quando pode ser útil?</h3>
-<p>Quando por querer você deseja utilizar o elemento pai como uma "mascara" para cortar fora partes de um ou mais elementos filhos.</p>
+<div class="grid--spacer">
+  <h2>Sem Overflow</h2>
+  <p>Com a classe <code>util--overflow-hidden</code> o elemento em que a classe é aplicada não terá mais a possibilidade
+    de scroll ou de elementos filhos sairem de dentro da sua estrutura.</p>
+  <h3>Quando pode ser útil?</h3>
+  <p>Quando por querer você deseja utilizar o elemento pai como uma "mascara" para cortar fora partes de um ou mais
+    elementos filhos.</p>
+</div>

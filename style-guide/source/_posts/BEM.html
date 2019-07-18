@@ -2,7 +2,8 @@
 title: Metodologia BEM
 categories: Introdução
 ---
-<p class="text--big">A sigla BEM vem do inglês <strong>Block, Element, Modifier</strong>, ou seja Bloco, Elemento e Modificador.</p>
+<p class="text--big">A sigla BEM vem do inglês <strong>Block, Element, Modifier</strong>, ou seja Bloco, Elemento e
+  Modificador.</p>
 
 <p>Um exemplo de aplicação:</p>
 
@@ -17,15 +18,18 @@ categories: Introdução
 .nav--secondary-color-magenta {}
 </pre>
 
-<p>Nessa convenção um <strong>bloco</strong> é uma abstração de alto nível de um componente, por exemplo um botão vira <code>.nav</code>. Esse
-bloco/abstração é um elemento pai.</p>
+<p>Nessa convenção um <strong>bloco</strong> é uma abstração de alto nível de um componente, por exemplo um botão vira
+  <code>.nav</code>. Esse
+  bloco/abstração é um elemento pai.</p>
 
-<p>Os filhos, ou <strong>elementos</strong>, devem estar dentro de um bloco, e são diferenciados por dois underlines entre o nome do bloco e
-o nome do elemento, por exemplo <code>.nav__logo</code>.</p>
+<p>Os filhos, ou <strong>elementos</strong>, devem estar dentro de um bloco, e são diferenciados por dois underlines
+  entre o nome do bloco e
+  o nome do elemento, por exemplo <code>.nav__logo</code>.</p>
 
-<p>Por fim, <strong>modificadores</strong> podem manipular/modificar o bloco, sendo assim podemos dar um estilo particular para um bloco sem
-ter que criar todo um novo componente. Para criar modificadores utilizamos dois hífens entre os nomes, por exemplo
-<code>.nav--secondary-color-magenta</code>.</p>
+<p>Por fim, <strong>modificadores</strong> podem manipular/modificar o bloco, sendo assim podemos dar um estilo
+  particular para um bloco sem
+  ter que criar todo um novo componente. Para criar modificadores utilizamos dois hífens entre os nomes, por exemplo
+  <code>.nav--secondary-color-magenta</code>.</p>
 
 <p>Seguindo essas regras poderiamos criar um HTML como o seguinte:</p>
 <pre>&lt;nav class="<strong>nav nav--secondary-color-magenta nav--justify-reset</strong>"&gt;
@@ -33,15 +37,20 @@ ter que criar todo um novo componente. Para criar modificadores utilizamos dois 
   &lt;p&gt;O nosso plano é cuidar de você&lt;/p&gt;
 &lt;/nav&gt;</pre>
 
-<p>A principal vantagem do BEM é conseguir entender o que está acontecendo no código apenas lendo o nome das classes, e não
-passar pelo inferno de modificar uma classe no CSS sem ter certeza de todos os elementos/partes de uma aplicação que
-serão modificadas.</p>
+<p>A principal vantagem do BEM é conseguir entender o que está acontecendo no código apenas lendo o nome das classes, e
+  não
+  passar pelo inferno de modificar uma classe no CSS sem ter certeza de todos os elementos/partes de uma aplicação que
+  serão modificadas.</p>
 
-<h2>Bibliografia BEM</h2>
-<ul>
-  <li><a taget="_blank" href="https://css-tricks.com/bem-101/">BEM 101</a></li>
-  <li><a taget="_blank" href="https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/">BEM: A New Front-End
-    Methodology</a></li>
-  <li><a taget="_blank" href="https://www.smashingmagazine.com/2018/06/bem-for-beginners/">BEM For Beginners: Why You Need
-    BEM</a></li>
-</ul>
+<div class="grid--spacer">
+  <h2>Bibliografia BEM</h2>
+  <ul>
+    <li><a taget="_blank" href="https://css-tricks.com/bem-101/">BEM 101</a></li>
+    <li><a taget="_blank" href="https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/">BEM: A New
+        Front-End
+        Methodology</a></li>
+    <li><a taget="_blank" href="https://www.smashingmagazine.com/2018/06/bem-for-beginners/">BEM For Beginners: Why You
+        Need
+        BEM</a></li>
+  </ul>
+</div>

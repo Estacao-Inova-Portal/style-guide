@@ -2,22 +2,28 @@
 title: Formulários
 categories: Componentes
 ---
-<p class="text--big">Formulários e seus elementos permitem capturar contatos, criar campos de busca... São uma das formas mais básica de interação entre uma aplicação e um usuário</p>
+<p class="text--big">Formulários e seus elementos permitem capturar contatos, criar campos de busca... São uma das
+  formas mais básica de interação entre uma aplicação e um usuário</p>
 
-<h2>Elementos básicos de um formulário</h2>
-<p>Os elementos mais básicos de formulário são tratados aqui diretamente pela sua tag HTML, sem o uso de classes adicionais. Isso garante acessibilidade e performance, onde os campos utilizados tem exatamente o comportamento esperado pelo navegador.</p>
-<p>Precisando de ajuda para montar formulários? A Mozilla tem <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Forms">uma documentação bem completa</a> que pode te ajudar a fazer formulários eficientes e semânticos.</p>
-<form>
-  <fieldset>
-    <legend>Eu sou um formulário simples</legend>
-    <label to="campo">Primeiro campo</label>
-    <input id="campo" type="text" placeholder="Insira um dado">
-    <label to="outro-campo">Mais um campo aqui</label>
-    <input id="outro-campo" type="text" placeholder="Insira algum outro dado">
-    <input type="submit" value="Enviar os dados">
-  </fieldset>
-</form>
-<pre>&lt;form&gt;
+<div class="grid--spacer">
+  <h2>Elementos básicos de um formulário</h2>
+  <p>Os elementos mais básicos de formulário são tratados aqui diretamente pela sua tag HTML, sem o uso de classes
+    adicionais. Isso garante acessibilidade e performance, onde os campos utilizados tem exatamente o comportamento
+    esperado pelo navegador.</p>
+  <p>Precisando de ajuda para montar formulários? A Mozilla tem <a target="_blank"
+      href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Forms">uma documentação bem completa</a> que pode te
+    ajudar a fazer formulários eficientes e semânticos.</p>
+  <form>
+    <fieldset>
+      <legend>Eu sou um formulário simples</legend>
+      <label to="campo">Primeiro campo</label>
+      <input id="campo" type="text" placeholder="Insira um dado">
+      <label to="outro-campo">Mais um campo aqui</label>
+      <input id="outro-campo" type="text" placeholder="Insira algum outro dado">
+      <input type="submit" value="Enviar os dados">
+    </fieldset>
+  </form>
+  <pre>&lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Eu sou um formulário simples&lt;/legend&gt;
     &lt;label to="campo"&gt;Primeiro campo&lt;/label&gt;
@@ -28,56 +34,55 @@ categories: Componentes
   &lt;/fieldset&gt;
 &lt;/form&gt;</pre>
 
-<h3>Formulários complexos</h3>
-<p>Todos os tipos de campo aceitos dentro das regras do HTML 5 tem um estilo específico.</p>
-<form>
-  <fieldset>
-    <legend>Este é um formulário complexo</legend>
-    <label to="campo" placeholder="Insira um dado">Primeiro campo vem aqui
-      <span class="form__hint">Aqui vem uma dica de como utilizar esse campo</span>
-    </label>
-    <input id="campo" type="text" placeholder="Insira alguma coisa nesse campo">
-    <label to="outro-campo">Mais um campo aqui com um monte de texto</label>
-    <textarea id="outro-campo" rows="10"
-      type="textarea">Aqui você pode escrever textos maiores</textarea>
-    <label to="select">Selecione um herói:</label>
-    <select id="select">
-      <option value="">Escolha uma opção</option>
-      <option value="volvo">Homem de ferro</option>
-      <option value="saab">Aquaman</option>
-      <option value="mercedes">Batman</option>
-      <option value="audi">Mulher Maravilha</option>
-    </select>
-    <legend>Selecione mais de uma opção:</legend>
-    <div class="form__multiple-choice">
-      <input type="checkbox" id="checkbox-1">
-      <label for="checkbox-1">Sorvete</label>
-    </div>
-    <div class="form__multiple-choice">
-      <input type="checkbox" id="checkbox-2">
-      <label for="checkbox-2">Bolo</label>
-    </div>
-    <div class="form__multiple-choice">
-      <input type="checkbox" id="checkbox-3">
-      <label for="checkbox-3">Gelativa</label>
-    </div>
-    <legend>Selecione apenas uma opção:</legend>
-    <div class="form__multiple-choice">
-      <input type="radio" name="radio-input" id="radio-1">
-      <label for="radio-1">Azul</label>
-    </div>
-    <div class="form__multiple-choice">
-      <input type="radio" name="radio-input" id="radio-2">
-      <label for="radio-2">Verde</label>
-    </div>
-    <div class="form__multiple-choice">
-      <input type="radio" name="radio-input" id="radio-3">
-      <label for="radio-3">Vermelho</label>
-    </div>
-    <input type="submit" value="Enviar os dados">
-  </fieldset>
-</form>
-<pre>&lt;form&gt;
+  <h3>Formulários complexos</h3>
+  <p>Todos os tipos de campo aceitos dentro das regras do HTML 5 tem um estilo específico.</p>
+  <form>
+    <fieldset>
+      <legend>Este é um formulário complexo</legend>
+      <label to="campo" placeholder="Insira um dado">Primeiro campo vem aqui
+        <span class="form__hint">Aqui vem uma dica de como utilizar esse campo</span>
+      </label>
+      <input id="campo" type="text" placeholder="Insira alguma coisa nesse campo">
+      <label to="outro-campo">Mais um campo aqui com um monte de texto</label>
+      <textarea id="outro-campo" rows="10" type="textarea">Aqui você pode escrever textos maiores</textarea>
+      <label to="select">Selecione um herói:</label>
+      <select id="select">
+        <option value="">Escolha uma opção</option>
+        <option value="volvo">Homem de ferro</option>
+        <option value="saab">Aquaman</option>
+        <option value="mercedes">Batman</option>
+        <option value="audi">Mulher Maravilha</option>
+      </select>
+      <legend>Selecione mais de uma opção:</legend>
+      <div class="form__multiple-choice">
+        <input type="checkbox" id="checkbox-1">
+        <label for="checkbox-1">Sorvete</label>
+      </div>
+      <div class="form__multiple-choice">
+        <input type="checkbox" id="checkbox-2">
+        <label for="checkbox-2">Bolo</label>
+      </div>
+      <div class="form__multiple-choice">
+        <input type="checkbox" id="checkbox-3">
+        <label for="checkbox-3">Gelativa</label>
+      </div>
+      <legend>Selecione apenas uma opção:</legend>
+      <div class="form__multiple-choice">
+        <input type="radio" name="radio-input" id="radio-1">
+        <label for="radio-1">Azul</label>
+      </div>
+      <div class="form__multiple-choice">
+        <input type="radio" name="radio-input" id="radio-2">
+        <label for="radio-2">Verde</label>
+      </div>
+      <div class="form__multiple-choice">
+        <input type="radio" name="radio-input" id="radio-3">
+        <label for="radio-3">Vermelho</label>
+      </div>
+      <input type="submit" value="Enviar os dados">
+    </fieldset>
+  </form>
+  <pre>&lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Este é um formulário complexo&lt;/legend&gt;
     &lt;label to="campo" placeholder="Insira um dado"&gt;Primeiro campo vem aqui
@@ -124,42 +129,47 @@ categories: Componentes
     &lt;input type="submit" value="Enviar os dados"&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;</pre>
+</div>
 
-<h2>Os elementos adicionais de formulários</h2>
+<div class="grid--spacer">
+  <h2>Os elementos adicionais de formulários</h2>
 
-<h3>Dicas de campo</h3>
-<p>A classe <code>.form__hint</code> pode ser adicionada em um elemento de texto, preferenciamente um <code>span</code>, que deve ser colocado dentro da <code>label</code>. Sua função é adicionar dicas para o usuário em como utilizar algum campo.</p>
-<form>
-  <label to="senha" placeholder="Insira um dado">Crie uma senha
+  <h3>Dicas de campo</h3>
+  <p>A classe <code>.form__hint</code> pode ser adicionada em um elemento de texto, preferenciamente um
+    <code>span</code>, que deve ser colocado dentro da <code>label</code>. Sua função é adicionar dicas para o usuário
+    em como utilizar algum campo.</p>
+  <form>
+    <label to="senha" placeholder="Insira um dado">Crie uma senha
       <span class="form__hint">Ela deve ter no mínimo 8 caracteres e pelo menos um número e uma letra maiúscula.</span>
     </label>
     <input pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm" id="senha" type="password">
-</form>
-<pre>&lt;form&gt;
+  </form>
+  <pre>&lt;form&gt;
   &lt;label to="senha" placeholder="Insira um dado"&gt;Crie uma senha
       &lt;span class="<strong>form__hint</strong>"&gt;Ela deve ter no mínimo 8 caracteres e pelo menos um número e uma letra maiúscula.&lt;/span&gt;
     &lt;/label&gt;
     &lt;input pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm" id="senha" type="password"&gt;
 &lt;/form&gt;</pre>
 
-<h3>Múltiplas escolhas</h3>
-<p>Uma <code>div</code> com a classe <code>.form__multiple-choice</code> deve ser o elemento pai de cada um dos inputs + label de elementos de múltipla escolha <code>checkbox</code> e <code>radio</code>.</p>
-<form>
-  <legend>Selecione apenas uma opção:</legend>
-  <div class="form__multiple-choice">
-    <input type="radio" name="radio-input" id="radio-a">
-    <label for="radio-a">Doláres</label>
-  </div>
-  <div class="form__multiple-choice">
-    <input type="radio" name="radio-input" id="radio-b">
-    <label for="radio-b">Reais</label>
-  </div>
-  <div class="form__multiple-choice">
-    <input type="radio" name="radio-input" id="radio-c">
-    <label for="radio-c">Pesos</label>
-  </div>
-</form>
-<pre>&lt;form&gt;
+  <h3>Múltiplas escolhas</h3>
+  <p>Uma <code>div</code> com a classe <code>.form__multiple-choice</code> deve ser o elemento pai de cada um dos inputs
+    + label de elementos de múltipla escolha <code>checkbox</code> e <code>radio</code>.</p>
+  <form>
+    <legend>Selecione apenas uma opção:</legend>
+    <div class="form__multiple-choice">
+      <input type="radio" name="radio-input" id="radio-a">
+      <label for="radio-a">Doláres</label>
+    </div>
+    <div class="form__multiple-choice">
+      <input type="radio" name="radio-input" id="radio-b">
+      <label for="radio-b">Reais</label>
+    </div>
+    <div class="form__multiple-choice">
+      <input type="radio" name="radio-input" id="radio-c">
+      <label for="radio-c">Pesos</label>
+    </div>
+  </form>
+  <pre>&lt;form&gt;
   &lt;legend&gt;Selecione apenas uma opção:&lt;/legend&gt;
   &lt;div class="<strong>form__multiple-choice</strong>"&gt;
     &lt;input type="radio" name="radio-input" id="radio-a"&gt;
@@ -174,3 +184,4 @@ categories: Componentes
     &lt;label for="radio-c"&gt;Pesos&lt;/label&gt;
   &lt;/div&gt;
 &lt;/form&gt;</pre>
+</div>

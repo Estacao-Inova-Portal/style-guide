@@ -4,42 +4,49 @@ categories: JavaScript
 ---
 <p class="text--big">Usamos JavaScript para tornar os modais interativos</p>
 <p>A estrutura do Modal foi construída baseada no projeto <a href="https://github.com/edenspiekermann/a11y-dialog"
-  target="_blank" rel="noopener">a11y-dialog</a>, criado por Hugo Giraudel. O modal foi desenvolvido de forma a garantir a melhor experiência para usuários com necessidades especiais e que acessam
+    target="_blank" rel="noopener">a11y-dialog</a>, criado por Hugo Giraudel. O modal foi desenvolvido de forma a
+  garantir a melhor experiência para usuários com necessidades especiais e que acessam
   a internet por sistemas de ditado.</p>
 
-<h2>Criando um modal</h2>
-<p>Na página do <a href="/modal">componente modal</a> é explicado qual a semântica que deve ser utilizada para criar um modal.</p>
-<p>Para ele se tornar interativo é necessário:</p>
-<ul>
-  <li>Criar um <code>id</code> no elemento que receber a classe <code>.modal__container</code>.</li>
-  <li>No botão/link que for utilizado para abrir o modal adicionar o atributlo <code>data-modal-show</code>. O valor desse atributo deve ser o <code>id</code> do elemento com classe <code>.modal__container</code></li>
-  <li>Nos botões/links que forem utilizados para fechar o modal, adicionar o atributo <code>data-modal-hide</code>.</li>
-</ul>
-<p>Por exemplo, se o elemento container do modal ter o id <code>#modalUnimed</code>, o botão que chama ele deve ter o atributo <code>data-modal-show="modalUnimed"</code>.</p>
-<p>E... Pronto! O script irá rastrear todos os botões que chamam modais e deixar eles prontos para funcionar.</p>
+<div class="grid--spacer">
+  <h2>Criando um modal</h2>
+  <p>Na página do <a href="/modal">componente modal</a> é explicado qual a semântica que deve ser utilizada para criar
+    um modal.</p>
+  <p>Para ele se tornar interativo é necessário:</p>
+  <ul>
+    <li>Criar um <code>id</code> no elemento que receber a classe <code>.modal__container</code>.</li>
+    <li>No botão/link que for utilizado para abrir o modal adicionar o atributlo <code>data-modal-show</code>. O valor
+      desse atributo deve ser o <code>id</code> do elemento com classe <code>.modal__container</code></li>
+    <li>Nos botões/links que forem utilizados para fechar o modal, adicionar o atributo <code>data-modal-hide</code>.
+    </li>
+  </ul>
+  <p>Por exemplo, se o elemento container do modal ter o id <code>#modalUnimed</code>, o botão que chama ele deve ter o
+    atributo <code>data-modal-show="modalUnimed"</code>.</p>
+  <p>E... Pronto! O script irá rastrear todos os botões que chamam modais e deixar eles prontos para funcionar.</p>
 
-<button type="button" data-modal-show="modal">Abrir modal</button>
-<div id="modal" class="modal__container">
-  <!-- The overlay -->
-  <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
+  <button type="button" data-modal-show="modal" class="btn--small-margins">Abrir modal</button>
+  <div id="modal" class="modal__container">
+    <!-- The overlay -->
+    <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
 
-  <!-- The modal -->
-  <dialog class="modal card" aria-labelledby="modal-title" role="dialog">
-    <!-- Close button -->
-    <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
-      &times;
-    </button>
-    <section class="modal__header">
-      <h2 id="modal-title"><strong class="text--gradient-hot-colors">Modal aberto!</strong></h2>
-    </section>
+    <!-- The modal -->
+    <dialog class="modal card" aria-labelledby="modal-title" role="dialog">
+      <!-- Close button -->
+      <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
+        &times;
+      </button>
+      <section class="modal__header">
+        <h2 id="modal-title"><strong class="text--gradient-hot-colors">Modal aberto!</strong></h2>
+      </section>
 
-    <section class="modal__content">
-      <p class="text--big">Você abriu um modal, o container dele tem o id <code>#modal</code>.</p>
-      <p>E esse <code>id</code> é o valor que o parâmetro <code>data-modal-show</code> recebeu no botão Abrir Modal.</p>
-    </section>
-  </dialog>
-</div>
-<pre>&lt;button type="button" <strong>data-modal-show="modal"</strong>&gt;Abrir modal&lt;/button&gt;
+      <section class="modal__content">
+        <p class="text--big">Você abriu um modal, o container dele tem o id <code>#modal</code>.</p>
+        <p>E esse <code>id</code> é o valor que o parâmetro <code>data-modal-show</code> recebeu no botão Abrir Modal.
+        </p>
+      </section>
+    </dialog>
+  </div>
+  <pre>&lt;button type="button" <strong>data-modal-show="modal"</strong>&gt;Abrir modal&lt;/button&gt;
 &lt;div id="<strong>modal</strong>" class="modal__container"&gt;
   &lt;!-- The overlay --&gt;
   &lt;div tabindex="-1" data-modal-hide class="modal__overlay"&gt;&lt;/div&gt;
@@ -60,3 +67,4 @@ categories: JavaScript
     &lt;/section&gt;
   &lt;/dialog&gt;
 &lt;/div&gt;</pre>
+</div>

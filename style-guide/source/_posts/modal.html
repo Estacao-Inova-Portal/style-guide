@@ -1,37 +1,43 @@
 ---
-title:  Modal
+title: Modal
 categories: Componentes
 ---
 <p class="text--big">Caixa de diálogo que aparece acima do conteúdo principal.</p>
-<p>A estrutura do Modal foi construída baseada no projeto <a href="https://github.com/edenspiekermann/a11y-dialog" target="_blank" rel="noopener">a11y-dialog</a>, criado por Hugo Giraudel. Os detalhes da aplicação JavaScript podem ser encontrados <a href="/javascript-modal/">nessa página</a>.</p>
-<p>O modal foi desenvolvido de forma a garantir a melhor experiência para usuários com necessidades especiais e que acessam a internet por sistemas de ditado.</p>
+<p>A estrutura do Modal foi construída baseada no projeto <a href="https://github.com/edenspiekermann/a11y-dialog"
+    target="_blank" rel="noopener">a11y-dialog</a>, criado por Hugo Giraudel. Os detalhes da aplicação JavaScript podem
+  ser encontrados <a href="/javascript-modal/">nessa página</a>.</p>
+<p>O modal foi desenvolvido de forma a garantir a melhor experiência para usuários com necessidades especiais e que
+  acessam a internet por sistemas de ditado.</p>
 
-<h2>Modal básico</h2>
-<button type="button" data-modal-show="modal">Abrir modal</button>
-<div id="modal" class="modal__container">
-  <!-- The overlay -->
-  <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
+<div class="grid--spacer">
+  <h2>Modal básico</h2>
+  <button type="button" data-modal-show="modal" class="btn--small-margins">Abrir modal</button>
+  <div id="modal" class="modal__container">
+    <!-- The overlay -->
+    <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
 
-  <!-- The modal -->
-  <dialog class="modal card" aria-labelledby="modal-title" role="dialog">
-    <!-- Close button -->
-    <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
-      &times;
-    </button>
-    <section class="modal__header">
-      <h2 id="modal-title"><strong class="text--gradient-cool-colors">Praticamos uma medicina humana, ampla e
-      preventiva</strong></h2>
-    </section>
+    <!-- The modal -->
+    <dialog class="modal card" aria-labelledby="modal-title" role="dialog">
+      <!-- Close button -->
+      <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
+        &times;
+      </button>
+      <section class="modal__header">
+        <h2 id="modal-title"><strong class="text--gradient-cool-colors">Praticamos uma medicina humana, ampla e
+            preventiva</strong></h2>
+      </section>
 
-    <section class="modal__content">
-      <p class="text--big">Acreditamos na diversidade, na sinergia, na singularidade, na interdependência e na união como
-      filosofia de vida.</p>
-      <p>Por isso, cuidamos das pessoas com leveza, proximidade e alegria. Incentivamos a busca equilibrada do bem-estar e da
-      felicidade em todos os momentos como melhor forma de prevenção e promoção da saúde.</p>
-    </section>
-  </dialog>
-</div>
-<pre>&lt;div id="modal" class="modal__container"&gt;
+      <section class="modal__content">
+        <p class="text--big">Acreditamos na diversidade, na sinergia, na singularidade, na interdependência e na união
+          como
+          filosofia de vida.</p>
+        <p>Por isso, cuidamos das pessoas com leveza, proximidade e alegria. Incentivamos a busca equilibrada do
+          bem-estar e da
+          felicidade em todos os momentos como melhor forma de prevenção e promoção da saúde.</p>
+      </section>
+    </dialog>
+  </div>
+  <pre>&lt;div id="modal" class="modal__container"&gt;
   &lt;!-- The overlay --&gt;
   &lt;div tabindex="-1" data-modal-hide class="modal__overlay"&gt;&lt;/div&gt;
 
@@ -55,52 +61,63 @@ categories: Componentes
   &lt;/<strong>dialog</strong>&gt;
 &lt;/div&gt;</pre>
 
-<h3>Como funciona</h3>
-<p>O primeiro passo é criar um elemento container, no caso do exemplo acima a <code>div</code> com id "modal" e a classe <code>.modal__container</code>. O importante é que esse container tenha um <code>id</code>, independente qual seja.</p>
-<p>O próximo elemento é o <code>.modal__overlay</code>, a camada que fica entre o modal e o conteúdo anterior, não é obrigatório, mas é uma boa prática.</p>
-<p>Por fim vem o modal, aqui representado pelo elemento <code>dialog</code>. Usar <code>dialog</code> é recomendável, pois alguns navegadores já ajudarão a renderizar o conteúdo da forma esperada nativamente, nesse caso a classe <code>.modal</code> se torna optativa, caso você deseje utilizar outro elemento como modal, o uso da classe se torna obrigatório.</p>
-<p>No <code>dialog</code> existe um parâmetro chamado <code>aria-labelledby</code>, feito para ajudar deifientes visuais, o seu valor deve ser o mesmo do <code>id</code> do título da modal.</p>
-<p>Por fim, os elementos <code>.modal__header</code> e <code>.modal__content</code> serão explicados a seguir.</p>
-
-<h2>Elementos dos modais</h2>
-<h3>Elementos semânticos</h3>
-<p>Eles são três:</p>
-<ul>
-  <li><code>.modal__header</code></li>
-  <li><code>.modal__body</code></li>
-  <li><code>.modal__footer</code></li>
-</ul>
-<p>São dois objetivos. A separação semântica do conteúdo dentro do modal, e espaçamento entre as áreas.</p>
-<p>É recomendado que o cabeçalho <code>.modal__header</code> seja utilizado para o título, o corpo <code>modal__body</code> para o conteúdo e o rodapé <code>.modal__footer</code> para botões de ação.</p>
-
-<button type="button" data-modal-show="semanticModal">Modal com separação semântica</button>
-<div id="semanticModal" class="modal__container">
-  <!-- The overlay -->
-  <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
-
-  <!-- The modal -->
-  <dialog class="modal card" aria-labelledby="semantic-modal-title" role="dialog">
-    <!-- Close button -->
-    <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
-      &times;
-    </button>
-
-    <section class="modal__header">
-      <h2 id="semantic-modal-title">Você deseja criar um novo usuário?</h2>
-    </section>
-
-    <section class="modal__content">
-      <p>Esse usuário terá acesso a todos os documentos presentes nessa pasta podendo ler, editar e <strong class="text--secondary-color-magenta">apagar arquivos</strong>.</p>
-    </section>
-
-    <section class="modal__footer">
-      <hr>
-      <button type="button" class="btn--secondary-color-lime btn--float-right" data-modal-hide>Continuar</button>
-      <button type="button" class="btn--simple btn--float-right" data-modal-hide>Cancelar</button>
-    </section>
-  </dialog>
+  <h3>Como funciona</h3>
+  <p>O primeiro passo é criar um elemento container, no caso do exemplo acima a <code>div</code> com id "modal" e a
+    classe <code>.modal__container</code>. O importante é que esse container tenha um <code>id</code>, independente qual
+    seja.</p>
+  <p>O próximo elemento é o <code>.modal__overlay</code>, a camada que fica entre o modal e o conteúdo anterior, não é
+    obrigatório, mas é uma boa prática.</p>
+  <p>Por fim vem o modal, aqui representado pelo elemento <code>dialog</code>. Usar <code>dialog</code> é recomendável,
+    pois alguns navegadores já ajudarão a renderizar o conteúdo da forma esperada nativamente, nesse caso a classe
+    <code>.modal</code> se torna optativa, caso você deseje utilizar outro elemento como modal, o uso da classe se torna
+    obrigatório.</p>
+  <p>No <code>dialog</code> existe um parâmetro chamado <code>aria-labelledby</code>, feito para ajudar deifientes
+    visuais, o seu valor deve ser o mesmo do <code>id</code> do título da modal.</p>
+  <p>Por fim, os elementos <code>.modal__header</code> e <code>.modal__content</code> serão explicados a seguir.</p>
 </div>
-<pre>&lt;div id="semanticModal" class="modal__container"&gt;
+
+<div class="grid--spacer">
+  <h2>Elementos dos modais</h2>
+  <h3>Elementos semânticos</h3>
+  <p>Eles são três:</p>
+  <ul>
+    <li><code>.modal__header</code></li>
+    <li><code>.modal__body</code></li>
+    <li><code>.modal__footer</code></li>
+  </ul>
+  <p>São dois objetivos. A separação semântica do conteúdo dentro do modal, e espaçamento entre as áreas.</p>
+  <p>É recomendado que o cabeçalho <code>.modal__header</code> seja utilizado para o título, o corpo
+    <code>modal__body</code> para o conteúdo e o rodapé <code>.modal__footer</code> para botões de ação.</p>
+
+  <button type="button" data-modal-show="semanticModal">Modal com separação semântica</button>
+  <div id="semanticModal" class="modal__container">
+    <!-- The overlay -->
+    <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
+
+    <!-- The modal -->
+    <dialog class="modal card" aria-labelledby="semantic-modal-title" role="dialog">
+      <!-- Close button -->
+      <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
+        &times;
+      </button>
+
+      <section class="modal__header">
+        <h2 id="semantic-modal-title">Você deseja criar um novo usuário?</h2>
+      </section>
+
+      <section class="modal__content">
+        <p>Esse usuário terá acesso a todos os documentos presentes nessa pasta podendo ler, editar e <strong
+            class="text--secondary-color-magenta">apagar arquivos</strong>.</p>
+      </section>
+
+      <section class="modal__footer">
+        <hr>
+        <button type="button" class="btn--secondary-color-lime btn--float-right" data-modal-hide>Continuar</button>
+        <button type="button" class="btn--simple btn--float-right" data-modal-hide>Cancelar</button>
+      </section>
+    </dialog>
+  </div>
+  <pre>&lt;div id="semanticModal" class="modal__container"&gt;
   &lt;!-- The overlay --&gt;
   &lt;div tabindex="-1" data-modal-hide class="modal__overlay"&gt;&lt;/div&gt;
 
@@ -127,68 +144,91 @@ categories: Componentes
   &lt;/dialog&gt;
 &lt;/div&gt;</pre>
 
-<h4>Conteúdos extensos</h4>
-<p>Apesar do bloco <code>.modal</code> não aceitar conteúdos extensos por padrão, o elemento semântico <code>.modal__content</code> aceita, ou seja, se você deseja colocar um conteúdo que terá uma extensão maior do que a altura do modal, você precisa adicionar o elemento <code>.modal__content</code>.</p>
-<button type="button" data-modal-show="extenseModal">Modal com conteúdo extenso</button>
-<div id="extenseModal" class="modal__container">
-  <!-- The overlay -->
-  <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
+  <h4>Conteúdos extensos</h4>
+  <p>Apesar do bloco <code>.modal</code> não aceitar conteúdos extensos por padrão, o elemento semântico
+    <code>.modal__content</code> aceita, ou seja, se você deseja colocar um conteúdo que terá uma extensão maior do que
+    a altura do modal, você precisa adicionar o elemento <code>.modal__content</code>.</p>
+  <button type="button" data-modal-show="extenseModal">Modal com conteúdo extenso</button>
+  <div id="extenseModal" class="modal__container">
+    <!-- The overlay -->
+    <div tabindex="-1" data-modal-hide class="modal__overlay"></div>
 
-  <!-- The modal -->
-  <dialog class="modal card" aria-labelledby="extenseModal-title" role="dialog">
-    <!-- Close button -->
-    <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
-      &times;
-    </button>
+    <!-- The modal -->
+    <dialog class="modal card" aria-labelledby="extenseModal-title" role="dialog">
+      <!-- Close button -->
+      <button type="button" class="modal__close-btn" data-modal-hide aria-label="Fechar a janela de modal">
+        &times;
+      </button>
 
-    <section class="modal__header">
-      <h2 id="extenseModal-title"><strong class="text--secondary-color-magenta text--slab">5 curiosidades sobre o paladar</strong></h2>
-      <p class="text--big">Conheça melhor o sentido que é responsável por um dos maiores prazeres da vida: saborear um bom alimento</p>
-    </section>
+      <section class="modal__header">
+        <h2 id="extenseModal-title"><strong class="text--secondary-color-magenta text--slab">5 curiosidades sobre o
+            paladar</strong></h2>
+        <p class="text--big">Conheça melhor o sentido que é responsável por um dos maiores prazeres da vida: saborear um
+          bom alimento</p>
+      </section>
 
-    <section class="modal__content text--serif">
-      <h3 class="text--slab">1 – Gosto e sabor não é a mesma coisa.</h3>
-      <p>Por mais que pareçam, são diferentes. O gosto, segundo especialistas, refere-se apenas ao sentido do paladar. Receptores
-      específicos presentes na língua reconhecem um determinado estímulo proporcionado por substâncias presentes nos
-      alimentos.</p>
-      <p>Já o sabor dos alimentos é reconhecido pela combinação de dois ou mais sentidos: o paladar (que se refere ao gosto) e
-      mais algum outro sentido, que pode ser o olfato (que dá o aroma dos alimentos). Na prática, é assim: coloque um pedaço
-      de chocolate na boca e segure o nariz. Tente identificar o sabor. Você notará que, com o nariz tampado, sentirá somente
-      o gosto doce. Ao liberar o olfato, você então será capaz de notar o sabor do doce.</p>
-      <p>Essa é a diferença.</p>
+      <section class="modal__content text--serif">
+        <h3 class="text--slab">1 – Gosto e sabor não é a mesma coisa.</h3>
+        <p>Por mais que pareçam, são diferentes. O gosto, segundo especialistas, refere-se apenas ao sentido do paladar.
+          Receptores
+          específicos presentes na língua reconhecem um determinado estímulo proporcionado por substâncias presentes nos
+          alimentos.</p>
+        <p>Já o sabor dos alimentos é reconhecido pela combinação de dois ou mais sentidos: o paladar (que se refere ao
+          gosto) e
+          mais algum outro sentido, que pode ser o olfato (que dá o aroma dos alimentos). Na prática, é assim: coloque
+          um pedaço
+          de chocolate na boca e segure o nariz. Tente identificar o sabor. Você notará que, com o nariz tampado,
+          sentirá somente
+          o gosto doce. Ao liberar o olfato, você então será capaz de notar o sabor do doce.</p>
+        <p>Essa é a diferença.</p>
 
-      <h3 class="text--slab">2 – Você pode identificar o gosto umami.</h3>
-      <p>Uma boa forma de identificar o gosto umami na boca é degustar um dos alimentos pelo qual ele é reconhecido. Saboreie
-      lentamente e espere passar o gosto doce, salgado, azedo ou amargo inicial presente nele. O residual que ficará na boca
-      será o umami. E como ele produz bastante saliva, esse residual tende a permanecer na boca um bom tempo.</p>
+        <h3 class="text--slab">2 – Você pode identificar o gosto umami.</h3>
+        <p>Uma boa forma de identificar o gosto umami na boca é degustar um dos alimentos pelo qual ele é reconhecido.
+          Saboreie
+          lentamente e espere passar o gosto doce, salgado, azedo ou amargo inicial presente nele. O residual que ficará
+          na boca
+          será o umami. E como ele produz bastante saliva, esse residual tende a permanecer na boca um bom tempo.</p>
 
-      <h3 class="text--slab">3 – Não existe um mapa gustativo na nossa língua.</h3>
-      <p>A língua é o órgão responsável pela percepção de gosto do nosso paladar. No entanto, diferente do que acreditávamos, não
-      existe uma divisão das papilas gustativas que identificam cada gosto, chamado até então de mapa da língua, onde cada
-      área delimitada identificava os gostos: doce, salgado, amargo, azedo e umami. Os estudos recentes mostram que as papilas
-      gustativas estão distribuídas aleatoriamente por toda a área da língua.</p>
+        <h3 class="text--slab">3 – Não existe um mapa gustativo na nossa língua.</h3>
+        <p>A língua é o órgão responsável pela percepção de gosto do nosso paladar. No entanto, diferente do que
+          acreditávamos, não
+          existe uma divisão das papilas gustativas que identificam cada gosto, chamado até então de mapa da língua,
+          onde cada
+          área delimitada identificava os gostos: doce, salgado, amargo, azedo e umami. Os estudos recentes mostram que
+          as papilas
+          gustativas estão distribuídas aleatoriamente por toda a área da língua.</p>
 
-      <h3 class="text--slab">4 – Nascemos com o paladar naturalmente propenso ao doce.</h3>
-      <p>A nossa primeira alimentação é o leite materno, que tem um sabor levemente adocicado. E mesmo as fórmulas infantis
-      receitadas para recém-nascidos que não são amamentados tentam imitar esse sabor do leite da mãe. E é exatamente nessa
-      fase que a criança começa a desenvolver o paladar. Logo, o pequeno tende a ser mais tolerante aos doces.</p>
-      <p>Por esta razão, a recomendação do Ministério da Saúde e da Sociedade Brasileira de Pediatria é evitar alimentar bebês
-      com alimentos adoçados artificialmente até os 2 anos de vida. Segundo as entidades, o açúcar mascara o sabor original do
-      alimento e o bebê tenderá a recusá-lo quando este for oferecido da forma natural. E ainda deixará de lado outros sabores
-      naturais que devem ser estimulados nessa fase.</p>
+        <h3 class="text--slab">4 – Nascemos com o paladar naturalmente propenso ao doce.</h3>
+        <p>A nossa primeira alimentação é o leite materno, que tem um sabor levemente adocicado. E mesmo as fórmulas
+          infantis
+          receitadas para recém-nascidos que não são amamentados tentam imitar esse sabor do leite da mãe. E é
+          exatamente nessa
+          fase que a criança começa a desenvolver o paladar. Logo, o pequeno tende a ser mais tolerante aos doces.</p>
+        <p>Por esta razão, a recomendação do Ministério da Saúde e da Sociedade Brasileira de Pediatria é evitar
+          alimentar bebês
+          com alimentos adoçados artificialmente até os 2 anos de vida. Segundo as entidades, o açúcar mascara o sabor
+          original do
+          alimento e o bebê tenderá a recusá-lo quando este for oferecido da forma natural. E ainda deixará de lado
+          outros sabores
+          naturais que devem ser estimulados nessa fase.</p>
 
-      <h3 class="text--slab">5 – As papilas gustativas podem parar de funcionar.</h3>
-      <p>Segundo especialistas, quando elas não funcionam bem, a pessoa pode começar a sofrer alterações no paladar, que pode ser
-      causado por qualquer motivo que interrompa a transferência das percepções de gosto para o cérebro.</p>
-      <p>As causas podem ser desde o hábito de fumar, o uso de medicamentos e algum ferimento na boca, a doenças respiratórias
-      como gripes, resfriados, infecção nasal, sinusite, faringite e infecções nas glândulas salivares. Ou ainda a deficiência
-      de vitamina B12 e zinco, tratamento para certos tipos de câncer, como quimioterapia e radioterapia, e Alzheimer. Por
-      isso, ao perceber qualquer mudança no paladar, é preciso procurar um especialista.</p>
-    </section>
+        <h3 class="text--slab">5 – As papilas gustativas podem parar de funcionar.</h3>
+        <p>Segundo especialistas, quando elas não funcionam bem, a pessoa pode começar a sofrer alterações no paladar,
+          que pode ser
+          causado por qualquer motivo que interrompa a transferência das percepções de gosto para o cérebro.</p>
+        <p>As causas podem ser desde o hábito de fumar, o uso de medicamentos e algum ferimento na boca, a doenças
+          respiratórias
+          como gripes, resfriados, infecção nasal, sinusite, faringite e infecções nas glândulas salivares. Ou ainda a
+          deficiência
+          de vitamina B12 e zinco, tratamento para certos tipos de câncer, como quimioterapia e radioterapia, e
+          Alzheimer. Por
+          isso, ao perceber qualquer mudança no paladar, é preciso procurar um especialista.</p>
+      </section>
 
-    <section class="modal__footer">
-      <hr>
-      <button type="button" class="btn--secondary-color-lime btn--float-right" data-modal-hide>Sair</button>
-    </section>
-  </dialog>
+      <section class="modal__footer">
+        <hr>
+        <button type="button" class="btn--secondary-color-lime btn--float-right" data-modal-hide>Sair</button>
+      </section>
+    </dialog>
+  </div>
 </div>
