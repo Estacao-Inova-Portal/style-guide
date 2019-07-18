@@ -122,6 +122,10 @@ input[type="submit"], input[type="reset"]{
   }
 }
 
+.btn--float-right, .card .btn.btn--float-right, .card button.btn--float-right{
+  margin-top: $unit * 3;
+}
+
 .btn--small-margins, button.btn--small-margins, input[type="submit"].btn--small-margins, input[type="reset"].btn--small-margins{
   margin: $unit * 3 0;
 }
@@ -136,7 +140,7 @@ input[type="submit"], input[type="reset"]{
   button, input[type="submit"], input[type="reset"]{
     width: 100%;
   }
-  .btn--float-right, .card .btn.btn--float-right{
+  .btn--float-right, .card .btn.btn--float-right, .card button.btn--float-right{
     margin-top: 0;
     max-width: 35%;
   }
