@@ -82,6 +82,7 @@ dialog, .modal{
   }
   .modal__close-btn, .card .modal__close-btn{
     position: fixed;
+    width: initial;
   }
   .modal__header{
     padding-top: $unit-8 * 2;
