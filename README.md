@@ -5,8 +5,8 @@ Esse Guia de estilos tem como objetivo unificar o CSS de todos os projetos web d
 ## Índice
  - [Site estático: Hexo](#site-estatico-hexo)
  - [Preprocessador: Sass](#preprocessador-sass)
- - [Convenção de nomenclatura de classes: BEM](#convenção-de-nomenclatura-de-classes-bem)
  - [Árvore de arquivos](#Árvore-de-arquivos)
+ - [Convenção de nomenclatura de classes: BEM](#convenção-de-nomenclatura-de-classes-bem)
  - [Tipografia](#tipografia)
  - [Cores](#cores)
 
@@ -15,7 +15,6 @@ O site do guia de estilos foi criado com [Hexo](https://hexo.io/).
 O primeiro passo é instalar o Hexo, para isso entre no diretorio `style-guide` e utilize o comando `npm run install:hexo`.
 
 Depois disso para iniciar os projetos, é necessario abrir o terminal dentro da pasta `/style-guide`, utilize o comando `npm run start` para rodar o Hexo, ele irá executar os comandos `hexo clean` e `hexo serve` automaticamente.
-
 
 ## Preprocessador: Sass
 O CSS desse projeto foi criado utilizando o pré-processador Sass.  
@@ -28,6 +27,41 @@ No terminal, chegue até o diretório raiz do repositório e use o seguinte coma
 sass --watch style-guide/source/css/main.scss:style-guide/source/css/style.css --style compressed
 ~~~
 Ou utilize o comando `npm run sass`
+
+## Árvore de arquivos
+Os arquivos CSS estão divididos da seguinte forma:  
+
+
+CSS  
+ |  
+ |-- base  
+ |-- components  
+ |-- layout  
+ |-- typography  
+ |  
+ | main.scss  
+ | style.css  
+
+### Main e Style
+O arquivo main.scss importa todos os outros arquivos do estilo. Já o style.css é o arquivo final gerado para ser aplicado nos sites.
+
+### Base
+Ficam aqui os arquivos básicos estruturais. São eles:  
+ - As famílias de fonte;
+ - O normalize (reset) de CSS para deixar todos os navegadores com o mesmo estilo;
+ - Os estilos universais, aplicados diretamente no html e no body;
+ - As utilities, ou seja classes de ajuda com usos simples, como `display: none` por exemplo;
+ - As variáveis globais, utilizadas por todas as outras folhas de estilo;
+ - As constantes de cor da Unimed.
+  
+### Components
+Aqui ficam os componentes (como botões por exemplo), tanto de classes como também semanticos de HTML (form/input...).
+  
+### Layout
+A base do layout do Framework. Ficam aqui os arquivos que montam a tipografia e o sistema de grid/apresentação.
+
+### Typography
+Aqui ficam os arquivos de web fonts das fontes Unimed usadas na folha de estilo.
 
 ## Convenção de nomenclatura de classes: BEM
 A sigla BEM vem do inglês **Block, Element, Modifier**, ou seja Bloco, Elemento e Modificador.  
@@ -84,41 +118,6 @@ Que apresentaria o seguinte código CSS de resultado:
  - [BEM 101](https://css-tricks.com/bem-101/)
  - [BEM: A New Front-End Methodology](https://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)
  - [BEM For Beginners: Why You Need BEM](https://www.smashingmagazine.com/2018/06/bem-for-beginners/)
-  
-## Árvore de arquivos
-Os arquivos CSS estão divididos da seguinte forma:  
-
-
-CSS  
- |  
- |-- base  
- |-- components  
- |-- layout  
- |-- typography  
- |  
- | main.scss  
- | style.css  
-
-### Main e Style
-O arquivo main.scss importa todos os outros arquivos do estilo. Já o style.css é o arquivo final gerado para ser aplicado nos sites.
-
-### Base
-Ficam aqui os arquivos básicos estruturais. São eles:  
- - As famílias de fonte;
- - O normalize (reset) de CSS para deixar todos os navegadores com o mesmo estilo;
- - Os estilos universais, aplicados diretamente no html e no body;
- - As utilities, ou seja classes de ajuda com usos simples, como `display: none` por exemplo;
- - As variáveis globais, utilizadas por todas as outras folhas de estilo;
- - As constantes de cor da Unimed.
-  
-### Components
-Aqui ficam os componentes (como botões por exemplo), tanto de classes como também semanticos de HTML (form/input...).
-  
-### Layout
-A base do layout do Framework. Ficam aqui os arquivos que montam a tipografia e o sistema de grid/apresentação.
-
-### Typography
-Aqui ficam os arquivos de web fonts das fontes Unimed usadas na folha de estilo.
 
 ## Tipografia
 A fonte base do framework é a Unimed Sans no **tamanho base de 18px**. O tamanho de 18px pode ser dividido por 4 e chegar no resultado de **4,5px - a unidade mínima do projeto**, que pode ser acessada pela variável `$unit`.  
