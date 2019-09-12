@@ -2,9 +2,9 @@
 title: Grid
 categories: Layout
 ---
-<p class="text--big">O grid responsivo se adapta a tela do usuário, seu tamanho e orientação, garantindo consistência
+<p class="text--big" id="subtitle">O grid responsivo se adapta a tela do usuário, seu tamanho e orientação, garantindo
+  consistência
   entre diferentes layouts</p>
-
 <div class="grid--spacer">
   <h2>Como funciona</h2>
   <p>O grid é baseado no módulo de layout <em>"Flexible Box"</em>, conhecido como <a target="_blank"
@@ -29,7 +29,7 @@ categories: Layout
 &lt;/html&gt;</pre>
   <p>Pronto! Seguindo esse esqueleto você acaba de montar uma página responsiva com o grid padrão.</p>
 
-  <h3>Entendendo o Container</h3>
+  <h3 id="understandContainer">Entendendo o Container</h3>
   <p>O container padrão tem uma largura de 244 unidades padrão (4.5px x 244 = 1098px). Assim ele pode comportar duas
     colunas de
     texto com tamanho mínimo de coluna e a calha das colunas (espaço de respiro entre elas).</p>
@@ -59,7 +59,7 @@ categories: Layout
       <p>Elemento de coluna <code>.grid__columns</code></p>
     </li>
   </ul>
-  <h3>O menu lateral</h3>
+  <h3 id="lateralMenu">O menu lateral</h3>
   <p>O elemento <code>.grid__menu</code> deve ser filho direto do <code>.grid</code> ou seja, estar no mesmo nível do
     <code>.grid__container</code>. É com esse elemento que é montado o menu ao lado nesse Guia de estilos por exemplo.
   </p>
@@ -104,7 +104,7 @@ categories: Layout
 
 <div class="grid--spacer">
   <h2 id="modifiers">Modificadores do Grid</h2>
-  <h3>Grid Wrap</h3>
+  <h3 id="gridWrap">Grid Wrap</h3>
   <p>Por padrão o <code>.grid__columns</code> vai forçar todos os seus filhos diretos dentro de uma mesma linha se
     estiver
     renderizando em dispositivos de tela grande. Esse modificador força o grid a separar esses elementos em múltiplas
@@ -142,7 +142,7 @@ categories: Layout
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 
-  <h3>Grid sem Wrap</h3>
+  <h3 id="gridNoWrap">Grid sem Wrap</h3>
   <p>Tem o efeito contrário do modificador anterior. O caso de uso principal do <code>.grid--nowrap</code> é quando se
     deseja forçar, mesmo em dispositivos móveis, que algum conteúdo seja apresentado em colunas.</p>
 
@@ -151,16 +151,16 @@ categories: Layout
     centralizado na tela, ao aplicar esse modificador ele ficará justificado à esquerda, como no caso desse Guia de
     estilos.</p>
 
-  <h3>Elementos com alturas variáveis</h3>
+  <h3 id="variableHeightElements">Elementos com alturas variáveis</h3>
   <p>Por padrão, todos os elementos dentro de <code>.grid__columns</code> terão a mesma altura do maior elemento. Ao
     adicionar o modificador <code>.grid--align-start</code> esse comportamento muda e os elementos tem sua altura
     inicial
     respeitada.</p>
 
-  <h3>Cores de fundo</h3>
+  <h3 id="backgroundColours">Cores de fundo</h3>
   <p>O modificador <code>.grid--background-light</code> aplica a cor cinza claríssimo como a cor de fundo do grid.</p>
 
-  <h3>Conteúdo na vertical</h3>
+  <h3 id="verticalContent">Conteúdo na vertical</h3>
   <p>Com <code>.grid--vertical</code> você força o elemento de grid a seguir a direção de coluna, e não o padrão de
     linha.
     Útil quando aplicado diretamento no element <code>.grid</code>, para páginas que não tem elementos ou menus
@@ -184,14 +184,14 @@ categories: Layout
     </div>
   </div>
 
-  <h3>Tamanho ideal de texto</h3>
+  <h3 id="idealText">Tamanho ideal de texto</h3>
   <p>Como pode ser visto na <a href="/tipografia">página de Tipografia</a>, existe um tamanho ideal de texto, e ele é
     uma
     coluna de até 170 unidades básicas de largura, ou seja 765px.</p>
   <p>Utilize o modificador <code>.grid--ideal-type</code> para garantir que a coluna de texto respeitara exatamente o
     tamanho ideal de linha.</p>
   <div style="outline: 2px solid rgb(223,224,225);" class="grid--ideal-type text--centered">
-    <h2 class="text--gradient-hot-colors"><strong>Sua Unimed a um toque de você</strong></h2>
+    <h4 class="text--gradient-hot-colors"><strong>Sua Unimed a um toque de você</strong></h4>
     <p>Os novos aplicativos Unimed foram desenvolvidos pensando nas necessidades de seus cooperados e beneficiários.
       Monte
       agora o app ideal dpara a sua Unimed e surpreenda-se!</p>
@@ -203,7 +203,7 @@ categories: Layout
   &lt;a class="btn btn--primary-color"&gt;Quero saber mais!&lt;/a&gt;
 &lt;/div&gt;</pre>
 
-  <h3>Scroll de linha única</h3>
+  <h3 id="lineScroll">Scroll de linha única</h3>
   <p>Ao aplicar a classe <code>.grid__overflow</code> os cards estão sendo apresentados na mesma linha, com uma barra de
     rolagem ajudando na navegação e garantindo que eles tenham o seu tamanho mínimo respeitado.</p>
   <div class="grid__columns grid--overflow">
@@ -241,7 +241,7 @@ categories: Layout
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 
-  <h3>Espaçador</h3>
+  <h3 id="spacer">Espaçador</h3>
   <p>Utilize a classe <code>.grid--spacer</code> para adicionar espaços de respiro no elemento em que for adicionado.
     Em dispositivos de tela grande esse espaço é de altura de 2 linhas (12 Unidades Básicas, 54px) para cima e para
     baixo,
@@ -258,7 +258,7 @@ categories: Layout
 
 <div class="grid--spacer">
   <h2 id="mobile">Modificadores para dispositivos móveis</h2>
-  <h3>Scroll de linha única mobile</h3>
+  <h3 id="lineScrollMobile">Scroll de linha única mobile</h3>
   <p>Vamos pegar o mesmo exemplo com cards que utilizamos no <code>.grid--wrap</code>, mas agora vamos também adicionar
     a
     classe <code>.grid--overflow-mobile</code>.</p>
@@ -297,3 +297,48 @@ categories: Layout
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 </div>
+
+<script>
+  (() => {
+    const titles = Array.from(document.querySelectorAll("h2, h3"));
+    const h2 = Array.from(document.querySelectorAll("h2"));
+    const subTitle = document.getElementById('subtitle');
+    let theContent = '';
+
+    h2.forEach(title => {
+      let theIndex = titles.indexOf(title);
+      let theSubtitles = '';
+
+      for (let i = ++theIndex; i < titles.length; i++) {
+        if (titles[i].tagName === 'H2') {
+          break;
+        }
+        theSubtitles += '<li>' +
+          '<a href="#' + titles[i].id + '">' + titles[i].innerText + '</a>' +
+          '<li>';
+      }
+
+      theContent += '<details>' +
+        '<summary>' + title.innerText + '</summary>' +
+        '<ul class="menu__link-list">' +
+        theSubtitles +
+        '</ul>' +
+        '</details>';
+    });
+
+    const header = '<h2>Conteúdos da página</h2>' +
+      '<p><em>Clique sobre o ítem para expandir o seu conteúdo</em></p>' +
+      '<hr />';
+
+    const content = '<section class="grid__columns grid--overflow">' +
+      theContent +
+      '</section>';
+
+    const full = '<article class="card">' +
+      header +
+      content +
+      '</article>';
+
+    subTitle.insertAdjacentHTML("afterend", full);
+  })();
+</script>

@@ -85,7 +85,8 @@
     padding-bottom: $line-height;
     & > *{
     flex: initial;
-    min-width: $unit * 65;
+    min-width: $unit * 75;
+    max-width: 80%;
     }
     & > *:last-child{
       padding-right: $unit * 3;
