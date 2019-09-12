@@ -1,4 +1,7 @@
-.btn, button, input[type="submit"], input[type="reset"]{
+.btn,
+button,
+input[type="submit"],
+input[type="reset"] {
   -webkit-appearance: none;
   appearance: none;
   text-decoration: none;
@@ -17,27 +20,28 @@
   & > * {
     pointer-events: none;
   }
-  &:focus{
-    outline: $unit / 2 solid $focus;
-    outline-offset: 0;
+  &:focus {
+    outline: none;
     border-color: $focus;
     box-shadow: none;
   }
-  &:hover{
+  &:hover {
     background: $primary;
     border-color: $primary;
     color: white;
   }
-  &:disabled{
+  &:disabled {
+    border-color: $gray !important;
+    background: $gray !important;
+    color: $gray-dark !important;
     cursor: default;
-    border-color: $gray;
-    color: $gray;
     pointer-events: none;
   }
 }
 
-input[type="submit"], input[type="reset"]{
-  display:block;
+input[type="submit"],
+input[type="reset"] {
+  display: block;
 }
 
 // Button Modifiers
@@ -47,7 +51,7 @@ input[type="submit"], input[type="reset"]{
   border-color: $background-color;
   background-color: $background-color;
   color: $color;
-  &:hover{
+  &:hover {
     background: lighten($background-color, 10);
     border-color: lighten($background-color, 10);
     color: $color;
@@ -56,7 +60,11 @@ input[type="submit"], input[type="reset"]{
 
 // Backgrond color Modifiers
 //.btn-primary is a Liferay class
-.btn--primary-color, input[type="submit"].btn--primary-color, input[type="reset"].btn--primary-color, .btn-primary,.btn-primary.btn-default{
+.btn--primary-color,
+input[type="submit"].btn--primary-color,
+input[type="reset"].btn--primary-color,
+.btn-primary,
+.btn-primary.btn-default {
   @include buttonColor($primary);
   ::selection {
     background: $secondary-orange;
@@ -69,78 +77,112 @@ input[type="submit"], input[type="reset"]{
 }
 
 //.btn-link.btn-default.btn-cancel are Liferay classes
-.btn--secondary-color-magenta, input[type="submit"].btn--secondary-color-magenta, input[type="reset"].btn--secondary-color-magenta,.btn-link.btn-default.btn-cancel{
+.btn--secondary-color-magenta,
+input[type="submit"].btn--secondary-color-magenta,
+input[type="reset"].btn--secondary-color-magenta,
+.btn-link.btn-default.btn-cancel {
   @include buttonColor($secondary-magenta);
 }
 
-.btn--secondary-color-purple-dark, input[type="submit"].btn--secondary-color-purple-dark, input[type="reset"].btn--secondary-color-purple-dark{
+.btn--secondary-color-purple-dark,
+input[type="submit"].btn--secondary-color-purple-dark,
+input[type="reset"].btn--secondary-color-purple-dark {
   @include buttonColor($secondary-purple-dark);
 }
 
-.btn--secondary-color-purple, input[type="submit"].btn--secondary-color-purple, input[type="reset"].btn--secondary-color-purple{
+.btn--secondary-color-purple,
+input[type="submit"].btn--secondary-color-purple,
+input[type="reset"].btn--secondary-color-purple {
   @include buttonColor($secondary-purple);
 }
 
-.btn--secondary-color-brown, input[type="submit"].btn--secondary-color-brown, input[type="reset"].btn--secondary-color-brown{
+.btn--secondary-color-brown,
+input[type="submit"].btn--secondary-color-brown,
+input[type="reset"].btn--secondary-color-brown {
   @include buttonColor($secondary-brown);
 }
 
-.btn--secondary-color-orange, input[type="submit"].btn--secondary-color-orange, input[type="reset"].btn--secondary-color-orange{
+.btn--secondary-color-orange,
+input[type="submit"].btn--secondary-color-orange,
+input[type="reset"].btn--secondary-color-orange {
   @include buttonColor($secondary-orange);
 }
 
-.btn--secondary-color-yellow, input[type="submit"].btn--secondary-color-yellow, input[type="reset"].btn--secondary-color-yellow{
+.btn--secondary-color-yellow,
+input[type="submit"].btn--secondary-color-yellow,
+input[type="reset"].btn--secondary-color-yellow {
   @include buttonColor($secondary-yellow, $primary-dark);
 }
 
-.btn--secondary-color-lime, input[type="submit"].btn--secondary-color-lime, input[type="reset"].btn--secondary-color-lime{
+.btn--secondary-color-lime,
+input[type="submit"].btn--secondary-color-lime,
+input[type="reset"].btn--secondary-color-lime {
   @include buttonColor($secondary-lime, $primary-dark);
 }
 
-.btn--secondary-color-gray, input[type="submit"].btn--secondary-color-gray, input[type="reset"].btn--secondary-color-gray{
+.btn--secondary-color-gray,
+input[type="submit"].btn--secondary-color-gray,
+input[type="reset"].btn--secondary-color-gray {
   @include buttonColor($gray);
 }
 
 // No background color Modifier
 // The .btn-outline-borderless class is a Liferay class
-.btn--simple, .btn-outline-borderless{
+.btn--simple,
+.btn-outline-borderless {
   background: none;
-  border-color: rgba(255,255,255,0);
+  border-color: rgba(255, 255, 255, 0);
   color: $gray-darker;
-   &:hover{
+  &:hover {
     background: none;
-    border-color: rgba(255,255,255,0);
+    border-color: rgba(255, 255, 255, 0);
     color: $primary;
   }
 }
 
-.btn--float-right{
+.btn--float-right {
   float: right;
   margin-right: $unit;
-  &:first-of-type{
+  &:first-of-type {
     margin-right: 0;
   }
 }
 
-.btn--float-right, .card .btn.btn--float-right, .card button.btn--float-right{
+.btn--float-right,
+.card .btn.btn--float-right,
+.card button.btn--float-right {
   margin-top: $unit * 3;
 }
 
-.btn--small-margins, button.btn--small-margins, input[type="submit"].btn--small-margins, input[type="reset"].btn--small-margins{
+.btn--small-margins,
+button.btn--small-margins,
+input[type="submit"].btn--small-margins,
+input[type="reset"].btn--small-margins {
   margin: $unit * 3 0;
 }
 
 // Media Querie
 // ----------------------
-@media (max-width: $break-default){
-  .btn, button, input[type="submit"], input[type="reset"], .btn--small-margins, button.btn--small-margins, input[type="submit"].btn--small-margins, input[type="reset"].btn--small-margins{
+@media (max-width: $break-default) {
+  .btn,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  .btn--small-margins,
+  button.btn--small-margins,
+  input[type="submit"].btn--small-margins,
+  input[type="reset"].btn--small-margins {
     margin-top: 0;
     display: block;
   }
-  button, input[type="submit"], input[type="reset"]{
+  button,
+  input[type="submit"],
+  input[type="reset"] {
     width: 100%;
   }
-  .btn--float-right, .card .btn.btn--float-right, .card button.btn--float-right{
+  .btn--float-right,
+  .card .btn.btn--float-right,
+  .card button.btn--float-right {
     margin-top: 0;
     max-width: 35%;
   }
