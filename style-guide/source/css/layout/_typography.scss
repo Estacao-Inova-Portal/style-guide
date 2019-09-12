@@ -239,4 +239,10 @@ hr{
     line-height: $line-height * 2;
     font-size: $line-height * 2;
   }
+  summary{
+    padding: $unit * 3 0;
+  }
+  details{
+    line-height: $line-height;
+  }
 }

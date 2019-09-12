@@ -86,7 +86,7 @@
     & > *{
     flex: initial;
     min-width: $unit * 75;
-    max-width: 80%;
+    max-width: 70%;
     }
     & > *:last-child{
       padding-right: $unit * 3;
@@ -115,7 +115,7 @@
     flex-wrap: wrap;
     & > *{
     flex: initial;
-    min-width: $unit * 28;
+    min-width: 60%;
     }
     & > *:not(img){
       width: 100%;
