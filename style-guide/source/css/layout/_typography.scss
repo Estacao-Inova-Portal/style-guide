@@ -1,23 +1,37 @@
 // Basic components
-p, span, ul, ol, a, label, legend, th, td, figcaption, input, select, button, q {
+p,
+span,
+ul,
+ol,
+a,
+label,
+legend,
+th,
+td,
+figcaption,
+input,
+select,
+button,
+q {
   max-width: $max-text-column;
   line-height: $line-height;
 }
 
-p, q{
+p,
+q {
   margin-top: 0;
   margin-bottom: $line-height;
   hanging-punctuation: first;
 }
 
-h1{
+h1 {
   font-size: $font-size * 2.75;
   line-height: $line-height * 2;
   margin-top: $line-height * 2;
   margin-bottom: $line-height;
 }
 
-h2{
+h2 {
   font-size: $font-size * 2.25;
   font-weight: 400;
   line-height: $line-height * 2;
@@ -25,38 +39,40 @@ h2{
   margin-bottom: $line-height;
 }
 
-h3{
+h3 {
   font-size: $font-size * 1.5;
   line-height: $line-height;
   margin-top: $line-height * 2;
   margin-bottom: $line-height;
 }
 
-h4{
+h4 {
   font-size: $font-size * 1.25;
   line-height: $line-height;
   margin-top: $line-height;
   margin-bottom: $line-height;
 }
 
-h2:first-child, h3:first-child, h4:first-child{
+h2:first-child,
+h3:first-child,
+h4:first-child {
   margin-top: 0;
 }
 
-.grid__container{
-  * > h1:first-child{
-    margin-top:$line-height;
+.grid__container {
+  * > h1:first-child {
+    margin-top: $line-height;
   }
 }
 
-code{
+code {
   background: $primary-25;
   color: $primary-dark;
   padding: 0 $unit;
   border-radius: $radius;
 }
 
-pre{
+pre {
   background: $gray-lighter;
   color: $primary-dark;
   line-height: $line-height;
@@ -66,7 +82,7 @@ pre{
   margin: $line-height 0;
 }
 
-ul{
+ul {
   margin: $line-height 0;
 }
 
@@ -75,12 +91,12 @@ a:not(.btn) {
   color: $font-color;
   text-decoration: none;
   box-shadow: $button-shadow;
-  &:hover{
+  &:hover {
     color: $link-color-hover;
     box-shadow: none;
     background: $gray-light;
   }
-  &:focus{
+  &:focus {
     box-shadow: $button-shadow-focus;
     background: $focus;
     outline: none;
@@ -88,28 +104,28 @@ a:not(.btn) {
   }
 }
 
-details{
+details {
   line-height: $line-height * 2;
   display: inline-block;
   width: 100%;
-  &:first-of-type{
+  &:first-of-type {
     margin-top: $unit * 3;
   }
 }
 
-summary{
+summary {
   cursor: pointer;
-  &:hover{
+  &:hover {
     color: #00401a;
     background: #c8c9cd;
     transition: $transition;
   }
-  &:focus{
+  &:focus {
     outline: $focus auto $unit;
   }
 }
 
-hr{
+hr {
   outline: 1px solid $gray-lighter;
   border: none;
   margin: $unit * 3 0;
@@ -118,86 +134,86 @@ hr{
 
 // Typography Modifiers
 // ----------------------
-.text--all-caps{
+.text--all-caps {
   text-transform: uppercase;
 }
 
-.text--small{
+.text--small {
   font-size: 0.75em;
   font-weight: normal;
 }
 
-.text--big{
+.text--big {
   font-size: 1.25em;
   font-weight: normal;
 }
 
-.text--centered{
+.text--centered {
   text-align: center;
 }
 
-.text--display{
+.text--display {
   line-height: $line-height * 3;
   font-size: $line-height * 3;
 }
 
-.text--slab{
-  font-family: 'Unimed Slab', 'Trebuchet MS', 'Unimed Sans', serif;
+.text--slab {
+  font-family: "Unimed Slab", "Trebuchet MS", "Unimed Sans", serif;
 }
 
-.text--brush{
-  font-family: 'Unimed Brush', $font-sans-serif;
+.text--brush {
+  font-family: "Unimed Brush", $font-sans-serif;
 }
 
-.text--serif{
-  font-family: 'Unimed Serif', $font-serif;
+.text--serif {
+  font-family: "Unimed Serif", $font-serif;
 }
 
 // Color modifiers
-.text--primary-color{
+.text--primary-color {
   color: $main-color;
 }
 
-.text--secondary-color{
+.text--secondary-color {
   color: $contrast-color;
 }
 
-.text--secondary-color-magenta{
+.text--secondary-color-magenta {
   color: $secondary-magenta;
 }
 
-.text--secondary-color-purple-dark{
+.text--secondary-color-purple-dark {
   color: $secondary-purple-dark;
 }
 
-.text--secondary-color-purple{
+.text--secondary-color-purple {
   color: $secondary-purple;
 }
 
-.text--secondary-color-brown{
+.text--secondary-color-brown {
   color: $secondary-brown;
 }
 
-.text--secondary-color-orange{
+.text--secondary-color-orange {
   color: $secondary-orange;
 }
 
-.text--secondary-color-yellow{
+.text--secondary-color-yellow {
   color: $secondary-yellow;
 }
 
-.text--secondary-color-lime{
+.text--secondary-color-lime {
   color: $secondary-lime;
 }
 
-.text--gradient-hot-colors{
+.text--gradient-hot-colors {
   background: $orange-to-magenta;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text--gradient-cool-colors{
+.text--gradient-cool-colors {
   background: $lime-to-green;
   -webkit-background-clip: text;
   background-clip: text;
@@ -206,43 +222,52 @@ hr{
 
 // Media Querie
 // ----------------------
-@media (max-width: $break-default){
-  h1{
+@media (max-width: $break-default) {
+  h1 {
     font-size: $font-size * 2;
     line-height: $unit * 9;
     margin-top: $font-size * 1.75;
   }
-  h2{
+  h2 {
     font-size: $font-size * 1.75;
     line-height: $unit * 8;
     margin-top: $font-size * 1.5;
   }
-  
-  h3{
+
+  h3 {
     font-size: $font-size * 1.25;
     line-height: $unit * 7;
     margin-top: $font-size * 1.25;
   }
-  h4{
+  h4 {
     font-size: $font-size * 1.1;
     line-height: $font-size * 1.5;
     margin-top: $font-size;
   }
-  pre, figcaption{
+  pre,
+  figcaption {
     font-size: 16px;
   }
-  .text--big{
+  .text--big {
     font-size: 1.1em;
     font-weight: bold;
   }
-  .text--display{
+  .text--display {
     line-height: $line-height * 2;
     font-size: $line-height * 2;
   }
-  summary{
+  summary {
     padding: $unit * 3 0;
   }
-  details{
+  details {
     line-height: $line-height;
+  }
+}
+
+// Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .text--gradient-green,
+  .text--gradient-hot-colors {
+    background: inherit;
   }
 }

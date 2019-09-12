@@ -1,7 +1,10 @@
 //public page and site added because of Liferay
-.grid, .public-page, .site{
-  display:flex;
-  & > .grid__container, & > .flipped{
+.grid,
+.public-page,
+.site {
+  display: flex;
+  & > .grid__container,
+  & > .flipped {
     margin-top: $line-height * 3;
   }
 }
@@ -9,7 +12,8 @@
 // Grid Elements
 // ----------------------
 //Flipped because of Liferay
-.grid__container, .flipped{
+.grid__container,
+.flipped {
   width: calc(100% - #{$line-height});
   max-width: $container-width;
   margin: auto;
@@ -19,24 +23,24 @@
   padding: 0 $unit * 3;
 }
 
-.grid__menu{
+.grid__menu {
   padding-right: $unit-2;
   padding-left: $unit-2;
-  min-width: $unit-8 *8;
+  min-width: $unit-8 * 8;
   position: relative;
 }
-.grid__columns{
-  display:flex;
-  margin-right: - $unit * 3;
-  margin-left: - $unit * 3;
+.grid__columns {
+  display: flex;
+  margin-right: -$unit * 3;
+  margin-left: -$unit * 3;
   min-width: 0; //Firefox
-  & > *{
+  & > * {
     margin: $unit * 3;
     flex: 1 1 0;
   }
 }
 
-.grid__container-full{
+.grid__container-full {
   padding: 0 $unit * 3;
   width: calc(100% - 27px);
   margin: auto;
@@ -47,110 +51,117 @@
 
 // Grid Modifiers
 // ----------------------
-.grid--wrap{
+.grid--wrap {
   flex-wrap: wrap;
-  & > *{
+  & > * {
     flex: initial;
   }
 }
 
-.grid--nowrap{
+.grid--nowrap {
   flex-wrap: nowrap;
 }
 
-.grid--vertical{
+.grid--vertical {
   flex-direction: column;
 }
 
-.grid--no-margin{
-  margin-right:initial;
-  margin-left:initial;
+.grid--no-margin {
+  margin-right: initial;
+  margin-left: initial;
 }
 
-.grid--align-start{
+.grid--align-start {
   align-items: flex-start;
 }
 
-.grid--background-light{
-  background: lighten($gray-lighter-max, 6) ;
+.grid--background-light {
+  background: lighten($gray-lighter-max, 6);
 }
 
-.grid--margin-top{
+.grid--margin-top {
   margin-top: $unit-8 * 3;
 }
 
-.grid--overflow{
-    overflow: auto;
-    flex-wrap: nowrap;
-    padding-bottom: $line-height;
-    & > *{
+.grid--overflow {
+  overflow: auto;
+  flex-wrap: nowrap;
+  padding-bottom: $line-height;
+  & > * {
     flex: initial;
     min-width: $unit * 75;
     max-width: 70%;
-    }
-    & > *:last-child{
-      padding-right: $unit * 3;
-    }
   }
+  & > *:last-child {
+    padding-right: $unit * 3;
+  }
+}
 
-.grid--ideal-type{
+.grid--ideal-type {
   display: block;
   width: $ideal-text-column;
   max-width: 100%;
   margin: auto;
 }
 
-.grid--spacer{
+.grid--spacer {
   padding: $unit * 12 0;
 }
 
 // Media Querie
 // ----------------------
-@media (max-width: $break-default){
-  .grid__container{
+@media (max-width: $break-default) {
+  .grid__container {
     margin-top: $line-height * 2 + $unit;
     width: calc(100% - 27px);
   }
-  .grid__columns{
+  .grid__columns {
     flex-wrap: wrap;
-    & > *{
-    flex: initial;
-    min-width: 60%;
+    & > * {
+      flex: initial;
+      min-width: 60%;
     }
-    & > *:not(img){
+    & > *:not(img) {
       width: 100%;
     }
-    & > img{
+    & > img {
       margin-right: auto;
       margin-left: auto;
     }
   }
-  .grid--overflow, .grid--overflow-mobile{
+  .grid--overflow,
+  .grid--overflow-mobile {
     overflow: auto;
     flex-wrap: nowrap;
     padding-bottom: $line-height;
-    & > *:last-child{
+    & > *:last-child {
       padding-right: $unit * 3;
     }
   }
-  .grid--nowrap{
+  .grid--nowrap {
     flex-wrap: nowrap;
   }
-  .grid__menu{
+  .grid__menu {
     margin-top: 0;
   }
-  .grid--spacer, .grid__container.grid--spacer{
-  padding: $unit * 6 0;
-}
+  .grid--spacer,
+  .grid__container.grid--spacer {
+    padding: $unit * 6 0;
+  }
 }
 
 // If Internet Explorer
 // ----------------------
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .grid, .grid__container{
+  .grid,
+  .grid__container {
     display: block;
   }
-  .grid__container{
+  .grid__container {
     margin-top: 0;
+  }
+  .grid__columns > * {
+    width: 50%;
+    float: right;
   }
 }

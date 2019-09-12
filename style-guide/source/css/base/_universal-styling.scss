@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   ::selection {
@@ -11,7 +11,8 @@ html{
   }
 }
 
-body, html{
+body,
+html {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-smoothing: unset;
   -webkit-font-smoothing: antialiased;
@@ -23,10 +24,17 @@ body, html{
   color: $font-color;
 }
 
-iframe{
-  width: 90%;
+iframe {
+  width: 100%;
   max-width: calc(100% - 27px);
   box-sizing: border-box;
   margin: auto;
   display: block;
+}
+
+// Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  video {
+    width: 100%;
+  }
 }
