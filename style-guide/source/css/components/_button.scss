@@ -16,7 +16,7 @@ input[type="reset"] {
   text-align: center;
   cursor: pointer;
   box-shadow: none;
-  transition: background-color $transition, border $transition;
+  transition: background-color $transition, border $transition, filter $transition;
   & > * {
     pointer-events: none;
   }
@@ -52,8 +52,9 @@ input[type="reset"] {
   background-color: $background-color;
   color: $color;
   &:hover {
-    background: lighten($background-color, 10);
-    border-color: lighten($background-color, 10);
+    border-color: $background-color;
+    background-color: $background-color;
+    filter: brightness(1.2) contrast(1.15);
     color: $color;
   }
 }
@@ -63,6 +64,7 @@ input[type="reset"] {
 .btn--primary-color,
 input[type="submit"].btn--primary-color,
 input[type="reset"].btn--primary-color,
+button.btn--primary-color,
 .btn-primary,
 .btn-primary.btn-default {
   @include buttonColor($primary);
@@ -78,6 +80,7 @@ input[type="reset"].btn--primary-color,
 
 //.btn-link.btn-default.btn-cancel are Liferay classes
 .btn--secondary-color-magenta,
+button.btn--secondary-color-magenta,
 input[type="submit"].btn--secondary-color-magenta,
 input[type="reset"].btn--secondary-color-magenta,
 .btn-link.btn-default.btn-cancel {
@@ -85,42 +88,49 @@ input[type="reset"].btn--secondary-color-magenta,
 }
 
 .btn--secondary-color-purple-dark,
+button.btn--secondary-color-purple-dark,
 input[type="submit"].btn--secondary-color-purple-dark,
 input[type="reset"].btn--secondary-color-purple-dark {
   @include buttonColor($secondary-purple-dark);
 }
 
 .btn--secondary-color-purple,
+button.btn--secondary-color-purple,
 input[type="submit"].btn--secondary-color-purple,
 input[type="reset"].btn--secondary-color-purple {
   @include buttonColor($secondary-purple);
 }
 
 .btn--secondary-color-brown,
+button.btn--secondary-color-brown,
 input[type="submit"].btn--secondary-color-brown,
 input[type="reset"].btn--secondary-color-brown {
   @include buttonColor($secondary-brown);
 }
 
 .btn--secondary-color-orange,
+button.btn--secondary-color-orange,
 input[type="submit"].btn--secondary-color-orange,
 input[type="reset"].btn--secondary-color-orange {
   @include buttonColor($secondary-orange);
 }
 
 .btn--secondary-color-yellow,
+button.btn--secondary-color-yellow,
 input[type="submit"].btn--secondary-color-yellow,
 input[type="reset"].btn--secondary-color-yellow {
   @include buttonColor($secondary-yellow, $primary-dark);
 }
 
 .btn--secondary-color-lime,
+button.btn--secondary-color-lime,
 input[type="submit"].btn--secondary-color-lime,
 input[type="reset"].btn--secondary-color-lime {
   @include buttonColor($secondary-lime, $primary-dark);
 }
 
 .btn--secondary-color-gray,
+button.btn--secondary-color-gray,
 input[type="submit"].btn--secondary-color-gray,
 input[type="reset"].btn--secondary-color-gray {
   @include buttonColor($gray);
@@ -129,6 +139,9 @@ input[type="reset"].btn--secondary-color-gray {
 // No background color Modifier
 // The .btn-outline-borderless class is a Liferay class
 .btn--simple,
+input[type="submit"].btn--simple,
+input[type="reset"].btn--simple,
+button.btn--simple,
 .btn-outline-borderless {
   background: none;
   border-color: rgba(255, 255, 255, 0);
@@ -138,6 +151,15 @@ input[type="reset"].btn--secondary-color-gray {
     border-color: rgba(255, 255, 255, 0);
     color: $primary;
   }
+}
+
+// Small buttons
+.btn--small,
+input[type="submit"].btn--small,
+input[type="reset"].btn--small,
+button.btn--simple {
+  padding: $unit $unit * 3;
+  margin: $unit * 1.75 0;
 }
 
 .btn--float-right {
