@@ -1,0 +1,25 @@
+---
+title: Polyfill (Internet Explorer)
+categories: JavaScript
+---
+<p class="text--big">Utilizamos JavaScript moderno e atualizado para montar os nossos scripts.</p>
+<p>Para funcionar em navegadores antigos - em especial no Internet Explorer - temos dois scripts. Um deles é um Script
+  para validar as capacidades do navegador e, se necessário, adicionar algumas funcionalidades em seu código, e um
+  segundo com o código dos nossos scripts reescritos em JavaScript antigo.</p>
+<p>Para funcionar você precisa dos dois arquivos.</p>
+<a href="../js/polyfill.js" download class="btn btn--secondary-color-purple btn--small-margins">Baixar validador
+  (.js)</a>
+<a href="../js/controllers-ie.js" download class="btn btn--secondary-color-purple-dark btn--small-margins">Baixar JS
+  antigo
+  (.js)</a>
+
+<h2>Como funciona?</h2>
+<p>O primeiro passo é adicionar ambos os arquivos na pasta <code>/js</code> do seu projeto. Caso você utilize uma pasta
+  com outro nome, precisa modificar o caminho dentro dos arquivos.</p>
+<p>O segundo passo é referenciar o arquivo <code>polyfill.js</code> (validador) em sua página, o outro arquivo não
+  precisa ser
+  chamado em seu HTML pois, se necessário, será chamado pelo próprio polyfill.</p>
+<pre>(...)
+  &lt;script src=&quot;<strong>/js/polyfill.js</strong>&quot;&gt;&lt;/script&gt;
+(...)
+</pre>
