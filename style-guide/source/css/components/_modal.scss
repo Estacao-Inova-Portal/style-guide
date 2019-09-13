@@ -1,4 +1,5 @@
-dialog, .modal{
+dialog,
+.modal {
   max-width: 90%;
   max-height: 80%;
   overflow: hidden;
@@ -8,14 +9,14 @@ dialog, .modal{
   left: 0;
   right: 0;
   margin: auto;
-  &[open]{
+  &[open] {
     display: block;
   }
 }
 
 // Modal Elements
 // ----------------------
-.modal__container{
+.modal__container {
   display: none;
   justify-content: center;
   align-items: center;
@@ -27,14 +28,15 @@ dialog, .modal{
   z-index: 10;
 }
 
-.modal__close-btn, .card .modal__close-btn{
+.modal__close-btn,
+.card .modal__close-btn {
   position: absolute;
   right: $unit-2;
   top: $unit-2;
   margin-top: 0;
 }
 
-.modal__overlay{
+.modal__overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -44,48 +46,53 @@ dialog, .modal{
   z-index: 20;
 }
 
-[data-modal-native] .modal__overlay{
+[data-modal-native] .modal__overlay {
   display: none;
 }
 
-.modal__header, .modal__content, .modal__footer{
+.modal__header,
+.modal__content,
+.modal__footer {
   padding: $unit-4 0;
 }
 
-.modal__header{
+.modal__header {
   padding-top: $unit-8;
 }
 
-.modal__content{
+.modal__content {
   overflow: auto;
   max-height: 37vh;
 }
 
 // Media Querie
 // ----------------------
-@media (max-width: $break-default){
-  dialog, .modal{
+@media (max-width: $break-default) {
+  dialog,
+  .modal {
     height: 100%;
     position: fixed;
     max-height: 100%;
+    max-width: 100%;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    &[open]{
+    &[open] {
       display: flex;
       flex-direction: column;
     }
   }
-  .modal__content{
+  .modal__content {
     max-height: initial;
     flex-grow: 2;
   }
-  .modal__close-btn, .card .modal__close-btn{
+  .modal__close-btn,
+  .card .modal__close-btn {
     position: fixed;
     width: initial;
   }
-  .modal__header{
+  .modal__header {
     padding-top: $unit-8 * 2;
   }
 }

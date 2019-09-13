@@ -33,7 +33,7 @@ input[type="reset"] {
   &:disabled {
     border-color: $gray !important;
     background: $gray !important;
-    color: $gray-dark !important;
+    color: $gray-darker !important;
     cursor: default;
     pointer-events: none;
   }
@@ -206,6 +206,6 @@ input[type="reset"].btn--small-margins {
   .card .btn.btn--float-right,
   .card button.btn--float-right {
     margin-top: 0;
-    max-width: 35%;
+    max-width: 33vw;
   }
 }

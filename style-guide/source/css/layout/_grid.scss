@@ -112,7 +112,7 @@
 // ----------------------
 @media (max-width: $break-default) {
   .grid__container {
-    margin-top: $line-height * 2 + $unit;
+    margin-top: $line-height * 1.75;
     width: calc(100% - 27px);
   }
   .grid__columns {
