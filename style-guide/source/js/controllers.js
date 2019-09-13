@@ -1,4 +1,12 @@
+//======================================//
+// Unimed Style Guide Scripts
+//======================================//
+
+
+
+//======================================//
 // Universal variables
+//======================================//
 // All elements that can be focused
 const FOCUSABLE_ELEMENTS = [
   'a[href]:not([tabindex^="-"]):not([inert])',
@@ -14,12 +22,9 @@ const FOCUSABLE_ELEMENTS = [
   '[tabindex]:not([tabindex^="-"]):not([inert])'
 ];
 
-let focusedBeforeDialog = '';
-
-// Get all the elements that opens a modal
-const modalOpeners = Array.from(document.querySelectorAll('[data-modal-show]'));
-
+//======================================//
 // Global functions
+//======================================//
 //Convert a NodeList into an array
 function toArray(collection) {
   return Array.prototype.slice.call(collection);
@@ -107,7 +112,34 @@ function toggleClass(target, cssClass){
   el.classList.toggle(cssClass);
 }
 
+// Lazy Load images and videos
+// This function is called at the end of this JS file
+function lazyload() {
+  // Lazy load images
+  const elements = Array.prototype.slice.call(document.querySelectorAll('[data-src]'))
+  elements.forEach(element => {
+    element.dataset.src ? element.src = element.dataset.src : null;
+  });
+
+  // Lazy load videos
+  if (document.getElementsByTagName('video')) {
+    Array.prototype.slice.call(document.getElementsByTagName('video')).forEach(element => {
+      element.children[0].dataset.src && element.load()
+    });
+  }
+}
+
+//======================================//
+// Classes
+//======================================//
 //Modal controllers
+//Modal controller specific global variables
+
+let focusedBeforeDialog = '';
+// Get all the elements that opens a modal
+const modalOpeners = Array.from(document.querySelectorAll('[data-modal-show]'));
+
+//The modal class
 class modalController {
   constructor(node, targets) {
     this._show = this.show.bind(this);
@@ -297,4 +329,7 @@ modalOpeners.forEach(el => {
   const modalId = el.dataset.modalShow;
   new modalController(document.getElementById(modalId))
 });
+
+// Loads Scripts after the page is loaded
+window.addEventListener('load', lazyload());
 //

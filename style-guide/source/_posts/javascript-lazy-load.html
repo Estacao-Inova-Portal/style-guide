@@ -1,0 +1,22 @@
+---
+title: Carregamento Dinâmico
+categories: JavaScript
+---
+<p class="text--big">Usamos JavaScript para carregar imagens e vídeos de forma dinâmica (Lazy Load)</p>
+<p>Apesar de desde a versão 75 do Chrome, <a href="https://css-tricks.com/native-lazy-loading/" target="_blank"
+    rel="noopener">ele aceitar o parâmetro</a> <code>loading="lazy"</code> até o momento ele é o único navegador a fazer
+  carregamento dinâmico de imagens de forma nativa.</p>
+<p>Apesar disso a sugestão é sim utilizar esse parâmetro nas suas imagens pois navegadores que não suportarem vão apenas
+  ignorar.</p>
+<p>Esse parâmetro deve ser utilizado da seguinte maneira:</p>
+<pre>&lt;img src=&quot;unimed.jpg&quot; <strong>loading=&quot;lazy&quot</strong> alt=&quot;...&quot; /&gt;</pre>
+<p>E isso garantirá o carregamento dinâmico de imagens no Chrome a partir da versão 75.</p>
+<h2>Carregamento dinâmico universal de imagens e vídeos</h2>
+<p>Para te ajudar a desenvolver sites com boa performance, dentro dos nossos controles de JavaScript, temos um script
+  que roda automaticamente após o carregamento da página e faz o carregamento de imagens e vídeos de forma dinâmica.</p>
+<h3>Como fazer o carregamento dinâmico funcionar</h3>
+<p>Para fazer o carregamento dinâmico funcionar, nas imagens e vídeos que deseja aplicá-lo, troque o parâmetro
+  <code>src</code> por <code>data-src</code>, e pronto, essa mídia irá carregar de forma dinâmica.</p>
+<pre>&lt;img <strong>data-src</strong>=&quot;unimed.jpg&quot; loading=&quot;lazy&quot alt=&quot;...&quot; /&gt;</pre>
+<p>Lembre-se, para o carregamento dinâmico funcionar, a mídia <strong>não pode</strong> ter o atributo <code>src</code>,
+  apenas <code>data-src</code> ou o carregamento dinâmico se tornará inútil.</p>
