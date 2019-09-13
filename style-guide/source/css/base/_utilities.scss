@@ -28,6 +28,61 @@
   overflow: hidden!important;
 }
 
+// Background with color
+// Base Background color Mixin
+@mixin backgroundColor($background-color, $color: $white) {
+  border-color: $background-color;
+  background: $background-color;
+  color: $color;
+  & > .card, & > .btn {
+    box-shadow: $shadow-strong;
+  }
+}
+
+.util--background-gradient-greens {
+  @include backgroundColor($green-to-lighter, $primary-dark);
+}
+
+.util--background-gradient-magenta-to-orange {
+  @include backgroundColor($magenta-to-orange);
+}
+
+.util--background-primary {
+  @include backgroundColor($primary);
+}
+
+.util--background-gray {
+  @include backgroundColor($gray-dark);
+}
+
+.util--background-secondary-magenta {
+  @include backgroundColor($secondary-magenta);
+}
+
+.util--background-secondary-purple-dark {
+  @include backgroundColor($secondary-purple-dark);
+}
+
+.util--background-secondary-purple {
+  @include backgroundColor($secondary-purple);
+}
+
+.util--background-secondary-brown {
+  @include backgroundColor($secondary-brown);
+}
+
+.util--background-secondary-orange {
+  @include backgroundColor($secondary-orange);
+}
+
+.util--background-secondary-yellow {
+  @include backgroundColor($secondary-yellow, $secondary-brown);
+}
+
+.util--background-secondary-lime {
+  @include backgroundColor($secondary-lime, $primary-dark);
+}
+
 // Media Querie
 // ----------------------
 @media (max-width: $break-default){

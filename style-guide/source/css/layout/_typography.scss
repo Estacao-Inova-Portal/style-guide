@@ -145,7 +145,7 @@ hr {
 
 .text--big {
   font-size: 1.25em;
-  font-weight: normal;
+  line-height: 1.5 * $line-height;
 }
 
 .text--centered {
@@ -251,6 +251,7 @@ hr {
   .text--big {
     font-size: 1.1em;
     font-weight: bold;
+    line-height: $line-height;
   }
   .text--display {
     line-height: $line-height * 2;

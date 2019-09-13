@@ -58,3 +58,34 @@ categories: Layout
   <p>Quando por querer você deseja utilizar o elemento pai como uma "mascara" para cortar fora partes de um ou mais
     elementos filhos.</p>
 </div>
+
+<div class="grid--spacer">
+  <h2>Cores de fundo</h2>
+  <p>Modificam a cor de fundo do bloco ou elemento em que são aplicados. Em alguns casos também modificam a cor do texto
+    para manterem um bom contraste.</p>
+  <div class="grid__columns">
+    <div class="grid--spacer util--background-secondary-brown">
+      <p class="text--big">Eu sou um parágrafo de texto grande, dentro de uma <code>div</code>, com a cor de fundo
+        marrom.</p>
+    </div>
+    <div class="grid--spacer util--background-gradient-greens">
+      <p>Eu sou um parágrafo normal, dentro de uma <code>div</code> com a cor de fundo verde gradiente de verdes.</p>
+    </div>
+  </div>
+  <h3>Como aplicar</h3>
+  <p>A classe que transforma a cor do fundo é dividida em duas partes, um prefixo global <code>.util--background-secondary-</code> e o nome da
+  cor em inglês. (Para saber mais sobre as cores do Guia de estilos visitar a <a href="/cores">seção de cores</a>).</p>
+  <p>As excessões são o botão na cor primaria, onde o codigo é <code>.util--background-primary</code> e os fundos com degradê, que são:</p>
+  <ul>
+    <li><code>.util--background-gradient-greens</code></li>
+    <li><code>.util--background-gradient-magenta-to-orange</code></li>
+  </ul>
+  <pre>&lt;div class=&quot;grid__columns&quot;&gt;
+  &lt;div class=&quot;grid--spacer <strong>util--background-secondary-brown</strong>&quot;&gt;
+    &lt;p class=&quot;text--big&quot;&gt;Eu sou um par&#225;grafo de texto grande, dentro de uma &lt;code&gt;div&lt;/code&gt;, com a cor de fundo marrom.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid--spacer <strong>util--background-gradient-greens</strong>&quot;&gt;
+    &lt;p&gt;Eu sou um par&#225;grafo normal, dentro de uma &lt;code&gt;div&lt;/code&gt; com a cor de fundo verde gradiente de verdes.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>

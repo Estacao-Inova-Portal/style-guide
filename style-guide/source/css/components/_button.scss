@@ -119,7 +119,7 @@ input[type="reset"].btn--secondary-color-orange {
 button.btn--secondary-color-yellow,
 input[type="submit"].btn--secondary-color-yellow,
 input[type="reset"].btn--secondary-color-yellow {
-  @include buttonColor($secondary-yellow, $primary-dark);
+  @include buttonColor($secondary-yellow, $secondary-brown);
 }
 
 .btn--secondary-color-lime,
