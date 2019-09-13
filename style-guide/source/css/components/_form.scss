@@ -1,30 +1,34 @@
-form{
+form {
   overflow: hidden;
 }
 
-form, fieldset{
+form,
+fieldset {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-fieldset{
+fieldset {
   margin-top: $line-height;
   border: 1px solid $gray-lighter;
   border-radius: $radius;
   padding: $line-height;
-  & > legend:first-child{
+  & > legend:first-child {
     font-weight: 800;
   }
 }
 
-label, legend{
+label,
+legend {
   margin-top: $line-height;
   display: block;
 }
 
-input, textarea, select{
-  &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]){
+input,
+textarea,
+select {
+  &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]) {
     padding: $unit * 2;
     margin: 0 0 $line-height;
     width: 90%;
@@ -33,12 +37,13 @@ input, textarea, select{
     border-radius: $radius;
     line-height: $line-height + $unit;
     height: initial;
-    &:focus{
+    &:focus {
       outline: 3px solid $focus;
       outline-offset: 0;
     }
   }
-  &[type="checkbox"],&[type="radio"]{
+  &[type="checkbox"],
+  &[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
     border: $form-border;
@@ -46,53 +51,70 @@ input, textarea, select{
     width: $unit-4 + $unit;
     margin-right: $unit;
     margin-bottom: $unit / -1;
-    &:focus{
+    &:focus {
       outline: 3px solid $focus;
       outline-offset: 0;
     }
-    &:checked{
+    &:checked {
       background: $main-color;
     }
-    &:checked + label{
+    &:checked + label {
       font-weight: 800;
     }
   }
-  &[type="radio"]{
+  &[type="radio"] {
     border-radius: $unit-4;
-    &:focus{
+    &:focus {
       outline: none;
       border-color: $focus;
     }
   }
-  &:only-child{
+  &:only-child {
     margin: 0;
   }
 }
 
 // Elements
-.form__hint{
+.form__hint {
   display: block;
   color: $gray;
 }
 
-.form__multiple-choice{
-  label{
+.form__multiple-choice {
+  label {
     display: inline-block;
   }
 }
 
-.form__multiple-choice:last-of-type{
+.form__multiple-choice:last-of-type {
   margin-bottom: $unit-2;
+}
+
+//Modifiers
+//Narrow inputs
+input,
+textarea,
+select {
+  &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]) {
+    &.form--narrow-field {
+      margin: 0 0 9 * $unit;
+      line-height: $line-height;
+      padding: $unit $unit * 2;
+      margin-bottom: $unit * 4.5;
+    }
+  }
 }
 
 // Media Querie
 // ----------------------
-@media (max-width: $break-default){
-  fieldset{
+@media (max-width: $break-default) {
+  fieldset {
     padding: $unit-2;
   }
-  input, textarea, select{
-    &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]){
+  input,
+  textarea,
+  select {
+    &:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="reset"]) {
       width: 100%;
       width: -moz-available;
       width: -webkit-fill-available;
