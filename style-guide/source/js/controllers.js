@@ -3,7 +3,6 @@
 //======================================//
 
 
-
 //======================================//
 // Universal variables
 //======================================//
@@ -107,7 +106,7 @@ function getSiblings(node) {
 }
 
 // Toggle class
-function toggleClass(target, cssClass){
+function toggleClass(target, cssClass) {
   const el = document.getElementById(target);
   el.classList.toggle(cssClass);
 }
