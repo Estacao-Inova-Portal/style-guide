@@ -268,7 +268,8 @@ hr {
 // Internet Explorer
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .text--gradient-green,
-  .text--gradient-hot-colors {
+  .text--gradient-hot-colors,
+  .text--gradient-cool-colors {
     background: inherit;
   }
 }
