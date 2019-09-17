@@ -96,3 +96,12 @@ dialog,
     padding-top: $unit-8 * 2;
   }
 }
+
+// Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  dialog.modal{
+    right: 5%;
+    left: 5%;
+    top: 15%;
+  }
+}
