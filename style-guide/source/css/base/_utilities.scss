@@ -28,6 +28,13 @@
   overflow: hidden!important;
 }
 
+// Centers content vertically
+.util--centered-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 // Background with color
 // Base Background color Mixin
 @mixin backgroundColor($background-color, $color: $white) {
