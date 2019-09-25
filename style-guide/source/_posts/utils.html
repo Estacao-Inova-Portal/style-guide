@@ -4,9 +4,6 @@ categories: Layout
 ---
 <div>
   <p class="text--big">O Guia de estilo tem algumas classes de utilidade pública globais (utilities).</p>
-  <p>Elas existem para <strong>forçar</strong> alguns estilos e devem ser utilizadas com cautela.</p>
-  <p>Sempre que possível utilize alguma classe do bloco de elementos que está trabalhando, utilize as <code>utils</code>
-    como <strong>último recurso</strong>.</p>
 </div>
 <div class="grid--spacer">
   <h2>Não mostrar</h2>
@@ -61,9 +58,11 @@ categories: Layout
 
 <div class="grid--spacer">
   <h2>Centralizar conteúdo</h2>
-  <p>Usando o modificador <code>util--centered-content</code>, os filhos do elemento em que a classe for aplicada estarão verticalmente centralizados.</p>
+  <p>Usando o modificador <code>util--centered-content</code>, os filhos do elemento em que a classe for aplicada
+    estarão verticalmente centralizados.</p>
   <h3>Quando pode ser útil?</h3>
-  <p>Quando, por exemplo, em um layout de duas colunas, uma delas tem um conteúdo muito mais comprido que a outra, e a ideia é que o conteúdo delas esteja verticalmente alinhado.</p>
+  <p>Quando, em um layout de duas ou mais colunas, uma delas tem um conteúdo muito mais longo que as outras, e a ideia é
+    que o conteúdo delas esteja verticalmente centralizados.</p>
 </div>
 
 <div class="grid--spacer">
@@ -79,20 +78,23 @@ categories: Layout
       <p>Eu sou um parágrafo normal, dentro de uma <code>div</code> com a cor de fundo gradiente de verdes.</p>
     </div>
   </div>
+  <pre>&lt;div class=&quot;grid__columns&quot;&gt;
+    &lt;div class=&quot;grid--spacer <strong>util--background-secondary-brown</strong>&quot;&gt;
+      &lt;p class=&quot;text--big&quot;&gt;Eu sou um par&#225;grafo de texto grande, dentro de uma &lt;code&gt;div&lt;/code&gt;, com a cor de fundo marrom.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid--spacer <strong>util--background-gradient-greens</strong>&quot;&gt;
+      &lt;p&gt;Eu sou um par&#225;grafo normal, dentro de uma &lt;code&gt;div&lt;/code&gt; com a cor de fundo gradiente de verdes.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</pre>
   <h3>Como aplicar</h3>
-  <p>A classe que transforma a cor do fundo é dividida em duas partes, um prefixo global <code>.util--background-secondary-</code> e o nome da
-  cor em inglês. (Para saber mais sobre as cores do guia de estilos, visitar a <a href="/cores">seção de cores</a>).</p>
-  <p>As excessões são o botão na cor primaria, onde o codigo é <code>.util--background-primary</code> e os fundos com degradê, que são:</p>
+  <p>A classe que transforma a cor do fundo é dividida em duas partes, um prefixo global
+    <code>.util--background-secondary-</code> e o nome da
+    cor em inglês. (Para saber mais sobre as cores do guia de estilos, visitar a <a href="/cores">seção de cores</a>).
+  </p>
+  <p>As excessões são o botão na cor primaria, onde o codigo é <code>.util--background-primary</code> e os fundos com
+    degradê, que são:</p>
   <ul>
     <li><code>.util--background-gradient-greens</code></li>
     <li><code>.util--background-gradient-magenta-to-orange</code></li>
   </ul>
-  <pre>&lt;div class=&quot;grid__columns&quot;&gt;
-  &lt;div class=&quot;grid--spacer <strong>util--background-secondary-brown</strong>&quot;&gt;
-    &lt;p class=&quot;text--big&quot;&gt;Eu sou um par&#225;grafo de texto grande, dentro de uma &lt;code&gt;div&lt;/code&gt;, com a cor de fundo marrom.&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid--spacer <strong>util--background-gradient-greens</strong>&quot;&gt;
-    &lt;p&gt;Eu sou um par&#225;grafo normal, dentro de uma &lt;code&gt;div&lt;/code&gt; com a cor de fundo gradiente de verdes.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</pre>
 </div>
